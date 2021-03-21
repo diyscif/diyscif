@@ -16,3 +16,5 @@ The Register | Finnland | Old tech, new battles: Inside F-Secure’s formidable 
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
+* Best Practices Guidelines for Architectural Radio Frequency Shielding (ONCIX/CSE)
+* UL 2050
