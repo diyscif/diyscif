@@ -9,6 +9,12 @@ abstract: |
     and active countermeasures to reach these limits. Finally it will present
     an example module that reaches these specifications measurably.
 
+    Note, this paper is limited in scope to constructive measures and does not
+    focus on IT or organisational security measures, like encryption,
+    security-related review/monitoring of employees, and classification levels.
+    It also does not dwell on specific countries bureaucratic protocols, but
+    instead aims to present a unified picture of the global state of the art.
+
 author: "diyscif"
 date: '2021-01-01'
 title: 'SCIF Research Working Title'
@@ -52,6 +58,12 @@ an area against intrusion and information source leaks.
 
 Active countermeasures use interference to obscure and render useless
 information source leaks.
+
+## During Construction
+
+Later passive and active countermeasures are completely ineffective if the SCIF
+is breached during construction. Therefore meticulous preparation of and
+adherence to a Construction Security Plan is required.
 
 # Example Module
 
