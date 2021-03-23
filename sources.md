@@ -19,3 +19,4 @@ To find:
 * BSI TL 03201, 03202, 03203 oder 03304
 * Best Practices Guidelines for Architectural Radio Frequency Shielding (ONCIX/CSE)
 * UL 2050
+* https://emshield.de/downloads/ downloads for register users "EMshield FactSheet – Technische Schirmung", "EMshield FactSheet – Abhörsicherer Besprechungsraum", "EMshield FactSheet – Abstrahlschutz / TEMPEST"
