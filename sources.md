@@ -14,6 +14,7 @@ NSTISS | USA | TEMPEST Countermeasures for Facilities | [Link](https://cryptome.
 NSTISS | USA | RED/BLACK Installation Guidance | [Link](https://cryptome.org/tempest-2-95.htm) | RED/BLACK considerations for NSI facilities
 The Register | Finnland | Old tech, new battles: Inside F-Secure’s formidable Faraday cage | [Link](https://www.theregister.com/2015/11/11/f_secure_lab_tour_faraday_cage/) | Article on F-Secures farraday cage
 SCIF Global | USA | SCIF Container Unit - SCIF Global Technologies | [Link](https://www.youtube.com/watch?v=_ePPa6pW1LA) | Container units, farraday lock, sound masking system/pink noise
+EMshield | Germany | Active eavesdropping protection | [Link](https://emshield.de/en/portfolio/active-eavesdropping-protection/) | Active defense against acoustic attacks, transmitters and line compromise
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
