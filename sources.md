@@ -13,6 +13,7 @@ Director of National Intelligence | USA | PHYSICAL AND TECHNICAL SECURITY STANDA
 NSTISS | USA | TEMPEST Countermeasures for Facilities | [Link](https://cryptome.org/nstissi-7000.htm) | Establishes guidelines and procedures that shall be used by to determine applicable TEMPEST countermeasures
 NSTISS | USA | RED/BLACK Installation Guidance | [Link](https://cryptome.org/tempest-2-95.htm) | RED/BLACK considerations for NSI facilities
 The Register | Finnland | Old tech, new battles: Inside F-Secure’s formidable Faraday cage | [Link](https://www.theregister.com/2015/11/11/f_secure_lab_tour_faraday_cage/) | Article on F-Secures farraday cage
+SCIF Global | USA | SCIF Container Unit - SCIF Global Technologies | [Link](https://www.youtube.com/watch?v=_ePPa6pW1LA) | Container units, farraday lock, sound masking system/pink noise
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
