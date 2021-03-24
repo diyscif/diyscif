@@ -15,9 +15,12 @@ NSTISS | USA | RED/BLACK Installation Guidance | [Link](https://cryptome.org/tem
 The Register | Finnland | Old tech, new battles: Inside F-Secure’s formidable Faraday cage | [Link](https://www.theregister.com/2015/11/11/f_secure_lab_tour_faraday_cage/) | Article on F-Secures farraday cage
 SCIF Global | USA | SCIF Container Unit - SCIF Global Technologies | [Link](https://www.youtube.com/watch?v=_ePPa6pW1LA) | Container units, farraday lock, sound masking system/pink noise
 EMshield | Germany | Active eavesdropping protection | [Link](https://emshield.de/en/portfolio/active-eavesdropping-protection/) | Active defense against acoustic attacks, transmitters and line compromise
+SpeechMasking | USA | Industry Leading Speech Privacy | [Link](https://www.speechmasking.com/) | All around great information on sound attenuation
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
 * Best Practices Guidelines for Architectural Radio Frequency Shielding (ONCIX/CSE)
 * UL 2050
 * https://emshield.de/downloads/ downloads for register users "EMshield FactSheet – Technische Schirmung", "EMshield FactSheet – Abhörsicherer Besprechungsraum", "EMshield FactSheet – Abstrahlschutz / TEMPEST"
+* ASTM E413 - 16: Outlines tools, processes, and test methods for evaluating the sound-insulating properties of interior walls, doors, or partition elements
+* ASTM E336 - 20: calculations needed to determine the measured STC value
