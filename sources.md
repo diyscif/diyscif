@@ -16,6 +16,7 @@ The Register | Finnland | Old tech, new battles: Inside F-Secure’s formidable 
 SCIF Global | USA | SCIF Container Unit - SCIF Global Technologies | [Link](https://www.youtube.com/watch?v=_ePPa6pW1LA) | Container units, farraday lock, sound masking system/pink noise
 EMshield | Germany | Active eavesdropping protection | [Link](https://emshield.de/en/portfolio/active-eavesdropping-protection/) | Active defense against acoustic attacks, transmitters and line compromise
 SpeechMasking | USA | Industry Leading Speech Privacy | [Link](https://www.speechmasking.com/) | All around great information on sound attenuation
+University of Chicago | USA | Understanding the Effectiveness of Ultrasonic Microphone Jammer | [Link](https://arxiv.org/pdf/1904.08490.pdf)
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
