@@ -20,6 +20,7 @@ University of Chicago | USA | Understanding the Effectiveness of Ultrasonic Micr
 Michael Möser | Germany | Technische Akustik | [Link](https://www.springer.com/de/book/9783540898184) | Chapter 8: Sound Isolation (especially 8.3 Double Shell Components), Chapter 9 Mufflers, Chapter 12 Basics of Active Noise Cancelling)
 DIN | Germany | 4109-1 Sound Insulation in Buildings Minimum Requirements | [Link](https://www.beuth.de/en/standard/din-4109-1/280079001) | Minimum/comparison values for enhanced sound insulation
 DIN | Germany | 4109-33 Data for verification of sound insulation (component catalogue) - Timber construction, lightweight construction and dry walling | [Link](https://www.beuth.de/en/standard/din-4109-33/254672248) | Empirical system values
+Karsten Tichelmann, Jochen Pfau | Germany | Entwicklungswandel Wohnungsbau: Neue Gebäudekonzepte in Trocken- und Leichtbauweise | [Link](https://link.springer.com/book/10.1007/978-3-663-07778-7) | Chapter 6 Schallschutz von Trocken- und Leichtbauweisen
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
