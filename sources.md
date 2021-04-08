@@ -17,6 +17,9 @@ SCIF Global | USA | SCIF Container Unit - SCIF Global Technologies | [Link](http
 EMshield | Germany | Active eavesdropping protection | [Link](https://emshield.de/en/portfolio/active-eavesdropping-protection/) | Active defense against acoustic attacks, transmitters and line compromise
 SpeechMasking | USA | Industry Leading Speech Privacy | [Link](https://www.speechmasking.com/) | All around great information on sound attenuation
 University of Chicago | USA | Understanding the Effectiveness of Ultrasonic Microphone Jammer | [Link](https://arxiv.org/pdf/1904.08490.pdf)
+Michael Möser | Germany | Technische Akustik | [Link](https://www.springer.com/de/book/9783540898184) | Chapter 8: Sound Isolation (especially 8.3 Double Shell Components), Chapter 9 Mufflers, Chapter 12 Basics of Active Noise Cancelling)
+DIN | Germany | 4109-1 Sound Insulation in Buildings Minimum Requirements | [Link](https://www.beuth.de/en/standard/din-4109-1/280079001) | Minimum/comparison values for enhanced sound insulation
+DIN | Germany | 4109-33 Data for verification of sound insulation (component catalogue) - Timber construction, lightweight construction and dry walling | [Link](https://www.beuth.de/en/standard/din-4109-33/254672248) | Empirical system values
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
