@@ -37,7 +37,6 @@ and be intercepted. These include
 * Visual
 * Acoustic
 * TEMPEST
-* Thermal
 
 For each practical usecase only a subset of these information sources must be
 isolated.
@@ -47,7 +46,7 @@ isolated.
 Set limits on information sources that should be available to an outside
 observer.
 
-# Countermeasures
+# Information Leak Countermeasures
 
 ## Passive Countermeasures
 
@@ -59,7 +58,17 @@ an area against intrusion and information source leaks.
 Active countermeasures use interference to obscure and render useless
 information source leaks.
 
-## During Construction
+# Physical Security
+
+## Intrusion Resistance
+
+## IDS
+
+## Access Control
+
+## Locks
+
+# During Construction
 
 Later passive and active countermeasures are completely ineffective if the SCIF
 is breached during construction. Therefore meticulous preparation of and
