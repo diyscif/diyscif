@@ -10,3 +10,4 @@ The repo is divided into the following sections
 * [sources.md](./sources.md): index of sources with authors, links and descriptions
 * [sources](./sources): collection of archived sources
 * [notes](./notes): research notes on [sources](./sources)
+* [prototypes](./prototypes): SCIF container unit schematics
