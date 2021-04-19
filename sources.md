@@ -23,6 +23,7 @@ DIN | Germany | 4109-33 Data for verification of sound insulation (component cat
 Karsten Tichelmann, Jochen Pfau | Germany | Entwicklungswandel Wohnungsbau: Neue Gebäudekonzepte in Trocken- und Leichtbauweise | [Link](https://link.springer.com/book/10.1007/978-3-663-07778-7) | Chapter 6 Schallschutz von Trocken- und Leichtbauweisen
 Shipping and Freight Resource | Global | Anatomy of a shipping container | [Link](https://www.shippingandfreightresource.com/anatomy-of-a-shipping-container/) | As title suggests
 Director of National Intelligence | USA | InspectableConstruction Materials Checklist | [Link](https://www.dni.gov/files/Governance/Inspectable-Materials-Checklist-V15.pdf) | Which materials are inspectable and how
+Department of State | USA | OBO Building Code | [Link](https://de.usembassy.gov/wp-content/uploads/sites/21/2016/08/Attachment-J.2-2015_OBO_Building_Code1.pdf) | Useful Security Details (Penetration details, Certified wall assemblies)
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
