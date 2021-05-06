@@ -24,6 +24,7 @@ Karsten Tichelmann, Jochen Pfau | Germany | Entwicklungswandel Wohnungsbau: Neue
 Shipping and Freight Resource | Global | Anatomy of a shipping container | [Link](https://www.shippingandfreightresource.com/anatomy-of-a-shipping-container/) | As title suggests
 Director of National Intelligence | USA | InspectableConstruction Materials Checklist | [Link](https://www.dni.gov/files/Governance/Inspectable-Materials-Checklist-V15.pdf) | Which materials are inspectable and how
 Department of State | USA | OBO Building Code | [Link](https://de.usembassy.gov/wp-content/uploads/sites/21/2016/08/Attachment-J.2-2015_OBO_Building_Code1.pdf) | Useful Security Details (Penetration details, Certified wall assemblies)
+Hans Wolfsperger | Germany | Elektromagnetische Schirmung - Theorie und Praxisbeispiele | [Link](https://www.springer.com/de/book/9783540769125) | Authoritative book on electromagnetic shielding, specifically for IT security
 
 To find:
 * BSI TL 03201, 03202, 03203 oder 03304
