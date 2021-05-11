@@ -1,6 +1,7 @@
-scif-thesis.pdf: scif-thesis.md
+scif-thesis.pdf: scif-thesis.md scif-thesis.bib
 	pandoc --standalone --table-of-contents --number-sections \
          --variable papersize=a4paper \
+	 --filter pandoc-citeproc --bibliography=scif-thesis.bib \
          -s $< \
          -o $@
 
