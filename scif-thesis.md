@@ -202,7 +202,7 @@ sets forth an attenuation for 1 kHz - 1 MHz H (magnetic) Field of 20 dB @ 1KHz,
 1 MHz, and 10 MHz. For a 100 MHz - 10 GHz Plane Wave it also requires 100 dB
 attenuation.
 
-![Electromagnetic Attenuation Requirements,
+![Electromagnetic Attenuation Requirements.
 @nsa94-106](images/nsa94-106.jpg){height=40%}
 
 The field test is carried out with a parallel setup. A continuous wave source
@@ -216,7 +216,7 @@ are then measured at various specified frequencies.  Attenuation tests are
 performed around the entire door frame, air ducts, filters and through any
 accessible joint or penetration. [@nsa94-106]
 
-![Test setup for NSA-94-106
+![Test setup for NSA-94-106.
 @shieldingtests](images/shieldingtests.jpg){height=40%}
 
 No comprising emanations should exit the SCIF on power lines and data
