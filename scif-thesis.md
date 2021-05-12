@@ -140,6 +140,58 @@ as much as possible.
 
 ## Acoustic
 
+Acoustic emissions must be reduced by at least a weighted sound reduction index
+of R'~w~ = 52 dB. This measure roughly corresponds to the Sound Transmission
+Class 50 listed in the IC Tech Spec‐for ICD/ICS 705 as an enhanced rating for
+areas that provide for amplified conversations [@ics-705-ts, p. 66]. We use this
+as a general minimum measure, because the IC Tech Spec is geared towards
+military and other government facilties that provide a large measure of security
+in depth (SID), meaning that only semi-trusted personnel ever get within earshot
+of the SCIF. Security in Depth is a multilayered approach, which effectively
+employs human and other physical security measures [like fences, walls, and
+guarded entry gates] throughout the installation or facility to create a layered
+defense against potential threats" [@navfac, p. 20]. Additionally, SID increases
+the probability of detection of nefarious activity because of continuous
+friendly-forces presence [@ics-705-ts, p. 3]. These conditions cannot be
+guaranteed for all locations, especially in the corporate realm, so we strive to
+compensate reduced SID with a higher degree of sound insulation.  When possible,
+R'~w~ = 52 dB should be exceeded.
+
+R'~w~ represents the resulting sound insulation between two rooms, taking into
+account all sound transmission paths [@tichelmann2000, p. 26]. This explicitly
+includes not only transmission through dividing components, but also so-called
+"flank transmission" over adjoining building components. In this phenomenon
+sound waves cause vibrations in flanking walls and then linearly travel through
+them into the other room [@moeser2009, p. 254]. R'~w~ is a cummulative value
+calculated on the basis of the weighted sound reduction index of each component
+R~w~ [@tichelmann2000, p. 34].
+
+R~w~ is calculated by measuring sound transmission from one room into the other
+in one-third octave or octave steps.  White noise with the given bandwidth is
+used as test sound. A frequency response curve R is thus obtained in the
+so-called building-acoustics frequency range between 100 Hz and 3.15 kHz. The
+frequency response curve R is then compared to a reference curve B in order to
+derive a single comparison value. In the comparison, the reference curve is
+shifted in 1 dB steps onto the frequency response curve until the sum of the
+undershoots S~U~ of the frequency response curve compared to the reference curve
+is less than 32 dB. [@moeser2009 pp.  256-257]
+
+![For the definition of the weighted sound reduction index R~w~. B = Reference
+curve, B~v~ = Shifted reference curve, M = Measured values, U = Undershoots of
+M compared to B~v~. @goesele2004](images/schalldämmmaß.png){height=40%}
+
+From this diagram we can also see that for a R~w~ = 52 dB (the reference curve)
+the fundamental frequency of the male voice - 125 Hz - only undergoes a sound
+attenuation of ca. 35 dB. Given a 60 dB conversation sound-level the sound
+attenuation is not sufficient to protect from a close proximity attacker.
+Passive sound-attenuation measures should be specifically evaluated in the 125
+Hz to 300 Hz range, and significantly exceed the reference curve's performance.
+
+Airborne sound transmission via ventilation and structure-borne sound
+transmission via ducts, such as water and ventilation pipes, can significantly
+reduce sound insulation. In some cases they can even provide direct channels for
+an outside attacker to capture sound on. [@moeser2009 p. 276]
+
 ## Electromagnetic/TEMPEST
 
 # Attacks
