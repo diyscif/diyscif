@@ -194,6 +194,34 @@ an outside attacker to capture sound on. [@moeser2009 p. 276]
 
 ## Electromagnetic/TEMPEST
 
+Electromagnetic emissions should be reduced by the values defined in National
+Security Specification for Shielded Enclosures NSA 94-106. This specification
+sets forth an attenuation for 1 kHz - 1 MHz H (magnetic) Field of 20 dB @ 1KHz,
+56 dB @ 10 kHz 90 dB @ 100 kHz, and 100 dB @ 1 MHz. For 1 kHz - 10 MHz E
+(electromagnetic) Field it requires 70 dB @ 1kHz, and 100 dB at 10 kHz, 100 kHz,
+1 MHz, and 10 MHz. For a 100 MHz - 10 GHz Plane Wave it also requires 100 dB
+attenuation.
+
+![Electromagnetic Attenuation Requirements,
+@nsa94-106](images/nsa94-106.jpg){height=40%}
+
+The field test is carried out with a parallel setup. A continuous wave source
+generates a wave in the range of 1 KHz to 10 GHz. Two antennas are placed, one
+on either side of the shielding. One antenna acts as a transmitting (TX) antenna
+and the other as a receiving (RX) antennas. The antennas are separated by a
+distance of 61 centimeters plus the wall thickness. The signal from the RX
+antenna is fed back into a reciver. Attenuation levels can then be read from a
+spectrum analyzer. Magnetic field, electronic field, and plane wave attenuations
+are then measured at various specified frequencies.  Attenuation tests are
+performed around the entire door frame, air ducts, filters and through any
+accessible joint or penetration. [@nsa94-106]
+
+![Test setup for NSA-94-106
+@shieldingtests](images/shieldingtests.jpg){height=40%}
+
+No comprising emanations should exit the SCIF on power lines and data
+connections.
+
 # Attacks
 
 Apart from passively observing information source leaks from outside the secure
