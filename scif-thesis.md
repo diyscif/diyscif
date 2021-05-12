@@ -20,7 +20,7 @@ abstract: |
 author: "diyscif"
 date: '2021-01-01'
 title: 'SCIFs - State of the Art and Future Considerations'
-csl: iso690-author-date-en.csl
+csl: resources/iso690-author-date-en.csl
 ---
 
 # What is a SCIF?
