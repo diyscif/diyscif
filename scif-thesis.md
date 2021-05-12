@@ -225,12 +225,45 @@ connections.
 # Attacks
 
 Apart from passively observing information source leaks from outside the secure
-facility, an attacker can also actively attack the space to place sensors inside
-it and transmit sensitive information to the outside.
+facility, an attacker can also actively attack the space to weaken the
+attenuation or to place sensors inside the SCIF and transmit sensitive
+information to the outside.
 
 ## Visual
 
+The goal of all visual attacks is to place cameras inside the SCIF. These
+cameras allow an attacker to gain valuable insights into the sensitive
+information being handled or processed inside the enclosed area. Cameras can be
+inserted by someone who gains physical access to the space, inserted through
+HVAC ducts, or drilled through the perimeter.
+
+Another attack avenue is taking over installed CCTV cameras. The video feed from
+these cameras could allow insights into the SCIF's comings and goings, and, with
+badly placed cameras, even into the information processed. This attack can also
+target the built-in cameras of information processing equiptment like laptops.
+
+Cameras transmit video feeds to the outside using radio/electromagnetic waves or
+wired connections. Wired connections could be specially installed for the attack
+or hijack existing lines, either directly or as emanations along unshielded
+lines.
+
 ## Acoustic
+
+An attacker may also attempt to place a microphones within the SCIF. To do this
+he can either physically insert a new microphone or hijack one of the
+built-in microphones of devices already included in the room. Acoustic
+information is usually most sensitive, especially in conference rooms or
+discussion areas.
+
+Avenues for placing a microphone are again physical entry, HVAC ducts, and hole
+drilling. In order to exfiltrate information the attacker again utilizes either
+radio/electromagnetic waves or wired connections, existing or specially placed.
+Another attack would be finding a weak spot in the sound attenuating shell and
+placing a microphone directly on it.
+
+An attacker could also seek to weaken the sound attenuation measures by
+tampering with the sound masking, destroying insulation or purposely creating
+sound bridges.
 
 ## Electromagnetic/TEMPEST
 
