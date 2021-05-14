@@ -2,6 +2,7 @@ scif-thesis.pdf: scif-thesis.md scif-thesis.bib
 	pandoc --standalone --table-of-contents --number-sections \
          --variable papersize=a4paper \
 	 --filter pandoc-citeproc --bibliography=scif-thesis.bib \
+	 -V linkcolor:blue \
 	 -H resources/fix-captions.tex \
          -s $< \
          -o $@
