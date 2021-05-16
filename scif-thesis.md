@@ -44,14 +44,14 @@ specifically built to protect information processed inside them.
 Most countries keep their specifications for these secure facilities secret.
 The United States, however, have published comprehensive information on their
 engineering practices under Intelligence Community Directive (ICD) 705
-"Sensitive Compartmeneted Information Facilities" and its associated technical
+"Sensitive Compartmented Information Facilities" and its associated technical
 specifications. In this paper, ICD 705 will be supplemented by private
 contractors' informational material, documents released under the Freedom of
 Information Act (FOIA), leaked documents, and scientific literature to create a
 comprehensive picture of the current state of the art and give an outlook on
 future improvements.
 
-# Information Security - Ideal State
+# Information Security - Ideal State and Practical Tradeoffs
 
 A communication link or room is considered secure if information travelling
 through it cannot be intercepted by unauthorized parties. This is a theoretical
@@ -163,6 +163,10 @@ equipment](https://greatscottgadgets.com/hackrf/one/). Although execution is
 fast, reconnaissance, planning and setup, especially for well-protected
 facilities, can entail significant time expenditure.
 
+![Display of one monitor reproduced on another using its TEMPEST emanations and
+a $40 software defined radio + antenna set up.
+@rtl-sdr](images/tempest.jpg){height=40%}
+
 Capture Technique | Cost | Time | Technical Skill Required
 --- | --- | --- | ---
 Direct Leaks | low | medium | high
@@ -213,14 +217,15 @@ R~w~ [@tichelmann2000, p. 34].
 
 R~w~ is calculated by measuring sound transmission from one test cabin into
 another divided by the test component. The test is carried out in one-third
-octave or octave steps.  White noise with the given bandwidth is used as test
-sound. A frequency response curve R is thus obtained in the so-called
-building-acoustics frequency range between 100 Hz and 3.15 kHz. The frequency
-response curve R is then compared to a reference curve B in order to derive a
-single comparison value. In the comparison, the reference curve is shifted in 1
-dB steps onto the frequency response curve until the sum of the undershoots S~U~
-of the frequency response curve compared to the reference curve is less than 32
-dB. [@moeser2009 pp.  256-257]
+octave or octave steps. White noise, a random signal with equal intensity across
+different frequencies, with the given bandwidth is used as test sound. A
+frequency response curve R is thus obtained in the so-called building-acoustics
+frequency range between 100 Hz and 3.15 kHz. The frequency response curve R is
+then compared to a reference curve B in order to derive a single comparison
+value. In the comparison, the reference curve is shifted in 1 dB steps onto the
+frequency response curve until the sum of the undershoots S~U~ of the frequency
+response curve compared to the reference curve is less than 32 dB. [@moeser2009
+pp. 256-257]
 
 ![For the definition of the weighted sound reduction index R~w~. B = Reference
 curve, B~v~ = Shifted reference curve, M = Measured values, U = Undershoots of
@@ -235,11 +240,11 @@ Hz to 300 Hz range, and significantly exceed the reference curve's performance.
 
 Airborne sound transmission via ventilation and structure-borne sound
 transmission via ducts, such as water and ventilation pipes, can significantly
-reduce sound insulation [@din4109-1, p. 19]. In some cases they can even
-provide direct channels for an outside attacker to capture sound on
-[@ics-705-ts, p.  13]. Hence, they must be treated with special attention. A
-mistake on a component penetrating the SCIF perimeter, like a duct or vent, can
-render useless all other attenuation.
+reduce sound insulation [@din4109-1, p. 19]. In some cases they can even provide
+direct channels for an outside observer to capture sound on [@ics-705-ts, p.
+13]. Hence, they must be treated with special attention. A mistake on a
+component penetrating the SCIF perimeter, like a duct or vent, can render
+useless all other attenuation.
 
 ## Electromagnetic/TEMPEST
 
@@ -255,9 +260,9 @@ dB attenuation.
 @nsa94-106](images/nsa94-106.jpg){height=40%}
 
 The field test is carried out with a parallel setup. A continuous wave source
-generates a wave in the range of 1 KHz to 10 GHz. Two antennas are placed, one
+generates a wave in the range of 1 KHz to 10 GHz. Two antennae are placed, one
 on either side of the shielding. One antenna acts as a transmitting (TX) antenna
-and the other as a receiving (RX) antennas. The antennas are separated by a
+and the other as a receiving (RX) antenna. The antennae are separated by a
 distance of 61 centimeters plus the wall thickness. The signal from the RX
 antenna is fed back into a reciver. Attenuation levels can then be read from a
 spectrum analyzer. Magnetic field, electronic field, and plane wave attenuations
@@ -271,16 +276,22 @@ accessible joint or penetration. [@nsa94-106]
 A RF shielding system is only as effective as its weakest component [@krieger].
 Shielding material faults and gaps in the shield should be carefully avoided.
 These holes become more critical the higher the frequency of the shielded field
-[@wolfsperger2008, pp. 292-293]. Furthermore, no comprising emanations should
-exit the SCIF on power lines and data connections.
+[@wolfsperger2008, pp. 292-293].
+
+Apart from airborne electromagnetic waves, emanations can also leak from a SCIF
+on cables and wires. Instead of travelling through the air, unwanted signals
+can travel along wires out of the SCIF [@wolfsperger2008, p. 210] inducing
+electromagnetic fields where they can be captured and turned into usable
+intelligence. With the right setup using different tools for power, data, and
+control connections these information source leaks can be entirely eliminated.
 
 # Active Attacker
 
 Apart from passively observing information source leaks from outside the secure
-facility, an attacker can also actively attack the space to place sensors
-inside the SCIF and transmit sensitive visual, acoustic, or electromagentic
-information to the outside. He can also seek to weaken the passive attenuation
-in order to increase the information yield of passive observance.
+facility, an attacker can also actively attack the space to place sensors inside
+the SCIF and transmit sensitive visual, acoustic, or electromagentic information
+to the outside. He can also seek to weaken the passive attenuation in order to
+increase the information yield of passive observance.
 
 This chapter intends to give some general ideas about possible attack vectors,
 not to list out specific attacks and describe their execution. New attack
@@ -348,7 +359,7 @@ them on some other channel. He could also seek to weaken the electromagnetic
 shield by purposely creating holes in it or tampering with protective equipment,
 like power line filters.
 
-Electromagnetic attacks are possible but it is more likely than an attacker
+Electromagnetic attacks are possible, but it is more likely that an attacker
 would place acoustic or visual sensors, which provide more direct insight into
 sensitive information, given the physical access necessary for these types of
 attacks.
