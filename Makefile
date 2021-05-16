@@ -4,6 +4,7 @@ scif-thesis.pdf: scif-thesis.md scif-thesis.bib
 	 --filter pandoc-citeproc --bibliography=scif-thesis.bib \
 	 -V linkcolor:blue \
 	 -H resources/fix-captions.tex \
+	 -M date="`date "+%B%e, %Y"`" \
          -s $< \
          -o $@
 

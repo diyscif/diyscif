@@ -18,7 +18,6 @@ abstract: |
     global state of the art.
 
 author: "diyscif"
-date: '2021-01-01'
 title: 'SCIFs - State of the Art and Future Considerations'
 csl: resources/iso690-author-date-en.csl
 ---
