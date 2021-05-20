@@ -387,7 +387,132 @@ Hijack Existing Device | low | medium | high
 
 Later passive and active countermeasures are completely ineffective if the SCIF
 is breached during construction. Therefore meticulous preparation of and
-adherence to a Construction Security Plan is required.
+adherence to a Construction Security Plan (CSP) is required. The CSP covers
+construction personnel, site perimeter, site access, and construction materials.
+
+#### Construction Personnel
+
+Construction personnel must be vetted and monitored so that they do not pose an
+insider threat to the construction site and resulting facility. The IC Tech
+Spec‐for ICD/ICS 705 [@ics-705-ts, pp. 23-27] provides for evaluation of
+construction workers by origin and clearance level. For example, it forbids the
+use of workers from SETL threat level "critical technical threat level."
+Furthermore, it requires biographical data (full name, current address, Social
+Security Number (SSN), date and place of birth (DPOB), proof of citizenship,
+etc.) and fingerprint cards for background checks of all non-cleared
+construction personnel. It requires finish work in high-threat countries to be
+carried out by SECRET-cleared U.S. personnel and requires access to the site to
+be withdrawn if adverse security, Counterintelligence (CI), or criminal activity
+is detected. It also sets various requirements for the monitoring/accompanying
+of non-cleared workers. As an example, for new facilities it allows non-cleared
+workers, monitored by Construction Surveillance Technicians (CSTs) - dedicated
+personnel that supplement site access controls, implement screening and
+inspection procedures, as well as monitor construction and personnel - to
+perform the installation of major utilities and feeder lines. It requires that
+all construction personnel receive a security briefing prior to entering the
+site, so they know which rules to follow and what suspicious activity to report.
+If a construction worker leaves the project under unusual circumstances, the ICD
+requires the event be documented and the approriate officer to be notified.
+
+Not all these measures for the security vetting of construction personnel can be
+implemented by non-government actors. These actors should try to build a staff
+of long-term, trustworthy workers or employ a company that does so. Video
+surveillance during the construction phase can supplement other monitoring
+efforts. However, it requires constant attention, just like any other
+non-technological security measure. Even with all the possible security
+mitigations and background checking, the human factor as an inside threat remains
+one of the most sensitive areas and the hardest to defend against.
+
+Threats from construction personnel can also further be mitigated by careful
+inspection after each construction phase's completion and [bug
+sweeping](#bug-sweeping) before commissioning of the SCIF.
+
+#### Site Perimeter
+
+Without a secure perimeter, access to and within the site cannot be controlled.
+A secure fencing or other form of perimeter should be errected, and continuously
+monitored for unauthorized penetration. For renovation projects, barriers should
+be installed to segregate construction workers from operational activities,
+providing protection against unauthorized access and visual observation. When
+expanding SCIF space into uncontrolled areas, maximum demolition of the
+uncontrolled areas should be carried out beforehand. This protects against
+existing threats and ensures a "clean slate" before building a new SCIF.
+[@ics-705-ts, p. 25].
+
+#### Site Access
+
+Access control using badges and other forms of identification should be required
+entry to the site. Guards should monitor these entry points to prevent tampering
+and penetration attempts. Possible site control measures like identity
+verification, random searches, signs listing prohibited items, and vehicle
+inspections should be considered and weighed against the SCIF threat model.
+[@ics-705-ts, p. 27]
+
+The IC Tech Spec also requires the use of cleared American guards (CAGs) to
+supervise non-U.S. and non-cleared U.S. guards, as well as to directly protect
+the site in high-threat, SETL category I countries. No equivalent to CAGs exists
+in the private sector. Their loyalty is difficult to recreate for a private
+actor who can't offer the same long-term employment and ideoligical motivation.
+However, guards with a similar training level can be sourced from private
+suppliers and with organizational practices like supervision and vetting an
+adequate level of security can be ensured.
+
+#### Construction Materials
+
+Construction materials must be procured, transported, and stored in a secure
+way. If not, the entire security of the finished SCIF can be jeapordized by
+faulty or compromised materials. Inspectable materials are those that can be
+reasonably inspected with available measures. All other materials, as well as
+inspectable materials on which approved test methods were not carried out, are
+classified as non-inspectable and are subject to higher security requirements.
+
+Inspectable materials can be procured from trusted suppliers without further
+security restrictions. Inspectable materials from non-trusted suppliers or
+shipped to the site in an unsecured manner should be inspected using approved
+methods and then moved to a secure storage area (SSA). If stored outside the
+SSA, a random selection of these materials should be inspected before use on the
+site. Non-inspectable materials should be procured from trusted suppliers or
+other approved channels and securely transported to the SSA. They can also be
+procured from untrusted suppliers if randomly chosen by trusted personnel from a
+suppliers shelf-stock without advance notice or indication of the intended use.
+No discernible purchasing patterns should be established while carrying out this
+randomized procurement procedure. [@ics-705-ts, pp. 27-29]
+
+Secure transporation is not required for inspectable materials if they are
+inspected and then immediately placed in an SSA. If securely procured, shipped
+and stored inspectable materials may even be utilized without inspection.
+Non-inspectable materials, should be transported securely packaged or
+containerized and under the 24-hour control of an approved courier or escort
+officer. If this is not possible they should be securely shipped using approved
+transit security technical safeguards capable of detecting evidence of tampering
+or compromise. For government actors it may be interesting to require the
+transporation by military or flag carrying vessels. [@ics-705-ts, p. 30]
+
+A secure storage area is a true floor to true ceiling, slab-to-slab construction
+of some substantial material, and a solid wood-core or steel-clad door equipped
+with a security lock. All inspected and securely shipped materials should be
+placed in the SSA immediately upon arrival and stored there until they are
+required for installation. Alternatively a shipping container located within a
+secure perimeter that is locked, alarmed, and monitored or a room or outside
+location enclosed by a secure perimeter that is under direct observation by
+cleared personnel can be used as an SSA. [@ics-705-ts, p. 31]
+
+#### Inspection Methods
+
+X-Ray, visual inspection, metal detectors and destructive tests can be used on
+inspectable materials to ensure their integrity. See [@checklist] for a detailed
+list of inspection methods and their uses.
+
+#### Technical Security
+
+The construction phase involves many different parties and material suppliers.
+It is almost impossible to defend against against down the entire supply chain.
+Security measures are only suitable to completely prevent the most primitive
+attacks and only serve to make advanced attacks more difficult. Therefore, a
+technical surveillance countermeasure (TSCM) [inspection](#bug-sweeping) should
+be carried out at all major construction milestones and before commissioning of
+the SCIF. This can effectively mitigate the impact of security breaches in the
+construction phase.
 
 ### Intrusion Resistance
 
