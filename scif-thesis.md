@@ -516,6 +516,66 @@ construction phase.
 
 ### Intrusion Resistance
 
+A secure perimeter is the foundation of a SCIF's security. Only it can prevent
+brute-force entries into the protected space. Without it, no other access
+control or locking measures are effective.
+
+A multi-layered approach, using security in depth (SID), is most effective in
+ensuring a SCIF's physical security. The multiple layers can be a controlled
+perimeter, a secure installation, a building perimeter, an area surrounding the
+SCIF, and/or the SCIF Perimeter itself. If one of these layers is not existant
+in a sufficient degree it may be possible to supplement by beefing up one of the
+other layers.
+
+![Map for Security in Depth of a Military Installation. @navfac, p.
+20](images/sid.jpg){height=40%}
+
+The SCIF perimeter itself should be made from a substantial material that is
+difficult to penetrate in a covert way. The IC Tech Spec‐for ICD/ICS 705
+[@ics-705-ts, pp. 8-10] proposes different wall makeups for varying mission
+demands. For example, an open storage facility - one in which sensitive
+information is stored openly and left out when not in use without further
+protection [@navfac, p. 16] - without SID requires a true-floor to true-ceiling
+wall made up of (from controlled to uncontrolled side) two 5/8" gipsum wall
+boards (GWB), ¾" #9 10 gauge expanded metal spot-welded or screwed every 6" to
+vertical studs, 16" metal studs and runners, acoustic fill, another 5/8" GWB.
+Specifically the combination of multiple GWBs and expanded metal makes for a
+very sturdy construction. Additionally, sheet metal laminated GWB, like Knauf
+Diamant Steel, can be used to further enhance the resistance capabilities of the
+GWB. Windows are highly discouraged for security reasons [@ics-705-ts, p. 12].
+
+![Wall B -Suggested Construction for Expanded Metal [@ics-705-ts, p.
+17]](images/wallb.png){height=40%}
+
+There should be only one primary entrance door to simplify personnel and visitor
+controlled entry. This door should be of a substantial material, like 1 ¾
+inch-thick solid wood core or 1 ¾ inch-thick face steel. Its hinge pins should
+be located inside the SCIF perimeter or modified to prevent removal of the door,
+e.g., welded or set screws. [@ics-705-ts, pp. 11-12]
+
+The alarm response time criteria on [@ics-705-ts, p. 14] requires a maximum
+response time of 15 minutes. Assuming that the door should resist entry for the
+entire alarm response time, i.e. an attacker should be captured before he
+breaches the door, this requirement roughly translates to DIN EN 1627
+Resistance Class 5. RC 5 entails that an experienced attacker using hand tools,
+power tools, such as a drill, jigsaw or reciprocating saw and an angle grinder
+with a max. disc diameter of 125 mm can't breach the door within 15 minutes. A
+SCIF door setup should meet or exceed this standard.
+
+Closed storage of sensitive information in a security container is preferrable
+over open storage when the SCIF is not in use. Even better, sensitive
+information should be stored in a separate vault when the SCIF is not in use. A
+security container according to the IC Tech Spec‐for ICD/ICS 705 [@ics-705-ts,
+p. 5] must be a General Services Administration (GSA) approved safe, which
+typically complies to GSA Class 6 for storage of classified information such as
+documents, maps, drawings, and plans [@navfaclocks]. GSA Class 6 has no forced
+entry requirements, but requires 30 minutes resistance to covert entry and 20
+hours resistance to surreptitious entry. Commercial cabinets meeting EN 14450
+Grade S2 likely also fulfill the requirements of GSA Class 6.
+
+![Hamilton GSA Approved Class 6 4 Drawer Security
+Container](images/cabinet.jpg){height=30%}
+
 ### Intrusion Detection Systems
 
 ### Access Control
