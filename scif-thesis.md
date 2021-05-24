@@ -576,13 +576,219 @@ Grade S2 likely also fulfill the requirements of GSA Class 6.
 ![Hamilton GSA Approved Class 6 4 Drawer Security
 Container](images/cabinet.jpg){height=30%}
 
-### Intrusion Detection Systems
+### Intrusion Detection System
+
+An intrusion detection system (IDS), also called alarm system, is essential in
+securing a SCIF against attackers. It allows quick detection and response to
+penetrations of the secured area. Multiple sensors are used in conjunction with
+a monitoring station to ensure round-the-clock alerts to unauthorized entry of
+any kind.
+
+Mainly, the IDS is used to secure the SCIF when it is unoccupied. All interior
+areas through which access could be gained, including walls and doors, should be
+protected by IDS. Special attention should be given to detecting and responding
+to system outages and tampering. Limiting false alarms to a maximum of one per
+30 days further ensures the reliability and effectiveness of the system, as too
+many false alarms cause fatigue and desensitization of security personnel. The
+IDS should be stand-alone, i.e. independent of other facilities' alarm systems.
+It can be supplemented with [audio or video monitoring](#cctv) if special
+attention is given not to inadvertently jeopardize the SCIFs information
+security.  [@ics-705-ts, p.  53]
+
+All components, i.e. the monitoring station, movement sensors, high security
+switches (HSS), premise control unit (PCU), and keypads should meet the
+internationally recognized Underwriters Laboratories (UL) Standards 2050, 639,
+634, 1610 and/or 294 respectively. The UL, being an independent, international
+organization not complying to the standards of any one country, is most suitable
+for providing globally recognized and universal security standards for the
+purposes of this paper.
+
+The IDS should allow for operating in access, secure, maintenance, and
+shunted/masked mode. Access mode is used during SCIF operation and should allow
+for normal entry without causing an alarm. Tampering or entry through a
+secondary point, like emergency exits, should continue to trigger an immediate
+alarm. Secure mode is used when the SCIF is unoccupied, i.e. the last person
+departs the SCIF. Any unauthorized entry into the SCIF should cause an alarm to
+be immediately transmitted to the monitoring station in secure mode. In general,
+there should be no remote capability to change between these modes. Maintenace
+mode is used during routine repairs and testing on the system. An signal for
+this condition should be automatically sent to the monitoring station and
+verified/recorded there. Generally speaking, there should be no remote access
+for diagnostics, maintenance or programming for security reasons. It might also
+become necessary to shunt/mask sensors and zones for other reasons, like
+unforeseen malfunctioning of specific components, however this must be displayed
+at the monitoring station through the period the condition exists and
+automatically limited in time to the next change from access to secure mode.
+[@ics-705-ts, pp. 57-58]
+
+Electrical power supply of the IDS must be redundant, e.g. backed by 24 hours of
+uninterruptible power supply (UPS). On primary power failure, the IDS should be
+automatically transferred to emergency electrical power without causing an
+alarm. An indicator of the power source in use should be given at the PCU or
+monitoring station. [@ics-705-ts, p. 58]
+
+The monitoring station must comply to UL 2050, which sets out standards for
+organizations monitoring, signal processing, investigating, servicing, and
+operating alarm systems in sensitive facilities [@convergint]. Governments
+themselves or private contractors can set up monitoring stations that meet these
+standards.  These stations should be staffed by human operators trained in
+system theory and operation to effectively interpret system incidents and take
+appropriate response action. Any alarm event along with time of receipt, names
+of responding personnel, dispatch time, nature of the alarm, and follow up
+actions should be recorded there for at least two years. [@ics-705-ts, p. 59]
+
+Sensors are the eyes and ears of an IDS. They detect breaches and trigger
+alarms. All sensors should be located inside the SCIF to prevent tampering and
+TEMPEST issues. Interior areas of a SCIF through which reasonable access could
+be gained should be monitored by motion sensors (UL 639) and high security
+switches (HSS) (UL 634 level 1 or 2). Motion sensors trigger alarms on detecting
+movements in their view. HSS split in two, one half mounted on moving components
+and the other on an adjacent rigid part. They trigger alarms when they lose
+internal contact between their two halfs, for example when a door is opened.
+SCIF perimeter doors should be protected by both an HSS and a motion sensor.
+Failed sensors should cause continuous alarm until repaired. [@ics-705-ts, pp.
+54-55] Seismic detectors, sensors that trigger on vibrations such as those
+resulting from drilling and blastic, can further be used to supplement HSS and
+motion sensors. There are impressive innovations in the realm of motion sensors
+such as passive infrared detecting attacker's body temperature, doppler radar
+catching attacker's radar reflections, cloak and camouflage detection against
+intrudersattempting to cover their infrared signal, and anti-masking technology
+against attempts to obscure the field of view of the detector [@boschtriptech].
+
+Premise Control Units (PCU) serve as a first point of control inside the SCIF.
+They as well as any associated cabling should be fully located within the SCIF
+perimter. PCU should validate authorized use with an authentication technology,
+such as a keypad and/or card reader. Cabling between all sensors and PCU should
+be dedicated to the IDS and contained within SCIF. Otherwise "External
+Transmission Line Security" must be employed. The alarm status as well as power
+source in use should be continuously displayed at the PCU. A special indicator
+should alert to changed/failed power supply. The PCU should identify and display
+all activated sensors. The auto-alarm reset feature, if present, must be
+disabled as every security incident can only be resolved after an inspection of
+the SCIF and a determination for the cause of the alarm by trained personnel.
+Because of the sensitive nature of the information displayed, the PCU must be
+installed in a location that precludes observation by any unauthorized party.
+[@ics-705-ts, p. 55]
+
+Immediate and continuous alarm must be given on any intrusion detection, failed
+sensor, tamper detection, or enabling of maintenance mode (maintenace message
+may be used in place of alarm). Alarms or maintenace messages should be
+displayed individually for all zones shunted or masked during maintenance mode.
+[@ics-705-ts, p. 55]
+
+Once an IDS is set up to the above specifications, thorough acceptance testing
+should be carried out before the SCIF is commissioned. Motion sensors should be
+tested by moving at very slow speeds through the monitored area. This speed
+should not exceed 800 mm per second. The movements should be repeated throughout
+the SCIF and from different directions. The alarm must be activated at least
+three out of every four trials. HSS should be tested to ensure that an alarm
+activates before the non-hinged side of the door or window opens beyond its own
+thickness from the closed position. For example, this means that the HSS
+triggers an alarm before the door opens 5 cm for a 5 cm door. Tamper testing
+should be carried out by ensuring that alarms are triggered when IDS equiptment
+covers are opened, both in secure and access mode. These test procedures should
+be repeated at least semi-anually. [@ics-705-ts, pp. 60-61]
 
 ### Access Control
 
+An access control system (ACS) is employed while the SCIF is occupied to control
+and record personnel entry into the protected space. It is mounted in addition
+to the SCIF perimeter door lock to regulate access while the SCIF is in use. It
+does not replace this lock while the SCIF is unoccupied. [@ics-705-ts, p. 62]
+
+Visual recognition of persons entering the SCIF by an authorized person at the
+entrance to a SCIF is the ideal access control. Should this not be possible an
+automated system can be used instead. [@ics-705-ts, p. 62]
+
+An automated personnel ACS should use two different credentials, such as ID
+badge/card, PIN, and biometric identifier, to verify authorized personnel. The
+probability of an unauthorized individual gaining access must be no more than
+than one in ten thousand.  Card readers, keypads, communication interface
+devices, and other access control equipment located outside the SCIF must be
+tamper-protected and securely fastened to a wall or other fixed structure.
+Electrical components, associated wiring, or mechanical links should only be
+accessible from inside SCIF. Otherwise transmission lines to and from outside
+SCIF must be FIPS-AES certified encrypted. Equipment containing access-control
+software used to program in authorized persons and remove no longer authorized
+individuals should be located fully inside the SCIF. Electric door strikes used
+to unlock the door and "buzz people in" must have a  positive engagement, i.e.
+rest in a locked position and only unlock on entry authorization. The electric
+door strikes should comply to UL 1034 (Burglary-Resistant Electric Locking
+Mechanisms). [@ics-705-ts, p. 63]
+
+Records should be kept of the active assignment of ID badge/card, PIN, level of
+access, recent entries, and other similar system-related information. Records of
+personnel removed from the authorized persons list should be retained for two
+years.  Records of security incidents should be retained for five years from the
+date of the incident or until the corresponding investigation is resolved.
+[@ics-705-ts, p. 63]
+
+If the number of personnel that require access is low and there is only one
+entrance a non-automated access control may be used. This can consist of a
+mechanical, eletric or electromechanical combination lock with combinations of
+four or more random digits. Mechanical access control devices should be
+installed to prevent manipulation or access to mechanisms used for setting the
+access combination from outside door.  For all non-automated mechanisms, the
+control panel or keypad should be installed to preclude unauthorized observation
+of combination entry or actions of combination change. The control panel with
+combination, cabling and wiring should be located inside the SCIF with
+sufficient physical security to deny unauthorized access to its mechanisms.
+[@ics-705-ts, p. 64]
+
 ### Locks
 
+When not occupied, SCIFs should be alarmed and secured with a FF-L-2740A
+compliant combination lock and a pedestrian door deadbolt meeting Federal
+Specification FF-L-2890 [@ics-705-ts, p. 11]. The combination lock is used to
+secure the door when the SCIF is unoccupied and the access control device is
+used when the SCIF is occupied [@ics-705-ts, p. 63]. The equivalent
+international specifications for combination locks are UL 768 and DIN EN 1300.
+The lowest UL 768 rating, Group 2, is essentialy equivalent to FF-L-2740A
+[@lockreference].
+
+![Kaba X-10 Mounted Lock (FF-L-2740)](images/ffl2740a.jpg){height=40%}
+
+Combinations to locks installed on perimeter doors should be changed when a
+combination lock is first installed, when a combination has been compromised,
+and whenever a person knowing the combination no longer requires access to it
+unless other sufficient controls exist to prevent access to the lock.
+[@ics-705-ts, p. 83]
+
 ### CCTV
+
+Video surveillance, also known as CCTV, can be used to supplement the
+monitoring of SCIF entrances for the remote control of doors from within SCIF.
+Special attention should be given to a CCTV system to make sure that it
+presents no technical security hazard. [@ics-705-ts, p. 64]. CCTV may be also
+used to supplement monitoring of the SCIF entrance and record events for
+investigation [@ics-705-ts, p. 75].
+
+When CCTV is used to monitor a SCIF entrance for ACS purposes, the remote
+control device should be located within SCIF and should be monitored/operated
+by indoctrined personnel. The cameras should provide a clear view of SCIF
+entrance without enabling a viewer to observe classified information when the
+door is open nor external control pads or access control components that would
+enable them to identify PINs or access procedures. The CCTV communication lines
+should be fully located within SCIF. Any external communication lines should be
+installed to prevent tampering. [@ics-705-ts, p. 64]
+
+When CCTV is used to monitor a SCIF entrance for security and record-keeping
+purposes the system and all its components, including communications and
+control lines, should be exterior to SCIF perimeter. In this case it must also
+not enable a viewer to observe any classified information or authentication
+procedures.
+
+In both cases special attention must be given that the cameras present no
+further technical security risk. Chinese-made video surveillance systems can be
+reasonably suspected of leaking information back to their Chinese State
+owned/controlled manufacturers [@cis], like HikVision and Dahua, and suffer from
+general bad security practices [@us-cert]. Their use has consequently been
+banned from U.S.  government agencies and facilities [@ndaa2019]. In general,
+proprietary products suffer from this kind of backdoor-risk and should only be
+sourced from trustworthy manufacturers. Even better, they should be built
+in-house with [open hardware](https://www.elphel.com/) components.
+
+![Elphel 10393 Series Free Software and Open Hardware Camera](images/elphel10393.jpeg){height=30%}
 
 ## Visual
 
