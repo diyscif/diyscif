@@ -792,9 +792,165 @@ in-house with [open hardware](https://www.elphel.com/) components.
 
 ## Visual
 
+Visual insights into the SCIF space are the easiest attack vector to defend. It
+suffices to create a "water-tight" outer shell without gaps or holes. Every
+effort should be made to exclude windows from the SCIF [@ics-705-ts, p. 12]. If
+they are unavoidable they must at least be treated for visual protection, i.e.
+darkened with external blinds and/or laser protection film [@wolfsperger2008, p.
+463]. As noted above, video surveillance systems should be designed with special
+attention not to provide visual insights into the space. No cameras should be
+installed inside the SCIF [@ics-705-ts, p. 82].
+
+To protect from visual insight into the SCIF during personnel entry, entrace
+points should incorporate a vestibule to preclude visual observation
+[@ics-705-ts, p. 11]. Double doors should have an astragal strip attached to one
+door to prevent observation through the door crack [@ics-705-ts, p. 12].
+
 ## Acoustic
 
+To secure the discussions, information processing, and conferences carried out
+inside the SCIF it is essential to design an effective acoustic protection
+system. Sound waves have the habit of finding weakpoints in even the most
+well-designed systems and escaping to the outside where even the faintest
+emission can be captured and reconstructed with digital means. Therefore, it is
+necessary to pay meticulous attention to detail, both in the design and build
+phases, while building on multiple technologies to prevent capture of usable
+sound information from any point.
+
+In most cases, passive sound attenuation, walls with strong sound isolation
+properties, must be combined with active sound masking, speakers that emit
+speech-like sounds to render useless escaping sound waves. Both out of room
+constraints and redundancy considerations passive sound attenuation most often
+doesn't suffice on its own. A sound masking system can reduce the wall thickness
+needed and mitigate any weakpoints that are inadvertently built into the
+attenuating shell.
+
+Even protecting against attackers who manage to smuggle microphones into the
+SCIF space, as guests or intruders, should be considered in system design.
+
 ### Sound Attenuation
+
+Passive sound attenuation is the first step in reducing noise emissions from the
+SCIF space. Massive single-shell walls or double-shell components can be used to
+reduce sound transmission on all paths. Both direct transmission, sound forces
+on a wall to structure-borne sound in the wall to airborne sound outside the
+SCIF, and indirect transmission, airborne sound within the SCIF to
+structure-borne sound in the wall to airborne sound outside the SCIF, can be
+reduced with the right wall design both on primary and secondary paths.
+[@moeser2009, p. 253]
+
+The sound insulation quality of building components is dependent on the
+frequency of the sound emission. Particularly low-frequency sound waves set
+walls into vibrations that they readily transmit as airborne sound to the
+outside. Higher frequencies are of less interest in system evaluation, because
+the insulation quality of walls for higher frequencies is almost always good.
+Problematically, the very sound emissions that need to be protected, those of
+the human voice, are in the low frequency range. [@moeser2009, p. 256]
+
+A clear understanding of cut-off frequencies is essential to properly analyzing
+the frequency-dependent sound insulation of building components. The cut-off
+frequency is the frequency at which the wavelength of the airborne sound matches
+the length of a component's bending wave. In this frequency range, track
+matching occurs between the incoming airborne sound and the walls internal
+vibrations. They align and result in poorer airborne sound insulation. For
+single-shell components, sound attenuation increases with 6 dB/Octave below the
+cut-off frequency. This is known as Bergers' mass law. At the cut-off frequency
+the component's sound attenuation suffers a sharp drop and then rises with 7.5
+dB/Octave. The drop is also described as the "cut-off slump" and entails
+significant decreases in sound attenuation at frequencies around cut-off
+frequency. The cut-off slump is more drastic the higher the cutoff frequency.
+Because of the higher sound attenuation increases above the cut-off frequency
+and lower cut-off slumps, it is of interest to design single-shell components
+with as low a cut-off frequency as possible. This can be accomplished by making
+the wall as rigid as possible and increasing its thickness. [@moeser2009, pp.
+258-270]
+
+![Principle curve of the sound reduction index frequency response of a single
+shell wall. Eta = loss factor derived from the loss mechanisms actually occurring,
+such as internal damping and vibration energy dissipation to adjacent
+components, f = frequency of emission, f~cr~= cut-off frequency [@moeser2009, p.
+267]](images/attenuationprogression.png){height=40%}
+
+Increasing wall rigidity and thickness might not always be possible due to
+space, weight, and cost constraints. Thankfully, a better method for building
+attenuating walls exists, double-shell components with flexurally soft
+facing-shells. These make use of the propensity of the two walls to swing at
+different frequencies when not connected, making use of the cavity in between to
+create a mass-spring-mass system. No connections or cross-coupling may exist
+between the two shells as these destroy the spring function of the hollow space
+and jeopardize the entire system's effectiveness. [@moeser2009, pp. 270-276]
+
+![Improvement of the sound insulation delta R of a 80 mm plaster wall by a
+flexible facing shell with m^''^~2~ = 4 kg/m^2^ and cavity depth d = 65 mm,
+filled with mineral wool](images/improvement.png){height=40%}
+
+Below the cut-off frequency the additional shell has no effect, however, above
+it the sound attenuation increases with 12 dB/octave. At the cut-off frequency
+there is again a slump in attenuation performance. The cut-off frequency should
+be engineered to be as low as possible to make use of the steep attenuation
+increases. According to
+
+$$
+f_{o} \approx \frac{60 Hz}{\sqrt{\frac{m^{''}_{2}}{kg/m^{2}}\frac{d}{m}}}
+$$
+
+a cut-off frequency of 60 Hz (well below the building acoustics frequency range
+beginning at 100 Hz) can be reached with a facing shell with a mass per unit
+area of m^''^~2~ = 10 kg/m^2^ (heavy gypsum wall board) and a hollow space of
+_d_ = 10 cm. From here we can see that sufficiently low cut-off frequencies can
+be achieved without excessively heavy facing shells or massive hollow spaces.
+[@moeser2009, p. 273]
+
+To achieve a high sound attenuation level it is advantageous to use heavy total
+masses and to distribute them unequally among the shells if possible avoding
+shells of equal weight. One should also maximize the distance _d_ between the two
+shells, dampen the cavity as fully as possible with absorber material, and avoid
+leaks or structure-borne sound bridges. [@moeser2009, p. 276]
+
+In order to evaluate the solution on a whole system level, including floors and
+ceilings, one combines the walls R~W~ value as described in Chapter 4.2 with the
+longitudinal sound transmission R~L,w~ of the four flanking components (two
+walls, ceiling, and floor) in a stepwise addition scheme specified in DIN
+4109-1. The result is a total resulting sound reduction index R'~w,R~ expressed
+in dB. [@tichelmann2000, p. 34]
+
+![Stepwise addition scheme DIN 4109-1 [@tichelmann2000, p.
+34]](images/din4109-1.png){height=50%}
+
+Walls and flanking components aren't the only transmission paths for sound out
+of the SCIF. Air ducts and vents also present a significant challenge in sound
+attenuation. If untreated they can serve as direct transmission paths for sound
+waves out of the SCIF and eliminate all benefits gained from a carefully
+designed shell system. In order to treat air ducts and vents it is necessary to
+insert some type of silencer. These can be reflection mufflers, wall mufflers or
+active noise cancelling systems. Reflection mufflers work eclusively through
+reflection. Cross-section changes, branch-offs and inserted chambers reflect
+sound waves internally and decrease their energy. Wall mufflers Work through
+absorption _and_ reflection. Absorbant wall lining or slim absorbant channels
+are used to reflect sound waves internally. Additionally, these sound waves lose
+energy into the mufflers absorbant surfaces. [@moeser2009, pp. 285-328]
+
+Active noise cancelling systems produce anti-sound, amplitude inverted sound
+waves, to cancel out sound. They are limited in frequency range and aereal
+effectivity. Large levels of sound reduction require very high replication
+accuracy in the secondary, cancelling field. [@moeser2009, pp. 405-427] Because
+of their complexity and relative novelty they are not the go-to solution for air
+vent treatment.
+
+For reflection and wall muflers either achieve high attenuation performance in
+narrow bands or moderate attenuation in wider bands. Knowing the frequency range
+of sound to be cancelled is essential in optimizing the mufflers. Specialized
+air vent mufflers for the human voice, called cross-talk sound attenuators, are
+readily available on the market. They achieve relatively high performance values
+around the frequency spectrum of the human voice and come in a box shape
+optimized for installation inside drywall. An off-the-shelf product from german
+manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX® achieves a
+weighted sound reduction index of R~w~ 38 dB at 508 mm length and 300 mm height.
+Normalised sound level difference, D~n,e~ at the male fundamental frequency 125
+Hz is 54 dB. [@schako]
+
+![SCHAKO Cross-talk Sound Attenuator Box AUDIX® Installation
+Schematic](images/schako.png){height=40%}
 
 ### Sound Masking
 
