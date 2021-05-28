@@ -954,15 +954,396 @@ Schematic](images/schako.png){height=40%}
 
 ### Sound Masking
 
+When passive measures alone, out of space, weight or costs constraints, can't
+provide an adequate level of sound attenuation, they can be supplemented by a
+sound masking system. In such a system, speakers and transudcers are placed on
+or close to any paths that would allow audio to leave the protected space. In
+conjunction with a noise generator and amplifier they generate and distribute
+vibrations or noise that drown out escaping audio and render it useless.
+[@ics-705-ts, p. 66]
+
+Speakers/transducers must produce sound at a higher level than the audio
+escaping on the path. They are placed on or close to weak points in the passive
+sound attenuation, like doors, windows, common perimeter walls, vents/ducts,
+pipes, as well as raised floors and ceilings. [@ics-705-ts, p. 66] For doors and
+windows, the transducers are placed on the frame to induce vibrations that
+provide a uniform audio mask and prevent contact/laser microphones from picking
+up usable emissions. For walls, transducers are placed at specific intervals on
+the studs to provide uniform protection along the entire length of the perimeter
+using stud-mount brackets. For vents, ducts, and pipes contact speakers are
+placed directly on the exterior inducing vibrations directly into the surface.
+In raised floors and ceilings, as well as all wall cavities, conventional
+dynamic cone speakers are placed in the hollow space to transmit sound through
+the air and induce audio interferences into adjoining parts. The speaker
+placement must be optimized for each room geometry and wall type.
+[@speechmasking]
+
+Sound-source generators can be dedicated noise generators, tapes, discs, or
+digital audio players. They emit some kind of recording, music or randomly
+generated noise, like pink or white noise. In practice, noise sources with
+deterministic intensity distribution across the frequency spectrum, also called
+broadband noises, like pink or white noise, have been proven ineffective to mask
+the human voice unless used at uncompfortably loud levels (two to five times
+higher than the voice to be masked). They simply do not replicate the human
+vocal system and can be easily be filtered out by sophisticated speech
+extraction software. Pre-recorded sounds such as music or tracks are also easier
+to isolate and separate digitally from speech.  Instead, it is better to use
+randomly generated noise from an algorithm specifically designed to imitate the
+spectral density, resonance, periodic pauses and interruptions, tonal and pitch
+qualities, and other improbable effects of human speech. [@speechmasking]
+
+![Comparison of broadband noise's and SpeechMask® algorithm's frequency spectrum
+mapped over spectrum of human speech [@speechmasking]](images/spectra.png){height=40%}
+
+Even more important than the noise source itself though is the way the mask is
+applied and directed inside the protected space. In a properly designed system,
+the occupants do not hear — or only faintly hear — the mask inside the room. The
+only way to listen to the mask should be by listening directly against the
+outside wall. The intended functional area of a sound masking system is not the
+protected space itself but the exfiltration paths that come from it. There and
+only there should the sound mask present itself as vibrations and audible noise.
+[@speechmasking]
+
+For security reasons, the sound masking systems should be permanently installed
+and not contain an AM/FM receiver. Its generators, wires and transducers should
+be located to the greatest extent possible within the SCIF. Generatorss with any
+capability to record ambient sound should have that capability disabled. The
+sound masking system should be subjected to a thorough TSCM inspection to ensure
+it poses no further technical risk. [@ics-705-ts, p. 67]
+
 ### Microphone Jamming
 
-## Electromagnetic/TEMPEST
+Microphone jamming can play a special role in protecting the SCIF from inside
+attackers. A meeting participant who wishes to record the discussions without
+the knowledge of the other participants could smuggle in a covert recording
+device, like a modern smartphone. Due to their small form factor, covert
+recording devices often use micro-electromechanical (MEMS) microphones whose
+inherent hardware properties can be exploited against them to jam and render
+useless their recordings.
 
-### Electromagnetic Shielding
+A microphone jammer makes use of the hardware non-linearity of commodity
+microphones. Linearity is ability to generate an electrical output proportional
+to the amplitude of the sound input. Any device, such as a microphone, exhibits
+non-linearity in some frequency bands, meaning it produces overproportional
+electrical output for a given input frequency. Ultrasonic signals (centered
+around 25kHz) can trigger these non-linearities without being noticable by human
+ears. Inside the microphone, they leak into the audible spectrum and produce
+jamming signals. [@chen2019]
 
-### System Monitoring
+A 2019 study by University of Chicago researchers showed existing devices to be
+effective against smartphone microhpones, but showed their inability to fully
+cover potential microphones at different angular positions relative to the
+masking device. The researchers improved upon existing devices by designing a
+wearable bracelet with more omni-directional speaker configuration and better
+angular coverage due to a user's wrist movement. [@chen2019]
+
+Existing devices are most effective against the MEMS microphones found in
+smartphones and other small-form factor devices. It is unclear how they perform
+against more sophisticated microphones designed to eliminate hardware
+non-linearities in the ultrasonic spectrum.
+
+If used at all, microphone jamming systems should function supplementally to a
+PED policy [@ics-705-ts, pp. 68-72]. A PED policy controls and limits the
+portable electronic devices allowed in the SCIF. It is especially useful when
+untrusted individuals are allowed entry to the SCIF to participate in
+discussions within.
+
+## Electromagnetic/TEMPEST Shielding
+
+Electromagnetic shielding is used to prevent inadvertent emissions of sensitive
+information from the SCIF and to make information transmission from bugging
+devices located within it more difficult. These shields take the form of
+separate enclosures around the entire protected space, and make use of different
+phyiscal principles to block airborne electromagentic waves. All penetrations of
+the elctromagentic shield, like pipes, ducts, and cables, are treated separately
+to prevent the inadvertent or malicious transmission of sensitive information
+along them. A monitoring system can be designed to ensure the continuous
+performance of such a shield over time.
+
+With the proper electromagnetic shield design, otherwise problematic signal
+processing equipment, like computers, can be operated inside the SCIF without
+concerns of leaking TEMPEST information. This saves the operator from having to
+block emanations at every using by using more expensive shielded equipment.
+
+### Functional Principles
+
+There are multiple functional principles which electromagentic shields can
+utilize to block airborne waves. Faraday cages are the simplest and most well
+known type of electromagnetic shields. They make use of conductive material to
+distribute externally induced electric charges within the conductive material
+cancelling the charge's effects in the cage's interior. The cage can be imagined
+as two metal plates connected by an electric conductor. Because of the higher
+conductivity of within the material than in the surrounding air, the external
+field causes charges to migrate from one plate to the other instead of being
+wirelessly transmitted. This happens until there is no longer an electric field
+between the plates that could motivate charges to cross to the opposite plate.
+[@wolfsperger2008, p. 90]
+
+![Two short-circuited conductive plates functioning as a Faraday
+cage [@wolfsperger2008, p. 89]](images/faraday.png){height=40%}
+
+Like Faraday cages, dielectric shields can be used to shield electrostatic
+fields. They work by refracting electric field lines at the shield's boundary.
+An electric field line is "bent" toward boundary when transitioning from a
+material with a low dielectric constant, like air, to a material with a high
+dielectric constant, like mineral materials. A dielectric shield must have thick
+walls made of a material with a high permittivity in order to achieve
+appreciable shielding effectiveness. For technical shields, the shielding
+effectiveness of dielectric shields is orders of magnitude lower than that of a
+Faraday cage at the same cost. Therefore, in normal cases, the shielding of
+electric fields is always carried out using the principle of the Faraday cage.
+[@wolfsperger2008, pp. 93-94]
+
+![Dielectric screen consisting of a thick-walled sheath with a high dielectric
+constant (permittivity) refracting electric field
+lines [@wolfsperger2008, p. 93]](images/dielectric.png){height=40%}
+
+Dimagentic shields are fully analog to dielectric shields, just that they
+function in the realm of magnetostatic fields instead of electrostatic fields.
+Magnetic field lines are refracted at the boundary between materials with
+different magentic permeability. The high permeability magnetostatic shield is
+much more important in practice than the dielectric shield. Since there is no
+physical effect equivalent to the Faraday cage for shielding static magnetic
+fields they present the only method of shielding static magnetic fields, like
+those emanating from electrical conductors carrying a direct current. They
+require high-permeability materials, such as pure iron, to provide effective
+shielding of both static and variable magnetic fields. [wolfsperger2008, pp.
+94-96]
+
+The most useful functional principle for the electromagnetic shielding of SCIFs
+is the electrodynamic shield. It shields variable magnetic fields while also
+functioning as a Faraday cage. Variable magnetic fields induce electric currents
+which in turn cause eddy currents to pile up within the conductive material.
+These eddy currents cause magnetic fields that are directed against the external
+magnetic field and cancel it out. This effect grows stronger the higher the
+frequency of the variable magnetic field. The electrodynamic shield must be
+constructed of a highly conductive material with minimal openings. Therefore it
+coincidentally also works as a Faraday cage. An electrodynamic shield made of an
+ideally conductive shell without openings shields alternating electric and
+variable magnetic fields as well as DC electric fields. Luckily, shielding
+variable magnetic fields is of primary interest in SCIF building. Shielding
+against static magnetic fields is the absolute exception. [@wolfsperger2008, pp.
+100-102]
+
+### Materials
+
+Electrodynamic shields are constructed from a wide variety of materials.
+Aluminium, steel, zinc, stainless steel, copper, brass, and tin are all useful,
+but come with different tradeoffs that must be evaluated when selecting an ideal
+material for the mission demand. The different materials with their pros and
+cons are listed in the table below.
+
+Material | Pros | Cons
+--- | --- | ---
+Aluminium | Low weight, easy to work with, high electrical conductivity | Cannot be magnetized, not so easy to weld, not as rigid as steel, electrically insulating passive corrosion layer forms on the surface (in case of joints remove the passive layer and immediately prevent new formation by applying paint or textiles)
+Steel | High magnetic permeability | Corrosive
+Zinc | Passive layer like aluminium | Low nobility (contact with metals higher on the galvanic series problematic for corrosion)
+Stainless steel | Relatively good electrical conductivity, high corrosion resistance (preferred material for electrodynamic shields) | High price, high weight, difficult processing with cutting tools, poor shielding of low frequency fields due to low permeability
+Copper | No interfering protective oxidation layers, soft, easy soldering | Very high price
+Brass | Good corrosion resistance, harder than copper | Low conductivity, very expensive
+Tin | Useful as alloy or corrosion protection | Too soft
+
+For electrodynamic shields, the conductivity of the material is most important.
+Permeability and dielectricity are secondary. The material must be installed
+with a minimum thickness, which can be derived mathematically from the
+penetration depth of the given frequency in the material. The greater the wall
+clearance between the perimeter walls, the higher the shielding effect.
+Homogeneous screens, those made of only one material, the performance of larger
+shields exceed those of smaller shields, because penetrating energy can be
+better distributed over a larger volume. As an example, 100 dB shielding
+effectiveness can be reached for a stainless steel shield with 1 m wall
+clearance and 2 mm thickness at the lowest generally usable radio frequency, 100
+kHz. [@wolfsperger2008, pp. 227-247]
+
+![Electrodynamic shield in the offices of finnish IT security firm F-Secure
+[@register]](images/f-secure.jpg){height=40%}
+
+The continuously electrically conductive connection of shielding materials is of
+utmost importance for the effectivity of the entire shield. Gaps of even half a
+wavelength in size can nullify the entire shield. Many materials have the
+propensity to build passive oxidation layers that protect them from further
+corrosion. These must be carefully removed when joining such materials in order
+to ensure electric conductivity. These stripped surfaces, as well as corrosive
+materials not covered by a passive layer, must be immediately covered by a
+protective coating upon installation as a component of the shield. This prevents
+the regeneration of the non-conductive passive layer or further corrosion in the
+case of corrosive materials. Another factor in the joining of materials,
+specifically materials with different electrode potential, is contact corrosion.
+When materials on opposite ends of the galvanic series are joined they can build
+a cathode-anode pair that results in the decay of both materials over time.
+[@wolfsperger2008, pp. 249-252]
+
+### Joints and Gaskets
+
+The ideal methods for joining components ensuring consistently high,
+"watertight" conductivity are soldering and welding. Riveting or screwing are
+also effective as long as the distances are small compared to the relevant
+minimum wavelength. However, these ideal methods are not applicable to
+connections that need to be opened and closed over time, for example those found
+in a door. For such joints, there are different types of HF (high frequency)
+gaskets that can provide fully electrically conductive connections over long
+periods of use. [@wolfsperger2008, pp. 252-253]
+
+![Different types of gaskets a) Contact feather, b) Wire mesh c) Elastomer
+gasket with conductive textile coating d) Conductive elastomer gasket
+[@wolfsperger2008, p. 267]](images/gaskets.png){height=40%}
+
+Contact feathers consist of stainless steel or copper beryllium, a highly
+elastic copper alloy, which is pressed against a conductive surface when the
+moving part is closed. The contact pressure enables excellent contact properties
+with low electrical resistance over long periods of time and many closing
+cycles. Contact feathers are self-cleaning, when pressing the contact springs
+against the conductive surface, the spring grinds over the metal surface and
+removes any oxide layers or small dirt on both surfaces. On the other hand, they
+are highly susceptible to mechanical damage, require high contact pressure, have
+a low tolerance for deviating gap dimensions, offer no insulation against
+outside air, and come with a high price. [@wolfsperger2008, pp. 254-258]
+
+Wire mesh gaskets are made up of a stainless steel, copper beryllium, aluminum
+or monel, an alloy of approximately 65% nickel, 33% copper and 2% iron, mesh
+that is pressed against a conductive surface when the component is closed. They
+have good contact properties with low electrical resistance over long periods of
+times. They are very robust featuring low susceptibility to mechanical damage.
+Any passive oxidation layers are broken through by the individual wires when the
+contact pressure is applied. However, they also require very high contact
+pressures, have a low tolerance for deviating gap dimensions, offer no
+insulation against outside air, and come at a high price point. Furthermore,
+they have weaker self cleaning properties than contact feathers and require
+contact pressure to always be applied perpendicular to the gasket.
+[@wolfsperger2008, pp. 258-261]
+
+Elastomer gaskets, both those consisting entirely of conductive material and
+those only covered by conductive textile, have generally weaker shielding
+properties than the above two gasket types. They sit between the moving part and
+its frame. Due to their elastic properties they are compressed by the closure
+and act as a conductor between them. They require lower contact pressures than
+contact feathers or wire mesh gaskets, have a higher tolerance for deviating gap
+dimensions, are very resistant to mechanical damage, insulate against outside
+air, and come at a very low price point. However, they do not have self-cleaning
+properties, don't counteract passive oxidation layers, and are less durable over
+time. [@wolfsperger2008, pp. 261-267]
+
+It is the designers job to weigh the different gaskets' strengths and weaknesses
+and select the ideal type for the individual SCIF and component.
+
+### Penetrations
+
+Electrical lines, data connections and control cables must all pass through the
+electromagnetic shield without degrading the shields performance or losing
+connection quality. HVAC vents/ducts and in some cases water pipes must carry
+utilities in and out of the SCIF without degrading shielding performance or
+affecting throughput to an excessive degree. Screws for lights and other
+fixtures must also puncture the shielding without reducing its performance. All
+these different challenges require individual solutions that must be
+incorporated in the design from the outset.
+
+Electrical power lines should pass into the SCIF through a power line filter.
+This filter only allows the 50 Hz frequency of the power grid to pass through
+while "filtering" out all other transmissions. Their encolsure should be mounted
+to the wall shielding in order to make its shielding continuous with that of the
+room. Similar filters also exist for control lines. [@wolfsperger2008, pp.
+271-276]
+
+![Different mounting configurations of power line filters [@wolfsperger2008, p.
+276]](images/powerlinefilters.png){height=40%}
+
+Data lines are best passed through the electromagnetic shield by converting them
+to fiber optic cables using a media converter. Fiber optic cables not only
+enable very high data transmission rates, but they are also beneficial from a
+shielding perspective, since they are made entirely from non-conductive
+material. To eliminate electromagnetic leaks through the cable tunnel, they
+should be fed through hollow conductors whose cut-off frequency is sufficiently
+high or through special fiber optic grommets. The purpose-built grommets wrap
+tightly around the individual fiber optic cores leaving no gaps for even the
+highest-frequency leaking emanations. [@wolfsperger2008, p. 281]
+
+Heating, ventilation, and air conditioning vents and ducts should incorporate
+honey comb panels at the protected space boundary. These make use of the fact
+that hollow conductors have high attenuation properties below their cut-off
+frequency. With sufficiently small hollow conductors the cut-off frequency can
+be raised to a point that almost all waves fall in this highly attenuating
+spectrum blow the cut-off freuqency. [@wolfsperger2008, p. 282-284] Due to their
+small hollow spaces honeycomb filters restrict air flow. They must be
+dimensioned with a sufficiently large cross-section area to supply the necessary
+air for all occupants and discharge an equivalent amount of exhaust air.
+Ventilation is absolutely necessary in SCIFs with airtight electromagnetic
+shields, otherwise there is a serious risk of suffocation for the occupants. As
+an example, a SCIF with 10 occupants requires ca. 360 m^3^/h of fresh air per
+hour. With a ventilation duct with a cross-section area of 0.1 m^2^ (30x30 cm)
+this results in a necessary air flow velocity of 3600 m/h = 1 m/s. Under these
+condtions, a 18 GHz honeycomb panel would cause a pressure loss of 0.1 mbar
+which would have to be compensated by the ventillation system. The same goes for
+the exhaust air side. [@wolfsperger2008, pp. 355-358]
+
+Refrigerant lines and water pipes should be fed through purpose-built pipe
+penetrations as shown in @wolfsperger2008 Schematic 4.40 and 4.52. These enclose
+the tubes or pipes and ensure electrical conductivity around the circumference
+of the penetration.
+
+Designated heating and cooling of the room can be achieved using electrical
+heating fed through the line filter and a ductless minisplit units with all
+refrigerant and control lines fed through the shielding as described above.
+
+A vapor barrier should be installed on both sides of the perimeter wall to
+protect it from moisture penetration by condensate. Especially with a mobile SCIF
+unit, the vapor pressure gradient can alternate throughout the year. Sometimes
+transpiration and heating on the inside with simultaneous cold air conditions on
+the outside will cause moisture to diffuse from the inside to the outside, while
+AC on the inside with high temperatures and humidity on the outside (tropical
+conditions) will cause moisture to diffuse in the other direction. The wall
+should be protected from both cases. [@wolfsperger2008, pp. 358-360]
+
+### Safety
+
+A shielded room must never be operated without proper grounding. Otherwise, the
+leaking currents from the power line filters can flow to the electrical ground
+in an undefined manner via the high-impedance connections between the power line
+filter and the shield itself. This would result in the entire line voltage being
+fed onto the SCIF perimeter walls, presenting a potential danger to the life
+of the personnel working within the SCIF. A shielded room or area should only be
+grounded at a single point so that no equalizing currents (usually magnetically
+induced) can flow through the shielding. In addition, a residual current circuit
+breaker should be installed to protect occupants from ongoing electric shocks.
+
+### Shielding System Function Monitoring
+
+In his book, Hans Wolfsperger also proposes a system to continuously monitor the
+function of the room shielding during use. He proposes that the RF output of a
+spectrum analyzer be fed through an amplifier to a broadband transmitting
+antenna permanently installed in the room. A receiving antenna, e.g. a leak
+detector, would also be permanently installed on the outside of the room and
+connected to the input of the spectrum analyzer. During the first functional
+tests, when the system is determined to be effective, the spectrum analyzer
+would determine and store the frequency response of the shielded transmission.
+Each time the shielding is checked, the frequency spectrum would be determined
+again and compared with the stored values. If clear deviation from the reference
+are detected, the shielding would have to be checked for errors.
+[@wolfsperger2008, pp. 466-467]
+
+![Shield monitoring system schematic [@wolfsperger2008, p.
+467]](images/monitoring.png){height=40%}
+
+This system could help mitigate against sabotage and performance losses over
+time, which would otherwise only be detected by periodic shield attenuation
+measurements. Because of their high equipment and personnel costs these are
+conventionally only conducted anually, if at all. Undetected leaks can therefore
+persist for long time periods and nullify the large effort that went into the
+planning and construction of the shield in the first place. Such a system is not
+yet commercially available and would have to be specially planned and
+implemented. [@wolfsperger2008, pp. 466-467]
 
 ### Signal Jamming
+
+Signal jamming cannot be used as an equivalent to sound masking in
+electromagnetic shielding. Signal jamming works by deliberately transmitting
+signals on the same radio frequencies as mobile phones and other wireless
+devices, disrupting the communication between the devices and their base
+stations, effectively disabling them within the range of the jammer.
+
+It is not possible to closely target these disruptive transmissions, as with
+sound masking, so they can interfere with the legitimate functioning of devices
+inside the SCIF and surround it. Because of this, they are illegal in the EU
+under Directive 1999/5/EC and in the US under the Communications Act of 1934.
 
 ## Bug Sweeping
 
