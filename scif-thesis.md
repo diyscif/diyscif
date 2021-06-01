@@ -1347,6 +1347,110 @@ under Directive 1999/5/EC and in the US under the Communications Act of 1934.
 
 ## Bug Sweeping
 
+Active detection of surveillance devices is a precondition to secure SCIF
+operation. Over time an attacker may manage to infiltrate the protected space
+and place listening devices that transmit information covertly to the outside.
+SCIF operators must check both for these devices and their exfiltration channels
+regularly to limit the effective window of a compromise. Tools for bug sweeping
+include spectrum analyzers, non-linear junction detectors, line analyzers, and
+lens finders. By carefully combining the use of these different tools it should
+be possible to locate active transmitters, passive transmitters, devices'
+built-in semiconductor components, and compromises of installed lines.
+
+To detect active transmitters in the protected space it is necessary to make use
+of a spectrum analyzer. These devices are designed to capture and analyze
+wireless signals over a wide frequency range. They either come as benchtop
+devices used to collect the ambient spectrum over longer periods of time or as
+hand-held, near field devices to detect signals at their source. Benchtop
+devices scan the frequency spectrum within the protected space over hours or
+even days and then compare them to measurements of the surrounding environment,
+historical measurements, or reference values of that type of environment. By
+monitoring the frequency spectrum over long periods of time they are able to
+detect even the most sophisticated bugs, like caching bugs that store captured
+sensitive information temporarily and emit it only at defined intervals all at
+once.
+
+![REI Oscor Blue Spectrum Analyzer](images/oscorblue.jpg){height=40%}
+
+Hand-held, near field devices complement benchtop devices. They make use of
+different probes to locate surveillance devices at their source, for example
+when suspicious signals are detected on the benchtop analyzer and require
+further investigation. The different probes function at different frequency
+ranges, direction focuses, and sensitivities, each specialized to detect a
+specific type of bug or exfiltration path. [@emshield]
+
+![REI ANDRE Near-field Detection Receiver Probes and
+Antennas](images/andre.jpg){height=40%}
+
+Passive transmitters, such as eavesdropping devices that are currently
+switched-off or not transmitting, and surveillance devices' semiconductor
+components can be detected using non-linear-junction detectors (NLJDs). NLJDs
+detect the presence of electronics, regardless of whether they are radiating,
+hard wired, or even turned off. They detect physical properties, and not energy
+emissions. For this they make use of semi-conductor's inherent propertiy to
+return a harmonic signature when radiated with RF energy. By means of a
+specially polarized antenna, the NLJD emits frequency in the range from 880 Hz
+to 2.4 GHz and simultaneously receives their respective harmonics, integer
+harmonic oscillations of the original frequency. For example, the second
+harmonic of 880 MHz is (1760 MHz; 880 x 2) and the third harmonic is 2640 MHz
+(880 x 3). If radio waves emitted by the NLJD antenna hit an electronic
+component, then each semiconductor (transistor, diode, integrated circuit, etc.)
+causes a strong reflection of the second harmonic. By comparing the reflection
+of the second and third harmonic one can exclude false positives, like those
+resulting from non-electronic metal components which tend to reflect strongly
+on the third harmonic. NLJDs come in slim, hand-held, telescopic boom designs
+that allow them to extend to even the most difficult to reach places. The
+device's head is passed closely over walls, furniture, and other building
+components and immediately alerts to any electronic components in its range.
+[@emshield]
+
+![REI ORION 2.4 HX Non-Linear Junction Detector
+Features](images/orion.jpg){height=40%}
+
+Line analyzers, like the REI TALAN, can be used to inspect and test analog,
+digital, and VoIP telephone lines and other wiring for taps and eavesdropping
+devices. Instead of listening to ambient noises in the room surveillance devices
+can also be placed directly on legitimate transmission lines to detect sensitive
+information. They can also hijack installed, fixed lines to exfiltrate
+information without needing to transmit wirelessly or having to set up a custom,
+covert transmission line. Line analyzers combine multiple testing capabilities
+to detect malicious data transmissions over a fixed line or the source and
+location of any type of device "tapping" the line to capture information
+travelling on it. Test techniques include a digital multimeter to test lines for
+voltage, current, resistance, and incapacitance anomalies, frequency domain
+reflectometion (FDR) to check for impedance anomalies from taps on the line,
+non-linear junction detection to check for electronics connected to a wire,
+digital demodulation to confirm that a digital telephone line is not passing
+audio when it shouldn't, and a high-gain amplifier to detect analog audio being
+passed on a digital line. [@reiusa]
+
+![REI TALAN 3.0 in use](images/talan.jpg){height=40%}
+
+Lens finders emit infrared signals in order to detect reflections coming from
+hidden camera lenses. When observed through a special view finder a room will
+reflect IR signals at a normal rate, however, hidden lenses will concentrate
+these waves and reflect them particularly strongly. They show up as bright spots
+on the red backdrop of the room. This allows an analyst to quickly detect
+cameras in use across an entire room. This technique does not work for camera
+lenses currently covered by a shutter, like those found in a photo camera not
+currently taking a picture. [@globaltscm]
+
+![View through a WEGA-i Hidden Camera Finder](images/lensfinder.jpg){height=40%}
+
+All these detection devices must be used in concert by trained personnel in
+order to guarantee a maximum detection rate of hidden surveillance devices.
+
+For an initial impression on the equipment costs for these devices see this
+included price table:
+
+Device | Cost
+--- | ---
+[REI OSCOR Blue Spectrum Analyzer](https://www.discoverytelecom.eu/catalog/5371.html) | $39000
+[REI ANDRE Deluxe Near-field Detection Receiver with probe set](https://spyassociates.com/andre-deluxe-near-field-detection-receiver/) | $8000
+[REI ORION 2.4 HX Non-Linear Junction Detector](https://spyassociates.com/orion-2-4-hx-non-linear-junction-detector/) | $19000
+[REI TALAN 3.0 Telephone & Line Analyzer](https://spyassociates.com/talan-3-0-telephone-line-analyzer/) | $23000
+[WEGA-i Hidden Camera Finder](https://spyassociates.com/laser-pro-hidden-camera-finder-law-enforcement-grade/) | $500
+
 # Example Module
 
 This section will propose an example solution for a Sensitive Compartmented
