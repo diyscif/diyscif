@@ -381,100 +381,109 @@ Hijack Existing Device | low | medium | high
 
 # Countermeasures
 
-## Physical
+## Physical Security
 
-### Construction Security
+### During Construction
 
-Later passive and active countermeasures are completely ineffective if the SCIF
-is breached during construction. Therefore meticulous preparation of and
+Later passive and active countermeasures are ineffective if the SCIF is
+breached during construction phase. Therefore meticulous preparation of and
 adherence to a Construction Security Plan (CSP) is required. The CSP covers
-construction personnel, site perimeter, site access, and construction materials.
+topics such as construction personnel, site perimeter, site access, and
+construction materials.
 
 #### Construction Personnel
 
 Construction personnel must be vetted and monitored so that they do not pose an
-insider threat to the construction site and resulting facility. The IC Tech
-Spec‐for ICD/ICS 705 [@ics-705-ts, pp. 23-27] provides for evaluation of
-construction workers by origin and clearance level. For example, it forbids the
-use of workers from SETL threat level "critical technical threat level."
-Furthermore, it requires biographical data (full name, current address, Social
-Security Number (SSN), date and place of birth (DPOB), proof of citizenship,
-etc.) and fingerprint cards for background checks of all non-cleared
-construction personnel. It requires finish work in high-threat countries to be
-carried out by SECRET-cleared U.S. personnel and requires access to the site to
-be withdrawn if adverse security, Counterintelligence (CI), or criminal activity
-is detected. It also sets various requirements for the monitoring/accompanying
-of non-cleared workers. As an example, for new facilities it allows non-cleared
-workers, monitored by Construction Surveillance Technicians (CSTs) - dedicated
-personnel that supplement site access controls, implement screening and
-inspection procedures, as well as monitor construction and personnel - to
-perform the installation of major utilities and feeder lines. It requires that
-all construction personnel receive a security briefing prior to entering the
-site, so they know which rules to follow and what suspicious activity to report.
-If a construction worker leaves the project under unusual circumstances, the ICD
-requires the event be documented and the approriate officer to be notified.
+insider threat to the construction site and the resulting facility. The IC Tech
+Spec‐for ICD/ICS 705 [@ics-705-ts, pp. 23-27] envisions evaluation of
+construction workers by their country of origin and U.S. clearance level. For
+example, it forbids the use of workers from SETL "critical technical threat
+level" countries.  Furthermore, it requires biographical data (full name,
+current address, Social Security Number (SSN), date and place of birth (DPOB),
+proof of citizenship, etc.) and fingerprint cards for background checks of all
+non-cleared construction personnel. It requires finish work in high-threat
+countries to be carried out by SECRET-cleared U.S. personnel and requires access
+to the site to be withdrawn if adverse security, counterintelligence (CI), or
+criminal activity is detected. It also sets various requirements for the
+monitoring/accompanying of non-cleared workers. As an example, for new
+facilities it allows non-cleared workers, monitored by Construction Surveillance
+Technicians (CSTs) - dedicated personnel that supplement site access controls,
+implement screening and inspection procedures, as well as monitor construction
+and personnel [@ics-705-ts. p. 7] - to perform the installation of major
+utilities and feeder lines. It requires that all construction personnel receive
+a security briefing prior to entering the site, so they know which rules to
+follow and what suspicious activity to report.  If a construction worker leaves
+the project under unusual circumstances, the ICD requires the event be
+documented and the approriate officer to be notified.
 
-Not all these measures for the security vetting of construction personnel can be
-implemented by non-government actors. These actors should try to build a staff
-of long-term, trustworthy workers or employ a company that does so. Video
-surveillance during the construction phase can supplement other monitoring
-efforts. However, it requires constant attention, just like any other
-non-technological security measure. Even with all the possible security
-mitigations and background checking, the human factor as an inside threat remains
-one of the most sensitive areas and the hardest to defend against.
-
+Not all the above measures for the security vetting of construction personnel
+can be implemented by non-government actors. They simply do not have the
+resources and capabilities to perform in-depth analysis and monitoring of each
+worker. Therefore, instead of evaluating workers for each project they should
+try to build a staff of long-term, trustworthy workers or contract a company
+that is certified to do so, through, for example, the ISO/IEC 27001 standard.
+Video surveillance during the construction phase can also help supplement
+monitoring efforts when CSTs are not available. However, it requires constant
+attention and responsiveness, just like any non-technological security measure.
 Threats from construction personnel can also further be mitigated by careful
-inspection after each construction phase's completion and [bug
-sweeping](#bug-sweeping) before commissioning of the SCIF.
+inspection after each construction phase's completion, as well as [bug
+sweeping](#bug-sweeping) and performance testing before commissioning of the
+SCIF.
+
+Even with thorough security mitigations and background checking, the human
+factor as an inside threat remains one of the most sensitive areas and the
+hardest to defend against.
 
 #### Site Perimeter
 
-Without a secure perimeter, access to and within the site cannot be controlled.
-A secure fencing or other form of perimeter should be errected, and continuously
-monitored for unauthorized penetration. For renovation projects, barriers should
-be installed to segregate construction workers from operational activities,
-providing protection against unauthorized access and visual observation. When
-expanding SCIF space into uncontrolled areas, maximum demolition of the
-uncontrolled areas should be carried out beforehand. This protects against
-existing threats and ensures a "clean slate" before building a new SCIF.
+Without a secure perimeter, access to and movement within the site cannot be
+controlled. A secure fencing or other form of perimeter should be errected
+around the site and continuously monitored for unauthorized penetration. For
+renovation projects, barriers should be installed to segregate construction
+workers from operational activities, providing protection against unauthorized
+access and visual observation. When expanding SCIF space into uncontrolled
+areas, maximum demolition of the uncontrolled areas should be carried out
+beforehand, ensuring a "clean slate" before the building of a new SCIF.
 [@ics-705-ts, p. 25].
 
 #### Site Access
 
 Access control using badges and other forms of identification should be required
-entry to the site. Guards should monitor these entry points to prevent tampering
+for entering the site. Guards should monitor entry points to prevent tampering
 and penetration attempts. Possible site control measures like identity
 verification, random searches, signs listing prohibited items, and vehicle
-inspections should be considered and weighed against the SCIF threat model.
-[@ics-705-ts, p. 27]
+inspections should be considered and implemented with the SCIF threat model in
+mind. [@ics-705-ts, p. 27]
 
 The IC Tech Spec also requires the use of cleared American guards (CAGs) to
 supervise non-U.S. and non-cleared U.S. guards, as well as to directly protect
-the site in high-threat, SETL category I countries. No equivalent to CAGs exists
-in the private sector. Their loyalty is difficult to recreate for a private
+the site in high-threat, SETL Category I countries. No equivalent to CAGs exists
+in the private sector. Their loyalty is impossible to recreate for a private
 actor who can't offer the same long-term employment and ideoligical motivation.
 However, guards with a similar training level can be sourced from private
-suppliers and with organizational practices like supervision and vetting an
-adequate level of security can be ensured.
+suppliers and with organizational practices like close supervision and vetting
+an adequate level of security can be ensured.
 
 #### Construction Materials
 
 Construction materials must be procured, transported, and stored in a secure
 way. If not, the entire security of the finished SCIF can be jeapordized by
-faulty or compromised materials. Inspectable materials are those that can be
+faulty or compromised materials. Materials are classfied in two categories,
+inspectable and non-inspectable. Inspectable materials are those that can be
 reasonably inspected with available measures. All other materials, as well as
 inspectable materials on which approved test methods were not carried out, are
 classified as non-inspectable and are subject to higher security requirements.
+[@ics-705-ts, p. 30]
 
 Inspectable materials can be procured from trusted suppliers without further
 security restrictions. Inspectable materials from non-trusted suppliers or
 shipped to the site in an unsecured manner should be inspected using approved
-methods and then moved to a secure storage area (SSA). If stored outside the
+methods and then moved to a Secure Storage Area (SSA). If stored outside the
 SSA, a random selection of these materials should be inspected before use on the
 site. Non-inspectable materials should be procured from trusted suppliers or
 other approved channels and securely transported to the SSA. They can also be
 procured from untrusted suppliers if randomly chosen by trusted personnel from a
-suppliers shelf-stock without advance notice or indication of the intended use.
+suppliers shelf-stock without advance notice or indication of their intended use.
 No discernible purchasing patterns should be established while carrying out this
 randomized procurement procedure. [@ics-705-ts, pp. 27-29]
 
@@ -484,94 +493,97 @@ and stored inspectable materials may even be utilized without inspection.
 Non-inspectable materials, should be transported securely packaged or
 containerized and under the 24-hour control of an approved courier or escort
 officer. If this is not possible they should be securely shipped using approved
-transit security technical safeguards capable of detecting evidence of tampering
-or compromise. For government actors it may be interesting to require the
-transporation by military or flag carrying vessels. [@ics-705-ts, p. 30]
+transit security technical safeguards capable of detecting and displaying
+tampering or compromise. For government actors it may be interesting to require
+the transporation by military or flag carrying vessels. [@ics-705-ts, p. 30]
 
 A secure storage area is a true floor to true ceiling, slab-to-slab construction
 of some substantial material, and a solid wood-core or steel-clad door equipped
-with a security lock. All inspected and securely shipped materials should be
-placed in the SSA immediately upon arrival and stored there until they are
-required for installation. Alternatively a shipping container located within a
-secure perimeter that is locked, alarmed, and monitored or a room or outside
-location enclosed by a secure perimeter that is under direct observation by
-cleared personnel can be used as an SSA. [@ics-705-ts, p. 31]
+with a security lock. A shipping container located within a secure perimeter
+that is locked, alarmed, and monitored or a room or outside location enclosed by
+a secure perimeter that is under direct observation by cleared personnel can
+also serve as an SSA. All securely shipped and/or inspected materials should be
+placed in the SSA immediately upon arrival/inspection and stored there until
+they are required for use. This ensures a secure chain of custody from first
+arrival/inspection to installation and eliminates the need for possible
+reinspections.  [@ics-705-ts, p. 31]
 
 #### Inspection Methods
 
 X-Ray, visual inspection, metal detectors and destructive tests can be used on
-inspectable materials to ensure their integrity. See [@checklist] for a detailed
+inspectable materials to ensure their integrity. See @checklist for a detailed
 list of inspection methods and their uses.
 
 #### Technical Security
 
 The construction phase involves many different parties and material suppliers.
-It is almost impossible to defend against against down the entire supply chain.
-Security measures are only suitable to completely prevent the most primitive
-attacks and only serve to make advanced attacks more difficult. Therefore, a
-technical surveillance countermeasure (TSCM) [inspection](#bug-sweeping) should
-be carried out at all major construction milestones and before commissioning of
-the SCIF. This can effectively mitigate the impact of security breaches in the
-construction phase.
+It is almost impossible to defend against threats accross the entire supply
+chain. Monitoring and inspection measures are only able to completely prevent
+the most primitive attacks. They merely serve to make advanced attacks more
+difficult. Therefore, a [Technical Surveillance Countermeasure (TSCM)
+inspection](#bug-sweeping) should be carried out at all major construction
+milestones and before commissioning of the SCIF, to detect and mitigate any
+attacks that did succeed during the construction phase.
 
 ### Intrusion Resistance
 
-A secure perimeter is the foundation of a SCIF's security. Only it can prevent
-brute-force entries into the protected space. Without it, no other access
-control or locking measures are effective.
+A secure perimeter is the foundation of a SCIF's security. Only a secure outer
+shell can prevent brute-force entries into the protected space. Without it, no
+further access control or locking measures are effective because an attacker
+can simply take the direct way - right through the wall.
 
 A multi-layered approach, using security in depth (SID), is most effective in
-ensuring a SCIF's physical security. The multiple layers can be a controlled
-perimeter, a secure installation, a building perimeter, an area surrounding the
-SCIF, and/or the SCIF Perimeter itself. If one of these layers is not existant
-in a sufficient degree it may be possible to supplement by beefing up one of the
-other layers.
+ensuring a SCIF's physical security. The multiple layers can consist of a
+controlled perimeter, secure installation, building perimeter, area surrounding
+the SCIF, and/or the SCIF perimeter itself. It may be possible to compensate for
+a lower number of layers with higher security properties in one layer.
 
-![Map for Security in Depth of a Military Installation. @navfac, p.
-20](images/sid.jpg){height=40%}
+![Map for Security in Depth of a Military Installation [@navfac, p.
+20]](images/sid.jpg){height=40%}
 
 The SCIF perimeter itself should be made from a substantial material that is
 difficult to penetrate in a covert way. The IC Tech Spec‐for ICD/ICS 705
-[@ics-705-ts, pp. 8-10] proposes different wall makeups for varying mission
-demands. For example, an open storage facility - one in which sensitive
-information is stored openly and left out when not in use without further
-protection [@navfac, p. 16] - without SID requires a true-floor to true-ceiling
-wall made up of (from controlled to uncontrolled side) two 5/8" gipsum wall
-boards (GWB), ¾" #9 10 gauge expanded metal spot-welded or screwed every 6" to
-vertical studs, 16" metal studs and runners, acoustic fill, another 5/8" GWB.
-Specifically the combination of multiple GWBs and expanded metal makes for a
-very sturdy construction. Additionally, sheet metal laminated GWB, like Knauf
-Diamant Steel, can be used to further enhance the resistance capabilities of the
-GWB. Windows are highly discouraged for security reasons [@ics-705-ts, p. 12].
+[@ics-705-ts, pp. 8-10] proposes different wall makeups for different mission
+demands. For example, an open storage facility, one in which sensitive
+information is stored in the open, without SID requires a true-floor to
+true-ceiling wall made up of (from inside to outside) two 5/8" gipsum wall
+boards (GWB), ¾" mesh from #9 expanded metal spot-welded or screwed every 6" to
+vertical studs, 16" metal studs and runners, acoustic fill, and another 5/8"
+GWB.  Specifically the combination of multiple GWBs and expanded metal makes for
+a very sturdy construction. Additionally, sheet metal laminated GWB, like
+Knauf's Diamant Steel, can be used to further enhance the resistance
+properties of the GWB. Windows are highly discouraged for security reasons
+[@ics-705-ts, p. 12].
 
 ![Wall B -Suggested Construction for Expanded Metal [@ics-705-ts, p.
-17]](images/wallb.png){height=40%}
+17]](images/wallb.png){height=50%}
 
-There should be only one primary entrance door to simplify personnel and visitor
-controlled entry. This door should be of a substantial material, like 1 ¾
-inch-thick solid wood core or 1 ¾ inch-thick face steel. Its hinge pins should
-be located inside the SCIF perimeter or modified to prevent removal of the door,
-e.g., welded or set screws. [@ics-705-ts, pp. 11-12]
+There should be only one primary entrance door. This greatly simplifies the
+controlled entry of personnel and visitors. The door should be of a substantial
+material, like 1 ¾ inch-thick solid wood core or 1 ¾ inch-thick face steel. Its
+hinge pins should be located inside the SCIF perimeter or modified to prevent
+removal of the door, e.g. welded or affixed with set screws. [@ics-705-ts, pp.
+11-12]
 
-The alarm response time criteria on [@ics-705-ts, p. 14] requires a maximum
+The alarm response time criteria on @ics-705-ts, p. 14 requires a maximum
 response time of 15 minutes. Assuming that the door should resist entry for the
 entire alarm response time, i.e. an attacker should be captured before he
-breaches the door, this requirement roughly translates to DIN EN 1627
-Resistance Class 5. RC 5 entails that an experienced attacker using hand tools,
-power tools, such as a drill, jigsaw or reciprocating saw and an angle grinder
-with a max. disc diameter of 125 mm can't breach the door within 15 minutes. A
-SCIF door setup should meet or exceed this standard.
+breaches the door, this requirement roughly translates to DIN EN 1627 Resistance
+Class 5. RC 5 entails that an experienced attacker using hand tools, power
+tools, such as a drill, jigsaw or reciprocating saw and an angle grinder with a
+maximum disc diameter of 125 mm can't breach the door within 15 minutes. A SCIF
+door setup should meet or exceed this standard.
 
 Closed storage of sensitive information in a security container is preferrable
 over open storage when the SCIF is not in use. Even better, sensitive
 information should be stored in a separate vault when the SCIF is not in use. A
 security container according to the IC Tech Spec‐for ICD/ICS 705 [@ics-705-ts,
-p. 5] must be a General Services Administration (GSA) approved safe, which
-typically complies to GSA Class 6 for storage of classified information such as
-documents, maps, drawings, and plans [@navfaclocks]. GSA Class 6 has no forced
-entry requirements, but requires 30 minutes resistance to covert entry and 20
-hours resistance to surreptitious entry. Commercial cabinets meeting EN 14450
-Grade S2 likely also fulfill the requirements of GSA Class 6.
+p. 5] must be a General Services Administration (GSA) approved safe, complying
+to GSA Class 6 for the storage of classified information such as documents,
+maps, drawings, and plans [@navfaclocks]. GSA Class 6 has no forced entry
+requirements, but requires 30 minutes resistance to covert entry and 20 hours
+resistance to surreptitious entry. Commercial cabinets meeting EN 14450 Grade S2
+also fulfill the requirements of GSA Class 6.
 
 ![Hamilton GSA Approved Class 6 4 Drawer Security
 Container](images/cabinet.jpg){height=30%}
@@ -592,13 +604,13 @@ to system outages and tampering. Limiting false alarms to a maximum of one per
 many false alarms cause fatigue and desensitization of security personnel. The
 IDS should be stand-alone, i.e. independent of other facilities' alarm systems.
 It can be supplemented with [audio or video monitoring](#cctv) if special
-attention is given not to inadvertently jeopardize the SCIFs information
-security.  [@ics-705-ts, p.  53]
+attention is given not to inadvertently compromise the SCIFs information
+security. [@ics-705-ts, p.  53]
 
 All components, i.e. the monitoring station, movement sensors, high security
 switches (HSS), premise control unit (PCU), and keypads should meet the
 internationally recognized Underwriters Laboratories (UL) Standards 2050, 639,
-634, 1610 and/or 294 respectively. The UL, being an independent, international
+634, 1610 and/or 294, respectively. The UL, being an independent, international
 organization not complying to the standards of any one country, is most suitable
 for providing globally recognized and universal security standards for the
 purposes of this paper.
@@ -608,67 +620,68 @@ shunted/masked mode. Access mode is used during SCIF operation and should allow
 for normal entry without causing an alarm. Tampering or entry through a
 secondary point, like emergency exits, should continue to trigger an immediate
 alarm. Secure mode is used when the SCIF is unoccupied, i.e. the last person
-departs the SCIF. Any unauthorized entry into the SCIF should cause an alarm to
-be immediately transmitted to the monitoring station in secure mode. In general,
-there should be no remote capability to change between these modes. Maintenace
-mode is used during routine repairs and testing on the system. An signal for
-this condition should be automatically sent to the monitoring station and
-verified/recorded there. Generally speaking, there should be no remote access
-for diagnostics, maintenance or programming for security reasons. It might also
-become necessary to shunt/mask sensors and zones for other reasons, like
-unforeseen malfunctioning of specific components, however this must be displayed
-at the monitoring station through the period the condition exists and
-automatically limited in time to the next change from access to secure mode.
-[@ics-705-ts, pp. 57-58]
+departs the SCIF. In secure mode, any unauthorized entry into the SCIF should
+cause an alarm to be immediately transmitted to the monitoring station.
+Maintenace mode is used during routine repairs and testing on the system. A
+signal for this condition should be automatically sent to the monitoring station
+and verified/recorded there. It might also become necessary to shunt/mask
+sensors and zones for other reasons, like unforeseen malfunctioning of specific
+components, however this must be displayed at the monitoring station through the
+entire period the condition exists and automatically limited in time to the next
+change from access to secure mode. Generally speaking for security reasons
+there should be no remote access for switching modes or performing diagnostics,
+maintenance or programming. [@ics-705-ts, pp. 57-58]
 
 Electrical power supply of the IDS must be redundant, e.g. backed by 24 hours of
 uninterruptible power supply (UPS). On primary power failure, the IDS should be
 automatically transferred to emergency electrical power without causing an
-alarm. An indicator of the power source in use should be given at the PCU or
+alarm. An indicator of the power source in use should be given at the PCU and/or
 monitoring station. [@ics-705-ts, p. 58]
 
 The monitoring station must comply to UL 2050, which sets out standards for
 organizations monitoring, signal processing, investigating, servicing, and
 operating alarm systems in sensitive facilities [@convergint]. Governments
 themselves or private contractors can set up monitoring stations that meet these
-standards.  These stations should be staffed by human operators trained in
-system theory and operation to effectively interpret system incidents and take
-appropriate response action. Any alarm event along with time of receipt, names
-of responding personnel, dispatch time, nature of the alarm, and follow up
-actions should be recorded there for at least two years. [@ics-705-ts, p. 59]
+standards. These stations should be staffed by human operators trained in system
+theory and operation who can effectively interpret system incidents and take
+appropriate response actions. Any alarm event along with the time of receipt,
+names of responding personnel, dispatch time, nature of the alarm, and follow up
+actions taken should be recorded at the monitoring station for at least two
+years. [@ics-705-ts, p. 59]
 
 Sensors are the eyes and ears of an IDS. They detect breaches and trigger
 alarms. All sensors should be located inside the SCIF to prevent tampering and
 TEMPEST issues. Interior areas of a SCIF through which reasonable access could
 be gained should be monitored by motion sensors (UL 639) and high security
-switches (HSS) (UL 634 level 1 or 2). Motion sensors trigger alarms on detecting
-movements in their view. HSS split in two, one half mounted on moving components
-and the other on an adjacent rigid part. They trigger alarms when they lose
-internal contact between their two halfs, for example when a door is opened.
-SCIF perimeter doors should be protected by both an HSS and a motion sensor.
-Failed sensors should cause continuous alarm until repaired. [@ics-705-ts, pp.
-54-55] Seismic detectors, sensors that trigger on vibrations such as those
-resulting from drilling and blastic, can further be used to supplement HSS and
-motion sensors. There are impressive innovations in the realm of motion sensors
-such as passive infrared detecting attacker's body temperature, doppler radar
-catching attacker's radar reflections, cloak and camouflage detection against
-intrudersattempting to cover their infrared signal, and anti-masking technology
-against attempts to obscure the field of view of the detector [@boschtriptech].
+switches (HSS) (UL 634 level 1 or 2). Motion sensors trigger alarms on
+detecting movements in their view field. HSS are split in two components, one
+mounted on the moving component and the other on its adjacent rigid part. They
+trigger alarms when they lose internal contact between their two halfs, for
+example when a door is opened. SCIF perimeter doors should be protected by both
+an HSS and a motion sensor. Failed sensors should cause continuous alarm until
+repaired.  [@ics-705-ts, pp. 54-55] Seismic detectors, sensors that trigger on
+vibrations such as those resulting from drilling and blasting, can further be
+used to supplement HSS and motion sensors. There are impressive innovations in
+the field of motion sensors, like passive infrared detecting attacker's body
+temperature, doppler radar catching attacker's radar reflections, cloak and
+camouflage detection against intruders attempting to cover their infrared
+signal, and anti-masking technology against attempts to obscure the field of
+view of a detector [@boschtriptech].
 
 Premise Control Units (PCU) serve as a first point of control inside the SCIF.
-They as well as any associated cabling should be fully located within the SCIF
-perimter. PCU should validate authorized use with an authentication technology,
+They, as well as any associated cabling, should be fully located within the
+SCIF. PCUs should validate authorized use with an authentication technology,
 such as a keypad and/or card reader. Cabling between all sensors and PCU should
 be dedicated to the IDS and contained within SCIF. Otherwise "External
 Transmission Line Security" must be employed. The alarm status as well as power
 source in use should be continuously displayed at the PCU. A special indicator
-should alert to changed/failed power supply. The PCU should identify and display
-all activated sensors. The auto-alarm reset feature, if present, must be
-disabled as every security incident can only be resolved after an inspection of
-the SCIF and a determination for the cause of the alarm by trained personnel.
-Because of the sensitive nature of the information displayed, the PCU must be
-installed in a location that precludes observation by any unauthorized party.
-[@ics-705-ts, p. 55]
+should alert to changed/failed power supply. The PCU should identify and
+display all activated sensors. The auto-alarm reset feature, if present, must
+be disabled as every security incident can only be resolved after an inspection
+of the SCIF and a determination for the cause of the alarm by trained dedicated
+personnel. Because of the sensitive nature of the information displayed, the
+PCU must be installed in a location that precludes observation by any
+unauthorized party. [@ics-705-ts, p. 55]
 
 Immediate and continuous alarm must be given on any intrusion detection, failed
 sensor, tamper detection, or enabling of maintenance mode (maintenace message
@@ -691,14 +704,15 @@ be repeated at least semi-anually. [@ics-705-ts, pp. 60-61]
 
 ### Access Control
 
-An access control system (ACS) is employed while the SCIF is occupied to control
-and record personnel entry into the protected space. It is mounted in addition
-to the SCIF perimeter door lock to regulate access while the SCIF is in use. It
-does not replace this lock while the SCIF is unoccupied. [@ics-705-ts, p. 62]
+An access control system (ACS) is employed while the SCIF is occupied to
+control and record personnel entry into the protected space. It is mounted in
+addition to the SCIF perimeter door lock to regulate access while the SCIF is
+in use. It does not replace the SCIF perimeter door lock while the SCIF is
+unoccupied. [@ics-705-ts, p. 62]
 
 Visual recognition of persons entering the SCIF by an authorized person at the
-entrance to a SCIF is the ideal access control. Should this not be possible an
-automated system can be used instead. [@ics-705-ts, p. 62]
+entrance is the ideal access control. Should this not be possible an automated
+system can be used instead. [@ics-705-ts, p. 62]
 
 An automated personnel ACS should use two different credentials, such as ID
 badge/card, PIN, and biometric identifier, to verify authorized personnel. The
@@ -707,14 +721,14 @@ than one in ten thousand.  Card readers, keypads, communication interface
 devices, and other access control equipment located outside the SCIF must be
 tamper-protected and securely fastened to a wall or other fixed structure.
 Electrical components, associated wiring, or mechanical links should only be
-accessible from inside SCIF. Otherwise transmission lines to and from outside
-SCIF must be FIPS-AES certified encrypted. Equipment containing access-control
-software used to program in authorized persons and remove no longer authorized
-individuals should be located fully inside the SCIF. Electric door strikes used
-to unlock the door and "buzz people in" must have a  positive engagement, i.e.
-rest in a locked position and only unlock on entry authorization. The electric
-door strikes should comply to UL 1034 (Burglary-Resistant Electric Locking
-Mechanisms). [@ics-705-ts, p. 63]
+accessible from inside SCIF. Otherwise transmission lines must be FIPS-AES
+encrypted. Equipment containing access-control software, used to program
+allowed entry for authorized persons and remove no longer authorized
+individuals, should be located fully inside the SCIF.  Electric door strikes
+used to unlock the door and "buzz people in" must have a positive engagement,
+i.e.  rest in a locked position and only unlock on entry authorization. The
+electric door strikes should comply to UL 1034 (Burglary-Resistant Electric
+Locking Mechanisms). [@ics-705-ts, p. 63]
 
 Records should be kept of the active assignment of ID badge/card, PIN, level of
 access, recent entries, and other similar system-related information. Records of
@@ -724,16 +738,15 @@ date of the incident or until the corresponding investigation is resolved.
 [@ics-705-ts, p. 63]
 
 If the number of personnel that require access is low and there is only one
-entrance a non-automated access control may be used. This can consist of a
+entrance, a non-automated access control may be used. This can consist of a
 mechanical, eletric or electromechanical combination lock with combinations of
 four or more random digits. Mechanical access control devices should be
 installed to prevent manipulation or access to mechanisms used for setting the
-access combination from outside door.  For all non-automated mechanisms, the
-control panel or keypad should be installed to preclude unauthorized observation
-of combination entry or actions of combination change. The control panel with
-combination, cabling and wiring should be located inside the SCIF with
-sufficient physical security to deny unauthorized access to its mechanisms.
-[@ics-705-ts, p. 64]
+combination from outside the door. The control panel or keypad should be
+installed to preclude unauthorized observation of the combination entry or the
+actions of combination change. The control panel for changing combinations
+should be located inside the SCIF with sufficient physical security to deny
+unauthorized access to its mechanisms. [@ics-705-ts, p. 64]
 
 ### Locks
 
@@ -741,44 +754,45 @@ When not occupied, SCIFs should be alarmed and secured with a FF-L-2740A
 compliant combination lock and a pedestrian door deadbolt meeting Federal
 Specification FF-L-2890 [@ics-705-ts, p. 11]. The combination lock is used to
 secure the door when the SCIF is unoccupied and the access control device is
-used when the SCIF is occupied [@ics-705-ts, p. 63]. The equivalent
-international specifications for combination locks are UL 768 and DIN EN 1300.
-The lowest UL 768 rating, Group 2, is essentialy equivalent to FF-L-2740A
-[@lockreference].
+used while the SCIF is occupied [@ics-705-ts, p. 63]. The equivalent
+international specifications for FF-L-2740A combination locks are UL 768 and
+DIN EN 1300. The lowest UL 768 rating, Group 2, is essentialy equivalent to
+FF-L-2740A [@lockreference].
 
 ![Kaba X-10 Mounted Lock (FF-L-2740)](images/ffl2740a.jpg){height=40%}
 
 Combinations to locks installed on perimeter doors should be changed when a
 combination lock is first installed, when a combination has been compromised,
-and whenever a person knowing the combination no longer requires access to it
+and whenever a person knowing the combination no longer requires access to it,
 unless other sufficient controls exist to prevent access to the lock.
 [@ics-705-ts, p. 83]
 
 ### CCTV
 
 Video surveillance, also known as CCTV, can be used to supplement the
-monitoring of SCIF entrances for the remote control of doors from within SCIF.
-Special attention should be given to a CCTV system to make sure that it
-presents no technical security hazard. [@ics-705-ts, p. 64]. CCTV may be also
-used to supplement monitoring of the SCIF entrance and record events for
+monitoring of SCIF entrances for the remote control of doors from within the
+SCIF.  Special attention should be given that a CCTV system presents no
+additional technical security hazard [@ics-705-ts, p. 64]. CCTV may be also
+used to supplement monitoring of the SCIF entrance and record events for later
 investigation [@ics-705-ts, p. 75].
 
 When CCTV is used to monitor a SCIF entrance for ACS purposes, the remote
-control device should be located within SCIF and should be monitored/operated
-by indoctrined personnel. The cameras should provide a clear view of SCIF
-entrance without enabling a viewer to observe classified information when the
-door is open nor external control pads or access control components that would
-enable them to identify PINs or access procedures. The CCTV communication lines
-should be fully located within SCIF. Any external communication lines should be
-installed to prevent tampering. [@ics-705-ts, p. 64]
+control device should be located within the SCIF and should be
+monitored/operated by indoctrinated personnel. The cameras should provide a
+clear view of the SCIF entrance without enabling a viewer to observe classified
+information when the door is open nor external control pads or access control
+components that would enable them to identify PINs or access procedures. The
+CCTV communication lines should be fully located within SCIF. Any external
+communication lines should be installed to prevent tampering. [@ics-705-ts, p.
+64]
 
 When CCTV is used to monitor a SCIF entrance for security and record-keeping
 purposes the system and all its components, including communications and
-control lines, should be exterior to SCIF perimeter. In this case it must also
-not enable a viewer to observe any classified information or authentication
-procedures.
+control lines, should be exterior to the SCIF perimeter. In this case also, it
+must not enable a viewer to observe any classified information or
+authentication procedures.
 
-In both cases special attention must be given that the cameras present no
+In both use cases, special attention must be given that the cameras present no
 further technical security risk. Chinese-made video surveillance systems can be
 reasonably suspected of leaking information back to their Chinese State
 owned/controlled manufacturers [@cis], like HikVision and Dahua, and suffer from
@@ -788,7 +802,8 @@ proprietary products suffer from this kind of backdoor-risk and should only be
 sourced from trustworthy manufacturers. Even better, they should be built
 in-house with [open hardware](https://www.elphel.com/) components.
 
-![Elphel 10393 Series Free Software and Open Hardware Camera](images/elphel10393.jpeg){height=30%}
+![Elphel 10393 Series Free Software and Open Hardware
+Camera](images/elphel10393.jpeg){height=30%}
 
 ## Visual
 
@@ -813,9 +828,9 @@ inside the SCIF it is essential to design an effective acoustic protection
 system. Sound waves have the habit of finding weakpoints in even the most
 well-designed systems and escaping to the outside where even the faintest
 emission can be captured and reconstructed with digital means. Therefore, it is
-necessary to pay meticulous attention to detail, both in the design and build
-phases, while building on multiple technologies to prevent capture of usable
-sound information from any point.
+necessary to pay meticulous attention to detail, both in the design and
+construction phase, while building on multiple technologies to prevent capture
+of usable sound information from the outside.
 
 In most cases, passive sound attenuation, walls with strong sound isolation
 properties, must be combined with active sound masking, speakers that emit
@@ -823,23 +838,25 @@ speech-like sounds to render useless escaping sound waves. Both out of room
 constraints and redundancy considerations passive sound attenuation most often
 doesn't suffice on its own. A sound masking system can reduce the wall thickness
 needed and mitigate any weakpoints that are inadvertently built into the
-attenuating shell.
-
-Even protecting against attackers who manage to smuggle microphones into the
-SCIF space, as guests or intruders, should be considered in system design.
+attenuating shell. Protecting against attackers who manage to smuggle
+microphones into the SCIF space, as guests or intruders, should also be
+considered in system design.
 
 ### Sound Attenuation
 
 Passive sound attenuation is the first step in reducing noise emissions from the
 SCIF space. Massive single-shell walls or double-shell components can be used to
 reduce sound transmission on all paths. Both direct transmission, sound forces
-on a wall to structure-borne sound in the wall to airborne sound outside the
-SCIF, and indirect transmission, airborne sound within the SCIF to
-structure-borne sound in the wall to airborne sound outside the SCIF, can be
-reduced with the right wall design both on primary and secondary paths.
+on a wall → structure-borne sound in the wall → airborne sound outside the
+SCIF, and indirect transmission, airborne sound within the SCIF →
+structure-borne sound in the wall → airborne sound outside the SCIF, can be
+reduced with the right wall design, both on primary and secondary paths.
 [@moeser2009, p. 253]
 
-The sound insulation quality of building components is dependent on the
+![Primary and Secondary, Flanking Sound Transmission through a
+Wall [@zeitler]](images/soundtransmission.png){height=40%}
+
+The sound insulation performance of building components is dependent on the
 frequency of the sound emission. Particularly low-frequency sound waves set
 walls into vibrations that they readily transmit as airborne sound to the
 outside. Higher frequencies are of less interest in system evaluation, because
@@ -857,32 +874,32 @@ single-shell components, sound attenuation increases with 6 dB/Octave below the
 cut-off frequency. This is known as Bergers' mass law. At the cut-off frequency
 the component's sound attenuation suffers a sharp drop and then rises with 7.5
 dB/Octave. The drop is also described as the "cut-off slump" and entails
-significant decreases in sound attenuation at frequencies around cut-off
-frequency. The cut-off slump is more drastic the higher the cutoff frequency.
-Because of the higher sound attenuation increases above the cut-off frequency
-and lower cut-off slumps, it is of interest to design single-shell components
-with as low a cut-off frequency as possible. This can be accomplished by making
-the wall as rigid as possible and increasing its thickness. [@moeser2009, pp.
-258-270]
+significant decreases in sound attenuation at frequencies around the cut-off
+frequency. The cut-off slump is more drastic the higher on the spectrum the
+cut-off frequency.  Because of the steeper sound attenuation increases above
+the cut-off frequency and because of the lower cut-off slumps at lower
+frequencies, it is of interest to design single-shell components with as low a
+cut-off frequency as possible. This can be accomplished by making the wall as
+rigid as possible and increasing its thickness. [@moeser2009, pp.  258-270]
 
-![Principle curve of the sound reduction index frequency response of a single
-shell wall. Eta = loss factor derived from the loss mechanisms actually occurring,
-such as internal damping and vibration energy dissipation to adjacent
-components, f = frequency of emission, f~cr~= cut-off frequency [@moeser2009, p.
+![Principle Curve of the Sound Reduction Index Frequency Response of a Single
+Shell Wall. η = Loss Factor Derived from the Loss Mechanisms at play, such as
+Internal Damping and Vibration Energy Dissipation to Adjacent Components, f =
+Frequency of Emission, f~cr~= Cut-off Frequency [@moeser2009, p.
 267]](images/attenuationprogression.png){height=40%}
 
 Increasing wall rigidity and thickness might not always be possible due to
 space, weight, and cost constraints. Thankfully, a better method for building
-attenuating walls exists, double-shell components with flexurally soft
+attenuating walls exists; double-shell components with flexurally soft
 facing-shells. These make use of the propensity of the two walls to swing at
 different frequencies when not connected, making use of the cavity in between to
 create a mass-spring-mass system. No connections or cross-coupling may exist
-between the two shells as these destroy the spring function of the hollow space
+between the two shells as these defeat the spring function of the hollow space
 and jeopardize the entire system's effectiveness. [@moeser2009, pp. 270-276]
 
-![Improvement of the sound insulation delta R of a 80 mm plaster wall by a
-flexible facing shell with m^''^~2~ = 4 kg/m^2^ and cavity depth d = 65 mm,
-filled with mineral wool](images/improvement.png){height=40%}
+![Improvement Of the Sound Insulation ΔR of a 80 mm Plaster Wall by a Flexible
+Facing Shell with m^''^~2~ = 4 kg/m^2^ and Cavity Depth d = 65 mm, Filled with
+Mineral Wool [@moeser2009, p. 274]](images/improvement.png){height=40%}
 
 Below the cut-off frequency the additional shell has no effect, however, above
 it the sound attenuation increases with 12 dB/octave. At the cut-off frequency
@@ -897,15 +914,15 @@ $$
 a cut-off frequency of 60 Hz (well below the building acoustics frequency range
 beginning at 100 Hz) can be reached with a facing shell with a mass per unit
 area of m^''^~2~ = 10 kg/m^2^ (heavy gypsum wall board) and a hollow space of
-_d_ = 10 cm. From here we can see that sufficiently low cut-off frequencies can
-be achieved without excessively heavy facing shells or massive hollow spaces.
+_d_ = 10 cm. Sufficiently low cut-off frequencies can be achieved without
+excessively heavy facing shells or prohibitively wide hollow spaces.
 [@moeser2009, p. 273]
 
 To achieve a high sound attenuation level it is advantageous to use heavy total
-masses and to distribute them unequally among the shells if possible avoding
-shells of equal weight. One should also maximize the distance _d_ between the two
-shells, dampen the cavity as fully as possible with absorber material, and avoid
-leaks or structure-borne sound bridges. [@moeser2009, p. 276]
+masses and to distribute them unequally among the shells, if possible avoding
+shells of equal weight. One should also maximize the distance _d_ between the
+two shells, dampen the cavity as fully as possible with absorber material, and
+avoid leaks or structure-borne sound bridges. [@moeser2009, p. 276]
 
 In order to evaluate the solution on a whole system level, including floors and
 ceilings, one combines the walls R~W~ value as described in Chapter 4.2 with the
@@ -914,7 +931,7 @@ walls, ceiling, and floor) in a stepwise addition scheme specified in DIN
 4109-1. The result is a total resulting sound reduction index R'~w,R~ expressed
 in dB. [@tichelmann2000, p. 34]
 
-![Stepwise addition scheme DIN 4109-1 [@tichelmann2000, p.
+![Stepwise Addition Scheme DIN 4109-1 [@tichelmann2000, p.
 34]](images/din4109-1.png){height=50%}
 
 Walls and flanking components aren't the only transmission paths for sound out
@@ -925,7 +942,7 @@ designed shell system. In order to treat air ducts and vents it is necessary to
 insert some type of silencer. These can be reflection mufflers, wall mufflers or
 active noise cancelling systems. Reflection mufflers work eclusively through
 reflection. Cross-section changes, branch-offs and inserted chambers reflect
-sound waves internally and decrease their energy. Wall mufflers Work through
+sound waves internally and decrease their energy. Wall mufflers work through
 absorption _and_ reflection. Absorbant wall lining or slim absorbant channels
 are used to reflect sound waves internally. Additionally, these sound waves lose
 energy into the mufflers absorbant surfaces. [@moeser2009, pp. 285-328]
@@ -937,20 +954,22 @@ accuracy in the secondary, cancelling field. [@moeser2009, pp. 405-427] Because
 of their complexity and relative novelty they are not the go-to solution for air
 vent treatment.
 
-For reflection and wall muflers either achieve high attenuation performance in
-narrow bands or moderate attenuation in wider bands. Knowing the frequency range
-of sound to be cancelled is essential in optimizing the mufflers. Specialized
-air vent mufflers for the human voice, called cross-talk sound attenuators, are
-readily available on the market. They achieve relatively high performance values
-around the frequency spectrum of the human voice and come in a box shape
-optimized for installation inside drywall. An off-the-shelf product from german
-manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX® achieves a
-weighted sound reduction index of R~w~ 38 dB at 508 mm length and 300 mm height.
-Normalised sound level difference, D~n,e~ at the male fundamental frequency 125
-Hz is 54 dB. [@schako]
+Reflection and wall muflers either achieve high attenuation performance in
+narrow bands or moderate attenuation in wider bands. Knowing the frequency
+range of sound to be cancelled is essential in optimizing the mufflers.
+Specialized air vent mufflers for the human voice, called cross-talk sound
+attenuators, are readily available on the market. They achieve relatively high
+performance values around the frequency spectrum of the human voice and come in
+a box shape optimized for installation inside drywall. An off-the-shelf product
+from german manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX®,
+achieves a weighted sound reduction index of R~w~ 38 dB at 508 mm length and
+300 mm height. Normalised sound reduction D~n,e~ at the male fundamental
+frequency 125 Hz is 54 dB. [@schako]
 
-![SCHAKO Cross-talk Sound Attenuator Box AUDIX® Installation
+![SCHAKO Cross-talk Sound Attenuator Box AUDIX® - Installation
 Schematic](images/schako.png){height=40%}
+
+Note: Floors and Ceilings?
 
 ### Sound Masking
 
@@ -965,39 +984,43 @@ vibrations or noise that drown out escaping audio and render it useless.
 Speakers/transducers must produce sound at a higher level than the audio
 escaping on the path. They are placed on or close to weak points in the passive
 sound attenuation, like doors, windows, common perimeter walls, vents/ducts,
-pipes, as well as raised floors and ceilings. [@ics-705-ts, p. 66] For doors and
-windows, the transducers are placed on the frame to induce vibrations that
+pipes, as well as raised floors and ceilings. [@ics-705-ts, p. 66] For doors
+and windows, the transducers are placed on the frame to induce vibrations that
 provide a uniform audio mask and prevent contact/laser microphones from picking
 up usable emissions. For walls, transducers are placed at specific intervals on
-the studs to provide uniform protection along the entire length of the perimeter
-using stud-mount brackets. For vents, ducts, and pipes contact speakers are
-placed directly on the exterior inducing vibrations directly into the surface.
-In raised floors and ceilings, as well as all wall cavities, conventional
-dynamic cone speakers are placed in the hollow space to transmit sound through
-the air and induce audio interferences into adjoining parts. The speaker
-placement must be optimized for each room geometry and wall type.
+the studs to provide uniform protection along the entire length of the
+perimeter using stud-mount brackets. For vents, ducts, and pipes contact
+speakers are placed directly on the exterior inducing vibrations directly into
+the surface.  In raised floors and ceilings, as well as all wall cavities,
+conventional dynamic cone speakers are placed in the hollow space to transmit
+sound through the air and induce audio interferences into adjoining parts. The
+speaker placement must be optimized for each room geometry and wall type.
 [@speechmasking]
+
+![Sound Masking System Speaker Placement
+[@speechmasking]](images/speechmasking.png){height=40%}
 
 Sound-source generators can be dedicated noise generators, tapes, discs, or
 digital audio players. They emit some kind of recording, music or randomly
 generated noise, like pink or white noise. In practice, noise sources with
 deterministic intensity distribution across the frequency spectrum, also called
-broadband noises, like pink or white noise, have been proven ineffective to mask
-the human voice unless used at uncompfortably loud levels (two to five times
-higher than the voice to be masked). They simply do not replicate the human
-vocal system and can be easily be filtered out by sophisticated speech
-extraction software. Pre-recorded sounds such as music or tracks are also easier
-to isolate and separate digitally from speech.  Instead, it is better to use
-randomly generated noise from an algorithm specifically designed to imitate the
-spectral density, resonance, periodic pauses and interruptions, tonal and pitch
-qualities, and other improbable effects of human speech. [@speechmasking]
+broadband noises, like pink or white noise, have been proven ineffective to
+mask the human voice unless used at uncompfortably loud levels (two to five
+times higher than the voice to be masked). They simply do not replicate the
+human vocal system and can easily be filtered out by sophisticated speech
+extraction software. Pre-recorded sounds such as music or tracks are also
+easier to isolate and separate digitally from speech. Instead, it is better to
+use randomly generated noise from an algorithm specifically designed to imitate
+the spectral density, resonance, periodic pauses and interruptions, tonal and
+pitch qualities, and other improbable effects of human speech. [@speechmasking]
 
-![Comparison of broadband noise's and SpeechMask® algorithm's frequency spectrum
-mapped over spectrum of human speech [@speechmasking]](images/spectra.png){height=40%}
+![Comparison of Broadband Noise's and SpeechMask® Algorithm's Frequency
+Spectrum Mapped over Spectrum of Human Speech
+[@speechmasking]](images/spectra.png){height=40%}
 
 Even more important than the noise source itself though is the way the mask is
 applied and directed inside the protected space. In a properly designed system,
-the occupants do not hear — or only faintly hear — the mask inside the room. The
+the occupants do not hear, or only faintly hear, the mask inside the room. The
 only way to listen to the mask should be by listening directly against the
 outside wall. The intended functional area of a sound masking system is not the
 protected space itself but the exfiltration paths that come from it. There and
@@ -1006,7 +1029,7 @@ only there should the sound mask present itself as vibrations and audible noise.
 
 For security reasons, the sound masking systems should be permanently installed
 and not contain an AM/FM receiver. Its generators, wires and transducers should
-be located to the greatest extent possible within the SCIF. Generatorss with any
+be located to the greatest extent possible within the SCIF. Generators with any
 capability to record ambient sound should have that capability disabled. The
 sound masking system should be subjected to a thorough TSCM inspection to ensure
 it poses no further technical risk. [@ics-705-ts, p. 67]
@@ -1022,31 +1045,31 @@ inherent hardware properties can be exploited against them to jam and render
 useless their recordings.
 
 A microphone jammer makes use of the hardware non-linearity of commodity
-microphones. Linearity is ability to generate an electrical output proportional
-to the amplitude of the sound input. Any device, such as a microphone, exhibits
-non-linearity in some frequency bands, meaning it produces overproportional
-electrical output for a given input frequency. Ultrasonic signals (centered
-around 25kHz) can trigger these non-linearities without being noticable by human
-ears. Inside the microphone, they leak into the audible spectrum and produce
-jamming signals. [@chen2019]
+microphones. Linearity is the ability to generate an electrical output
+proportional to the amplitude of the sound input. Any device, such as a
+microphone, exhibits non-linearity in some frequency bands, meaning it produces
+overproportional electrical output for a given input frequency. Ultrasonic
+signals (centered around 25kHz) can trigger these non-linearities without being
+noticable by human ears. Inside the microphone, they leak into the audible
+spectrum and produce jamming signals. [@chen2019]
 
 A 2019 study by University of Chicago researchers showed existing devices to be
-effective against smartphone microhpones, but showed their inability to fully
+effective against smartphone microphones, but showed their inability to fully
 cover potential microphones at different angular positions relative to the
 masking device. The researchers improved upon existing devices by designing a
 wearable bracelet with more omni-directional speaker configuration and better
 angular coverage due to a user's wrist movement. [@chen2019]
 
-Existing devices are most effective against the MEMS microphones found in
-smartphones and other small-form factor devices. It is unclear how they perform
-against more sophisticated microphones designed to eliminate hardware
-non-linearities in the ultrasonic spectrum.
+Existing microphone jamming devices are most effective against the MEMS
+microphones found in smartphones and other small-form factor devices. It is
+unclear how they perform against more sophisticated microphones designed to
+eliminate hardware non-linearities in the ultrasonic spectrum.
 
 If used at all, microphone jamming systems should function supplementally to a
-PED policy [@ics-705-ts, pp. 68-72]. A PED policy controls and limits the
-portable electronic devices allowed in the SCIF. It is especially useful when
-untrusted individuals are allowed entry to the SCIF to participate in
-discussions within.
+PED policy. A PED policy controls and limits the portable electronic devices
+allowed in the SCIF. It is especially useful when untrusted individuals are
+allowed entry to the SCIF to participate in discussions within. [@ics-705-ts,
+pp. 68-72]
 
 ## Electromagnetic/TEMPEST Shielding
 
