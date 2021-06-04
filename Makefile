@@ -3,6 +3,7 @@ scif-thesis.pdf: scif-thesis.md scif-thesis.bib
          --variable papersize=a4paper \
 	 --filter pandoc-citeproc --bibliography=scif-thesis.bib \
 	 -V linkcolor:blue \
+	 --pdf-engine=xelatex \
 	 -H resources/fix-captions.tex \
 	 -M date="`date "+%B%e, %Y"`" \
          -s $< \
