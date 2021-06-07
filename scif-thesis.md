@@ -13,7 +13,7 @@ abstract: |
     Note, this paper is limited in scope to constructive and technical measures
     and does not focus on IT or organisational security measures, like
     encryption, security-related review/monitoring of employees, and
-    classification levels.  It also does not dwell on specific countries
+    classification levels. It also does not dwell on specific countries
     bureaucratic protocols, but instead aims to present a unified picture of the
     global state of the art.
 
@@ -162,9 +162,9 @@ equipment](https://greatscottgadgets.com/hackrf/one/). Although execution is
 fast, reconnaissance, planning and setup, especially for well-protected
 facilities, can entail significant time expenditure.
 
-![Display of one monitor reproduced on another using its TEMPEST emanations and
-a $40 software defined radio + antenna set up.
-@rtl-sdr](images/tempest.jpg){height=40%}
+![Display of One Monitor Reproduced on Another using its TEMPEST Emanations and
+a $40 Software Defined Radio + Antenna Setup
+[@rtl-sdr]](images/tempest.jpg){height=40%}
 
 Capture Technique | Cost | Time | Technical Skill Required
 --- | --- | --- | ---
@@ -202,7 +202,7 @@ defense against potential threats" [@navfac, p. 20]. Additionally, SID increases
 the probability of detection of nefarious activity because of continuous
 friendly-forces presence [@ics-705-ts, p. 3]. These conditions cannot be
 guaranteed for all locations, especially in the corporate realm, so we strive to
-compensate reduced SID with a higher degree of sound insulation.  When possible,
+compensate reduced SID with a higher degree of sound insulation. When possible,
 R'~w~ = 52 dB should be exceeded.
 
 R'~w~ represents the resulting sound insulation between two rooms, taking into
@@ -226,9 +226,9 @@ frequency response curve until the sum of the undershoots S~U~ of the frequency
 response curve compared to the reference curve is less than 32 dB. [@moeser2009
 pp. 256-257]
 
-![For the definition of the weighted sound reduction index R~w~. B = Reference
-curve, B~v~ = Shifted reference curve, M = Measured values, U = Undershoots of
-M compared to B~v~. @goesele2004](images/schalldämmmaß.png){height=40%}
+![Definition of the Weighted sound Reduction Index R~w~. B = Reference Curve,
+B~v~ = Shifted Reference Curve, M = Measured Values, U = Undershoots of M
+Compared to B~v~ [@goesele2004]](images/schalldämmmaß.png){height=40%}
 
 From this diagram we can also see that for a R~w~ = 52 dB (the reference curve)
 the fundamental frequency of the male voice - 125 Hz - only undergoes a sound
@@ -255,8 +255,8 @@ E (electromagnetic) Field it requires 70 dB @ 1kHz, and 100 dB at 10 kHz, 100
 kHz, 1 MHz, and 10 MHz. For a 100 MHz - 10 GHz Plane Wave it also requires 100
 dB attenuation.
 
-![Electromagnetic Attenuation Requirements.
-@nsa94-106](images/nsa94-106.jpg){height=40%}
+![Electromagnetic Attenuation Requirements
+[@nsa94-106]](images/nsa94-106.jpg){height=40%}
 
 The field test is carried out with a parallel setup. A continuous wave source
 generates a wave in the range of 1 KHz to 10 GHz. Two antennae are placed, one
@@ -265,12 +265,12 @@ and the other as a receiving (RX) antenna. The antennae are separated by a
 distance of 61 centimeters plus the wall thickness. The signal from the RX
 antenna is fed back into a reciver. Attenuation levels can then be read from a
 spectrum analyzer. Magnetic field, electronic field, and plane wave attenuations
-are then measured at various specified frequencies.  Attenuation tests are
+are then measured at various specified frequencies. Attenuation tests are
 performed around the entire door frame, air ducts, filters and through any
 accessible joint or penetration. [@nsa94-106]
 
-![Test setup for NSA-94-106.
-@shieldingtests](images/shieldingtests.jpg){height=40%}
+![Test Setup for NSA-94-106
+[@shieldingtests]](images/shieldingtests.jpg){height=40%}
 
 A RF shielding system is only as effective as its weakest component [@krieger].
 Shielding material faults and gaps in the shield should be carefully avoided.
@@ -318,7 +318,7 @@ unshielded exterior.
 
 Attack Technique | Cost | Time | Technical Skill Required
 --- | --- | --- | ---
-Inserting Camera |  low | low | medium
+Inserting Camera | low | low | medium
 Hijacking Existing Camera | low | medium | high
 
 ## Acoustic
@@ -398,7 +398,7 @@ insider threat to the construction site and the resulting facility. The IC Tech
 Spec‐for ICD/ICS 705 [@ics-705-ts, pp. 23-27] envisions evaluation of
 construction workers by their country of origin and U.S. clearance level. For
 example, it forbids the use of workers from SETL "critical technical threat
-level" countries.  Furthermore, it requires biographical data (full name,
+level" countries. Furthermore, it requires biographical data (full name,
 current address, Social Security Number (SSN), date and place of birth (DPOB),
 proof of citizenship, etc.) and fingerprint cards for background checks of all
 non-cleared construction personnel. It requires finish work in high-threat
@@ -412,7 +412,7 @@ implement screening and inspection procedures, as well as monitor construction
 and personnel [@ics-705-ts. p. 7] - to perform the installation of major
 utilities and feeder lines. It requires that all construction personnel receive
 a security briefing prior to entering the site, so they know which rules to
-follow and what suspicious activity to report.  If a construction worker leaves
+follow and what suspicious activity to report. If a construction worker leaves
 the project under unusual circumstances, the ICD requires the event be
 documented and the approriate officer to be notified.
 
@@ -506,7 +506,7 @@ also serve as an SSA. All securely shipped and/or inspected materials should be
 placed in the SSA immediately upon arrival/inspection and stored there until
 they are required for use. This ensures a secure chain of custody from first
 arrival/inspection to installation and eliminates the need for possible
-reinspections.  [@ics-705-ts, p. 31]
+reinspections. [@ics-705-ts, p. 31]
 
 #### Inspection Methods
 
@@ -549,13 +549,13 @@ information is stored in the open, without SID requires a true-floor to
 true-ceiling wall made up of (from inside to outside) two 5/8" gipsum wall
 boards (GWB), ¾" mesh from #9 expanded metal spot-welded or screwed every 6" to
 vertical studs, 16" metal studs and runners, acoustic fill, and another 5/8"
-GWB.  Specifically the combination of multiple GWBs and expanded metal makes for
+GWB. Specifically the combination of multiple GWBs and expanded metal makes for
 a very sturdy construction. Additionally, sheet metal laminated GWB, like
 Knauf's Diamant Steel, can be used to further enhance the resistance
 properties of the GWB. Windows are highly discouraged for security reasons
 [@ics-705-ts, p. 12].
 
-![Wall B -Suggested Construction for Expanded Metal [@ics-705-ts, p.
+![Wall B - Suggested Construction with Expanded Metal [@ics-705-ts, p.
 17]](images/wallb.png){height=50%}
 
 There should be only one primary entrance door. This greatly simplifies the
@@ -605,7 +605,7 @@ many false alarms cause fatigue and desensitization of security personnel. The
 IDS should be stand-alone, i.e. independent of other facilities' alarm systems.
 It can be supplemented with [audio or video monitoring](#cctv) if special
 attention is given not to inadvertently compromise the SCIFs information
-security. [@ics-705-ts, p.  53]
+security. [@ics-705-ts, p. 53]
 
 All components, i.e. the monitoring station, movement sensors, high security
 switches (HSS), premise control unit (PCU), and keypads should meet the
@@ -659,7 +659,7 @@ mounted on the moving component and the other on its adjacent rigid part. They
 trigger alarms when they lose internal contact between their two halfs, for
 example when a door is opened. SCIF perimeter doors should be protected by both
 an HSS and a motion sensor. Failed sensors should cause continuous alarm until
-repaired.  [@ics-705-ts, pp. 54-55] Seismic detectors, sensors that trigger on
+repaired. [@ics-705-ts, pp. 54-55] Seismic detectors, sensors that trigger on
 vibrations such as those resulting from drilling and blasting, can further be
 used to supplement HSS and motion sensors. There are impressive innovations in
 the field of motion sensors, like passive infrared detecting attacker's body
@@ -717,23 +717,23 @@ system can be used instead. [@ics-705-ts, p. 62]
 An automated personnel ACS should use two different credentials, such as ID
 badge/card, PIN, and biometric identifier, to verify authorized personnel. The
 probability of an unauthorized individual gaining access must be no more than
-than one in ten thousand.  Card readers, keypads, communication interface
+than one in ten thousand. Card readers, keypads, communication interface
 devices, and other access control equipment located outside the SCIF must be
 tamper-protected and securely fastened to a wall or other fixed structure.
 Electrical components, associated wiring, or mechanical links should only be
 accessible from inside SCIF. Otherwise transmission lines must be FIPS-AES
 encrypted. Equipment containing access-control software, used to program
 allowed entry for authorized persons and remove no longer authorized
-individuals, should be located fully inside the SCIF.  Electric door strikes
+individuals, should be located fully inside the SCIF. Electric door strikes
 used to unlock the door and "buzz people in" must have a positive engagement,
-i.e.  rest in a locked position and only unlock on entry authorization. The
+i.e. rest in a locked position and only unlock on entry authorization. The
 electric door strikes should comply to UL 1034 (Burglary-Resistant Electric
 Locking Mechanisms). [@ics-705-ts, p. 63]
 
 Records should be kept of the active assignment of ID badge/card, PIN, level of
 access, recent entries, and other similar system-related information. Records of
 personnel removed from the authorized persons list should be retained for two
-years.  Records of security incidents should be retained for five years from the
+years. Records of security incidents should be retained for five years from the
 date of the incident or until the corresponding investigation is resolved.
 [@ics-705-ts, p. 63]
 
@@ -771,7 +771,7 @@ unless other sufficient controls exist to prevent access to the lock.
 
 Video surveillance, also known as CCTV, can be used to supplement the
 monitoring of SCIF entrances for the remote control of doors from within the
-SCIF.  Special attention should be given that a CCTV system presents no
+SCIF. Special attention should be given that a CCTV system presents no
 additional technical security hazard [@ics-705-ts, p. 64]. CCTV may be also
 used to supplement monitoring of the SCIF entrance and record events for later
 investigation [@ics-705-ts, p. 75].
@@ -797,7 +797,7 @@ further technical security risk. Chinese-made video surveillance systems can be
 reasonably suspected of leaking information back to their Chinese State
 owned/controlled manufacturers [@cis], like HikVision and Dahua, and suffer from
 general bad security practices [@us-cert]. Their use has consequently been
-banned from U.S.  government agencies and facilities [@ndaa2019]. In general,
+banned from U.S. government agencies and facilities [@ndaa2019]. In general,
 proprietary products suffer from this kind of backdoor-risk and should only be
 sourced from trustworthy manufacturers. Even better, they should be built
 in-house with [open hardware](https://www.elphel.com/) components.
@@ -876,11 +876,11 @@ the component's sound attenuation suffers a sharp drop and then rises with 7.5
 dB/Octave. The drop is also described as the "cut-off slump" and entails
 significant decreases in sound attenuation at frequencies around the cut-off
 frequency. The cut-off slump is more drastic the higher on the spectrum the
-cut-off frequency.  Because of the steeper sound attenuation increases above
+cut-off frequency. Because of the steeper sound attenuation increases above
 the cut-off frequency and because of the lower cut-off slumps at lower
 frequencies, it is of interest to design single-shell components with as low a
 cut-off frequency as possible. This can be accomplished by making the wall as
-rigid as possible and increasing its thickness. [@moeser2009, pp.  258-270]
+rigid as possible and increasing its thickness. [@moeser2009, pp. 258-270]
 
 ![Principle Curve of the Sound Reduction Index Frequency Response of a Single
 Shell Wall. η = Loss Factor Derived from the Loss Mechanisms at play, such as
@@ -926,13 +926,23 @@ avoid leaks or structure-borne sound bridges. [@moeser2009, p. 276]
 
 In order to evaluate the solution on a whole system level, including floors and
 ceilings, one combines the walls R~W~ value as described in Chapter 4.2 with the
-longitudinal sound transmission R~L,w~ of the four flanking components (two
+longitudinal sound attenuation R~L,w~ of the four flanking components (two
 walls, ceiling, and floor) in a stepwise addition scheme specified in DIN
 4109-1. The result is a total resulting sound reduction index R'~w,R~ expressed
 in dB. [@tichelmann2000, p. 34]
 
 ![Stepwise Addition Scheme DIN 4109-1 [@tichelmann2000, p.
 34]](images/din4109-1.png){height=50%}
+
+In accordance with the above scheme, floors and ceilings must also be
+constructed with sound attenuation in mind to insure adequate system-level
+performance. Both longitudional sound attenuation R~L,w~ and direct sound
+attenuation R~W~ should offer adequate protection of escaping sound waves. In
+general, a designer should seek to constuct floors and ceilings as rigid and
+heavy as possible. Walls should go from true-floor to true-ceiling, completely
+interrupting additional longitudional layers like screed, flooring, and false
+ceilings. Example constructions with their associated attenuation values can be
+taken from the component catalog in DIN 4109-33 sections 4.3 and 5.3.
 
 Walls and flanking components aren't the only transmission paths for sound out
 of the SCIF. Air ducts and vents also present a significant challenge in sound
@@ -969,8 +979,6 @@ frequency 125 Hz is 54 dB. [@schako]
 ![SCHAKO Cross-talk Sound Attenuator Box AUDIX® - Installation
 Schematic](images/schako.png){height=40%}
 
-Note: Floors and Ceilings?
-
 ### Sound Masking
 
 When passive measures alone, out of space, weight or costs constraints, can't
@@ -991,7 +999,7 @@ up usable emissions. For walls, transducers are placed at specific intervals on
 the studs to provide uniform protection along the entire length of the
 perimeter using stud-mount brackets. For vents, ducts, and pipes contact
 speakers are placed directly on the exterior inducing vibrations directly into
-the surface.  In raised floors and ceilings, as well as all wall cavities,
+the surface. In raised floors and ceilings, as well as all wall cavities,
 conventional dynamic cone speakers are placed in the hollow space to transmit
 sound through the air and induce audio interferences into adjoining parts. The
 speaker placement must be optimized for each room geometry and wall type.
@@ -1074,79 +1082,81 @@ pp. 68-72]
 ## Electromagnetic/TEMPEST Shielding
 
 Electromagnetic shielding is used to prevent inadvertent emissions of sensitive
-information from the SCIF and to make information transmission from bugging
+information from the SCIF, and to make information transmission of bugging
 devices located within it more difficult. These shields take the form of
 separate enclosures around the entire protected space, and make use of different
 phyiscal principles to block airborne electromagentic waves. All penetrations of
 the elctromagentic shield, like pipes, ducts, and cables, are treated separately
 to prevent the inadvertent or malicious transmission of sensitive information
-along them. A monitoring system can be designed to ensure the continuous
-performance of such a shield over time.
+along them. Additionally, a monitoring system can be designed to ensure the
+continuous performance of the electromagnetic shield over time.
 
 With the proper electromagnetic shield design, otherwise problematic signal
 processing equipment, like computers, can be operated inside the SCIF without
-concerns of leaking TEMPEST information. This saves the operator from having to
-block emanations at every using by using more expensive shielded equipment.
+concerns of leaking TEMPEST information to the outside. This saves the operator
+from having to buy more expensive, shielded equipment with the purpose of
+blocking emanations at the individual device level.
 
 ### Functional Principles
 
 There are multiple functional principles which electromagentic shields can
 utilize to block airborne waves. Faraday cages are the simplest and most well
-known type of electromagnetic shields. They make use of conductive material to
-distribute externally induced electric charges within the conductive material
-cancelling the charge's effects in the cage's interior. The cage can be imagined
-as two metal plates connected by an electric conductor. Because of the higher
-conductivity of within the material than in the surrounding air, the external
+known type of electromagnetic shield. They make use of conductive material to
+distribute externally induced electric charges within the material, cancelling
+the charge's effects in the cage's interior. The cage can be imagined as two
+metal plates connected by an electric conductor. Because of the higher
+conductivity within the material than into the surrounding air, the external
 field causes charges to migrate from one plate to the other instead of being
-wirelessly transmitted. This happens until there is no longer an electric field
-between the plates that could motivate charges to cross to the opposite plate.
-[@wolfsperger2008, p. 90]
+wirelessly transmitted. Migration of charges between plates happens until there
+is no longer an electric field between the plates that could motivate charges to
+cross to the opposite side. [@wolfsperger2008, p. 90]
 
-![Two short-circuited conductive plates functioning as a Faraday
-cage [@wolfsperger2008, p. 89]](images/faraday.png){height=40%}
+![Two Short-Circuited Conductive Plates Functioning as a Faraday Cage
+[@wolfsperger2008, p. 89]](images/faraday.png){height=40%}
 
-Like Faraday cages, dielectric shields can be used to shield electrostatic
-fields. They work by refracting electric field lines at the shield's boundary.
-An electric field line is "bent" toward boundary when transitioning from a
-material with a low dielectric constant, like air, to a material with a high
-dielectric constant, like mineral materials. A dielectric shield must have thick
-walls made of a material with a high permittivity in order to achieve
-appreciable shielding effectiveness. For technical shields, the shielding
-effectiveness of dielectric shields is orders of magnitude lower than that of a
-Faraday cage at the same cost. Therefore, in normal cases, the shielding of
-electric fields is always carried out using the principle of the Faraday cage.
-[@wolfsperger2008, pp. 93-94]
+Like Faraday cages, dielectric shields are used to block electrostatic fields.
+They work by refracting electric field lines at the shield's boundary,
+preventing them from entering the inside. They make use of the fact that an
+electric field line is "bent" toward the material boundary when transitioning
+from a material with a low dielectric constant, like air, to a material with a
+high dielectric constant, like a mineral material. For this effect to take
+place, a dielectric shield must have thick walls made of a material with high
+electromagnetic permittivity. For technical shields, the shielding effectiveness
+of dielectric shields is orders of magnitude lower than that of a Faraday cage
+at the same cost. Therefore, in normal cases the shielding of electric fields is
+preferably carried out using the Faraday cage principle. [@wolfsperger2008, pp.
+93-94]
 
-![Dielectric screen consisting of a thick-walled sheath with a high dielectric
-constant (permittivity) refracting electric field
-lines [@wolfsperger2008, p. 93]](images/dielectric.png){height=40%}
+![Dielectric Shield, Consisting of a Thick-walled Sheath with a High Dielectric
+Constant (Permittivity), Refracting Electric Field Lines [@wolfsperger2008, p.
+93]](images/dielectric.png){height=40%}
 
 Dimagentic shields are fully analog to dielectric shields, just that they
 function in the realm of magnetostatic fields instead of electrostatic fields.
-Magnetic field lines are refracted at the boundary between materials with
-different magentic permeability. The high permeability magnetostatic shield is
-much more important in practice than the dielectric shield. Since there is no
-physical effect equivalent to the Faraday cage for shielding static magnetic
-fields they present the only method of shielding static magnetic fields, like
-those emanating from electrical conductors carrying a direct current. They
-require high-permeability materials, such as pure iron, to provide effective
-shielding of both static and variable magnetic fields. [wolfsperger2008, pp.
-94-96]
+Instead of electric field lines, magnetic field lines are refracted at the
+boundary between materials with different magentic permeability. The high
+permeability magnetostatic shield is much more important in practice than the
+dielectric shield. Since there is no physical effect equivalent to the Faraday
+cage for shielding static magnetic fields they present the only method of
+shielding static magnetic fields, like those emanating from electrical
+conductors carrying a direct current. They must be built from high-permeability
+materials, such as pure iron, to provide effective shielding of both static and
+variable magnetic fields. [wolfsperger2008, pp. 94-96]
 
 The most useful functional principle for the electromagnetic shielding of SCIFs
 is the electrodynamic shield. It shields variable magnetic fields while also
-functioning as a Faraday cage. Variable magnetic fields induce electric currents
-which in turn cause eddy currents to pile up within the conductive material.
-These eddy currents cause magnetic fields that are directed against the external
-magnetic field and cancel it out. This effect grows stronger the higher the
-frequency of the variable magnetic field. The electrodynamic shield must be
-constructed of a highly conductive material with minimal openings. Therefore it
-coincidentally also works as a Faraday cage. An electrodynamic shield made of an
-ideally conductive shell without openings shields alternating electric and
-variable magnetic fields as well as DC electric fields. Luckily, shielding
-variable magnetic fields is of primary interest in SCIF building. Shielding
-against static magnetic fields is the absolute exception. [@wolfsperger2008, pp.
-100-102]
+functioning as a full Faraday cage. In the electrodynamic shield, variable
+magnetic fields induce electric currents which in turn cause eddy currents to
+pile up within the conductive material. These eddy currents cause magnetic
+fields that are directed against the external magnetic field and cancel it out.
+This effect grows stronger the higher the frequency of the variable magnetic
+field. The electrodynamic shield must be constructed of a highly conductive
+material with minimal openings. Therefore it coincidentally also works as a
+Faraday cage. An electrodynamic shield, made of an ideally conductive shell
+without openings, shields alternating electric and variable magnetic fields as
+well as DC electric fields. Forunately, shielding variable magnetic fields is of
+primary interest in SCIF building. Shielding static magnetic fields, on the
+other hand, is the absolute exception. [@wolfsperger2008, pp. 100-102]
 
 ### Materials
 
@@ -1167,98 +1177,100 @@ Brass | Good corrosion resistance, harder than copper | Low conductivity, very e
 Tin | Useful as alloy or corrosion protection | Too soft
 
 For electrodynamic shields, the conductivity of the material is most important.
-Permeability and dielectricity are secondary. The material must be installed
-with a minimum thickness, which can be derived mathematically from the
+Permeability and dielectricity are secondary. The conductive material must be
+installed with a minimum thickness, which can be derived mathematically from the
 penetration depth of the given frequency in the material. The greater the wall
-clearance between the perimeter walls, the higher the shielding effect.
-Homogeneous screens, those made of only one material, the performance of larger
-shields exceed those of smaller shields, because penetrating energy can be
-better distributed over a larger volume. As an example, 100 dB shielding
-effectiveness can be reached for a stainless steel shield with 1 m wall
-clearance and 2 mm thickness at the lowest generally usable radio frequency, 100
-kHz. [@wolfsperger2008, pp. 227-247]
+clearance between the perimeter walls, the higher the shielding effect. The
+performance of a larger electrodynamic shield also generally exceeds that of a
+smaller one, because penetrating energy can be better distributed over a larger
+volume. Taking these factors into account, an example shield made from stainless
+steel at the lowest generally usable radio frequency, 100 kHz, can reach 100 dB
+shielding effectiveness with a thickness of only 2 mm and a 1 m wall clearance.
+Shielding performance only increases the higher the radio frequency to be
+shielded. [@wolfsperger2008, pp. 227-247]
 
-![Electrodynamic shield in the offices of finnish IT security firm F-Secure
+![Electrodynamic Shield in the Offices of Finnish IT Security Firm F-Secure
 [@register]](images/f-secure.jpg){height=40%}
 
 The continuously electrically conductive connection of shielding materials is of
 utmost importance for the effectivity of the entire shield. Gaps of even half a
 wavelength in size can nullify the entire shield. Many materials have the
 propensity to build passive oxidation layers that protect them from further
-corrosion. These must be carefully removed when joining such materials in order
-to ensure electric conductivity. These stripped surfaces, as well as corrosive
-materials not covered by a passive layer, must be immediately covered by a
-protective coating upon installation as a component of the shield. This prevents
-the regeneration of the non-conductive passive layer or further corrosion in the
-case of corrosive materials. Another factor in the joining of materials,
-specifically materials with different electrode potential, is contact corrosion.
-When materials on opposite ends of the galvanic series are joined they can build
-a cathode-anode pair that results in the decay of both materials over time.
+corrosion. These must be carefully removed along the contact area when joining
+such materials in order to ensure electric conductivity. The stripped surfaces,
+as well as corrosive materials that not do not form a passive layer, must be
+immediately covered by a protective coating upon installation as a component of
+the shield. This prevents the regeneration of the non-conductive passive layer
+or further corrosion in the case of corrosive materials that don't form a
+passive layer. Another factor in the joining of materials, specifically
+materials with different electrode potential, is contact corrosion. When
+materials on opposite ends of the galvanic series are joined they can build a
+cathode-anode pair that results in the decay of both materials over time.
+Special care should be given not to combine these materials in use.
 [@wolfsperger2008, pp. 249-252]
 
 ### Joints and Gaskets
 
-The ideal methods for joining components ensuring consistently high,
-"watertight" conductivity are soldering and welding. Riveting or screwing are
-also effective as long as the distances are small compared to the relevant
-minimum wavelength. However, these ideal methods are not applicable to
-connections that need to be opened and closed over time, for example those found
-in a door. For such joints, there are different types of HF (high frequency)
-gaskets that can provide fully electrically conductive connections over long
-periods of use. [@wolfsperger2008, pp. 252-253]
+The ideal methods for joining shielding components, ensuring consistently high,
+"watertight" conductivity, are soldering and welding. Riveting or screwing are
+also effective as long as the distances between surfaces are small relative to
+the minimum wavelength. However, above methods cannot be applied to connections
+that need to be opened and closed over time, for example those found in a door.
+For such joints, there are different types of HF (high frequency) gaskets that
+can provide fully electrically conductive connections over long periods of use
+and many closing cycles. [@wolfsperger2008, pp. 252-253]
 
-![Different types of gaskets a) Contact feather, b) Wire mesh c) Elastomer
-gasket with conductive textile coating d) Conductive elastomer gasket
+![Different Types of Gaskets a) Contact Feather, b) Wire Mesh c) Elastomer
+Gasket with Conductive Textile Coating d) Conductive Elastomer Gasket
 [@wolfsperger2008, p. 267]](images/gaskets.png){height=40%}
 
 Contact feathers consist of stainless steel or copper beryllium, a highly
 elastic copper alloy, which is pressed against a conductive surface when the
 moving part is closed. The contact pressure enables excellent contact properties
 with low electrical resistance over long periods of time and many closing
-cycles. Contact feathers are self-cleaning, when pressing the contact springs
+cycles. Contact feathers are self-cleaning. When pressing the contact springs
 against the conductive surface, the spring grinds over the metal surface and
 removes any oxide layers or small dirt on both surfaces. On the other hand, they
 are highly susceptible to mechanical damage, require high contact pressure, have
 a low tolerance for deviating gap dimensions, offer no insulation against
-outside air, and come with a high price. [@wolfsperger2008, pp. 254-258]
+outside air, and come with a high price tag. [@wolfsperger2008, pp. 254-258]
 
 Wire mesh gaskets are made up of a stainless steel, copper beryllium, aluminum
-or monel, an alloy of approximately 65% nickel, 33% copper and 2% iron, mesh
-that is pressed against a conductive surface when the component is closed. They
-have good contact properties with low electrical resistance over long periods of
-times. They are very robust featuring low susceptibility to mechanical damage.
-Any passive oxidation layers are broken through by the individual wires when the
-contact pressure is applied. However, they also require very high contact
-pressures, have a low tolerance for deviating gap dimensions, offer no
-insulation against outside air, and come at a high price point. Furthermore,
-they have weaker self cleaning properties than contact feathers and require
-contact pressure to always be applied perpendicular to the gasket.
-[@wolfsperger2008, pp. 258-261]
+or monel mesh that is pressed against a conductive surface when the component
+is closed. They have good shielding properties with low electrical resistance over
+long periods of use. They are very robust, featuring low susceptibility to
+mechanical damage. Any passive oxidation layers are broken through by the
+individual wires when the contact pressure is applied. However, they also
+require very high contact pressures, have a low tolerance for deviating gap
+dimensions, offer no insulation against outside air, and come at a high price
+point. Furthermore, they have weaker self cleaning properties than contact
+feathers and only allow contact pressure to be applied perpendicular to the
+gasket. [@wolfsperger2008, pp. 258-261]
 
 Elastomer gaskets, both those consisting entirely of conductive material and
 those only covered by conductive textile, have generally weaker shielding
 properties than the above two gasket types. They sit between the moving part and
 its frame. Due to their elastic properties they are compressed by the closure
-and act as a conductor between them. They require lower contact pressures than
-contact feathers or wire mesh gaskets, have a higher tolerance for deviating gap
-dimensions, are very resistant to mechanical damage, insulate against outside
-air, and come at a very low price point. However, they do not have self-cleaning
-properties, don't counteract passive oxidation layers, and are less durable over
-time. [@wolfsperger2008, pp. 261-267]
+and act as a conductor between the two sides. They require lower contact
+pressures than contact feathers or wire mesh gaskets, have a higher tolerance
+for deviating gap dimensions, are very resistant to mechanical damage, insulate
+against outside air, and come at a very low price point. However, they do not
+have self-cleaning properties, don't counteract passive oxidation layers, and
+are less durable over time. [@wolfsperger2008, pp. 261-267]
 
 It is the designers job to weigh the different gaskets' strengths and weaknesses
-and select the ideal type for the individual SCIF and component.
+and select the ideal type for the individual SCIF and component part.
 
 ### Penetrations
 
 Electrical lines, data connections and control cables must all pass through the
 electromagnetic shield without degrading the shields performance or losing
-connection quality. HVAC vents/ducts and in some cases water pipes must carry
+connection quality. HVAC vents/ducts, and in some cases water pipes, must carry
 utilities in and out of the SCIF without degrading shielding performance or
-affecting throughput to an excessive degree. Screws for lights and other
-fixtures must also puncture the shielding without reducing its performance. All
-these different challenges require individual solutions that must be
-incorporated in the design from the outset.
+incurring excessive throughput losses. Screws for lights and other fixtures must
+also puncture the shielding without reducing its performance. All these
+different challenges require individual solutions that must be incorporated in
+the design from the outset.
 
 Electrical power lines should pass into the SCIF through a power line filter.
 This filter only allows the 50 Hz frequency of the power grid to pass through
@@ -1267,54 +1279,67 @@ to the wall shielding in order to make its shielding continuous with that of the
 room. Similar filters also exist for control lines. [@wolfsperger2008, pp.
 271-276]
 
-![Different mounting configurations of power line filters [@wolfsperger2008, p.
+![Different Mounting Configurations of Power Line Filters [@wolfsperger2008, p.
 276]](images/powerlinefilters.png){height=40%}
 
-Data lines are best passed through the electromagnetic shield by converting them
-to fiber optic cables using a media converter. Fiber optic cables not only
-enable very high data transmission rates, but they are also beneficial from a
-shielding perspective, since they are made entirely from non-conductive
-material. To eliminate electromagnetic leaks through the cable tunnel, they
-should be fed through hollow conductors whose cut-off frequency is sufficiently
-high or through special fiber optic grommets. The purpose-built grommets wrap
-tightly around the individual fiber optic cores leaving no gaps for even the
-highest-frequency leaking emanations. [@wolfsperger2008, p. 281]
+Data lines are best passed through the electromagnetic shield by first
+converting them onto fiber optic cables using a media converter. Fiber optic
+cables not only enable very high data transmission rates, but are also
+beneficial from a shielding perspective, since they are made entirely from
+non-conductive material. To eliminate electromagnetic leaks through the cable
+penetration, they should be fed through hollow conductors whose cut-off
+frequency is sufficiently high or through special fiber optic grommets. The
+purpose-built grommets wrap tightly around the individual fiber optic cores
+leaving no gaps for even the highest-frequency emanations to leak.
+[@wolfsperger2008, p. 281]
+
+Screws for affixing cable ducts, pipes, facing shells, claddings, suspended
+ceilings, radiators, etc. should only puncture the electromagnetic shield
+through special shielding anchor plates. These anchor plates are sheet metal
+disks that are attached to the room shielding over a large area with an RF
+gasket or highly conductive adhesive. They insure a larger contact area between
+the screw and shield, to couple them with as low an impedance as possible. This
+helps maintain continuous electrical conductivity, limiting the effect the hole
+has on the shield's overall performance. [@wolfsperger2008, pp. 334-335]
 
 Heating, ventilation, and air conditioning vents and ducts should incorporate
 honey comb panels at the protected space boundary. These make use of the fact
 that hollow conductors have high attenuation properties below their cut-off
 frequency. With sufficiently small hollow conductors the cut-off frequency can
-be raised to a point that almost all waves fall in this highly attenuating
-spectrum blow the cut-off freuqency. [@wolfsperger2008, p. 282-284] Due to their
-small hollow spaces honeycomb filters restrict air flow. They must be
+be raised to a point where almost all waves fall in its highly attenuating
+spectrum below the cut-off freuqency. [@wolfsperger2008, p. 282-284] Due to
+their small hollow spaces, honeycomb filters restrict air flow. They must be
 dimensioned with a sufficiently large cross-section area to supply the necessary
-air for all occupants and discharge an equivalent amount of exhaust air.
-Ventilation is absolutely necessary in SCIFs with airtight electromagnetic
-shields, otherwise there is a serious risk of suffocation for the occupants. As
-an example, a SCIF with 10 occupants requires ca. 360 m^3^/h of fresh air per
-hour. With a ventilation duct with a cross-section area of 0.1 m^2^ (30x30 cm)
-this results in a necessary air flow velocity of 3600 m/h = 1 m/s. Under these
-condtions, a 18 GHz honeycomb panel would cause a pressure loss of 0.1 mbar
-which would have to be compensated by the ventillation system. The same goes for
-the exhaust air side. [@wolfsperger2008, pp. 355-358]
+air for all occupants and discharge the equivalent amount of exhaust air on the
+other side. Ventilation is absolutely necessary in SCIFs with airtight
+electromagnetic shields, otherwise there is a serious risk of suffocation for
+the occupants. As an example, a SCIF with 10 occupants requires ca. 360 m^3^/h
+of fresh air per hour. For a ventilation duct with a cross-section area of 0.1
+m^2^ (30x30 cm) this results in a necessary air flow velocity of 3600 m/h = 1
+m/s. Under these condtions, a 18 GHz honeycomb panel would cause a pressure loss
+of 0.1 mbar which would have to be compensated by the ventillation system. The
+same goes for the exhaust air side. [@wolfsperger2008, pp. 355-358]
 
 Refrigerant lines and water pipes should be fed through purpose-built pipe
 penetrations as shown in @wolfsperger2008 Schematic 4.40 and 4.52. These enclose
 the tubes or pipes and ensure electrical conductivity around the circumference
 of the penetration.
 
-Designated heating and cooling of the room can be achieved using electrical
-heating fed through the line filter and a ductless minisplit units with all
-refrigerant and control lines fed through the shielding as described above.
+Controlled heating of the SCIF can be achieved using electrical heating fed from
+the power line filter. The SCIF can be cooled using a ductless mini-split unit
+with all refrigerant lines fed through purpose-built pipe penetrations, power
+lines fed through the power line filter, and control lines fed through a control
+line filter.
 
 A vapor barrier should be installed on both sides of the perimeter wall to
-protect it from moisture penetration by condensate. Especially with a mobile SCIF
+protect it from moisture penetration by condensate. Especially in a mobile SCIF
 unit, the vapor pressure gradient can alternate throughout the year. Sometimes
 transpiration and heating on the inside with simultaneous cold air conditions on
-the outside will cause moisture to diffuse from the inside to the outside, while
-AC on the inside with high temperatures and humidity on the outside (tropical
-conditions) will cause moisture to diffuse in the other direction. The wall
-should be protected from both cases. [@wolfsperger2008, pp. 358-360]
+the outside will cause moisture to diffuse from the inside to the outside,
+whereas other times AC on the inside with high temperatures and humidity on the
+outside (tropical conditions) will cause moisture to diffuse in the other
+direction. The wall should be protected from both cases. [@wolfsperger2008, pp.
+358-360]
 
 ### Safety
 
@@ -1338,17 +1363,17 @@ detector, would also be permanently installed on the outside of the room and
 connected to the input of the spectrum analyzer. During the first functional
 tests, when the system is determined to be effective, the spectrum analyzer
 would determine and store the frequency response of the shielded transmission.
-Each time the shielding is checked, the frequency spectrum would be determined
-again and compared with the stored values. If clear deviation from the reference
-are detected, the shielding would have to be checked for errors.
-[@wolfsperger2008, pp. 466-467]
+Each time the shielding is used, the frequency spectrum would be determined
+again and compared with the stored values. If clear deviations from the
+reference are detected, the shielding could be checked for malicious tampering
+or other damages. [@wolfsperger2008, pp. 466-467]
 
-![Shield monitoring system schematic [@wolfsperger2008, p.
+![Shield Monitoring System Schematic [@wolfsperger2008, p.
 467]](images/monitoring.png){height=40%}
 
 This system could help mitigate against sabotage and performance losses over
 time, which would otherwise only be detected by periodic shield attenuation
-measurements. Because of their high equipment and personnel costs these are
+measurements. Because of their high equipment and personnel costs, these are
 conventionally only conducted anually, if at all. Undetected leaks can therefore
 persist for long time periods and nullify the large effort that went into the
 planning and construction of the shield in the first place. Such a system is not
@@ -1363,10 +1388,11 @@ signals on the same radio frequencies as mobile phones and other wireless
 devices, disrupting the communication between the devices and their base
 stations, effectively disabling them within the range of the jammer.
 
-It is not possible to closely target these disruptive transmissions, as with
-sound masking, so they can interfere with the legitimate functioning of devices
-inside the SCIF and surround it. Because of this, they are illegal in the EU
-under Directive 1999/5/EC and in the US under the Communications Act of 1934.
+In contrast to sound masking, however, it is not possible to closely target
+signal jammers' disruptive transmissions. They can interfere with the legitimate
+functioning of devices inside the SCIF and surrounding it. Because of this, the
+use of signal jammers is illegal in the EU under Directive 1999/5/EC and in the
+U.S. under the Communications Act of 1934.
 
 ## Bug Sweeping
 
@@ -1377,21 +1403,22 @@ SCIF operators must check both for these devices and their exfiltration channels
 regularly to limit the effective window of a compromise. Tools for bug sweeping
 include spectrum analyzers, non-linear junction detectors, line analyzers, and
 lens finders. By carefully combining the use of these different tools it should
-be possible to locate active transmitters, passive transmitters, devices'
+be possible to locate any active transmitters, passive transmitters, devices'
 built-in semiconductor components, and compromises of installed lines.
 
 To detect active transmitters in the protected space it is necessary to make use
 of a spectrum analyzer. These devices are designed to capture and analyze
 wireless signals over a wide frequency range. They either come as benchtop
-devices used to collect the ambient spectrum over longer periods of time or as
-hand-held, near field devices to detect signals at their source. Benchtop
-devices scan the frequency spectrum within the protected space over hours or
-even days and then compare them to measurements of the surrounding environment,
-historical measurements, or reference values of that type of environment. By
-monitoring the frequency spectrum over long periods of time they are able to
-detect even the most sophisticated bugs, like caching bugs that store captured
-sensitive information temporarily and emit it only at defined intervals all at
-once.
+devices, used to collect the ambient spectrum over longer periods of time, or as
+hand-held, near field devices to detect signals at their source.
+
+Benchtop devices scan the frequency spectrum within the protected space over
+hours or even days and then automatically compare them to measurements of the
+surrounding environment, historical measurements, or reference values for that
+type of environment. By monitoring the frequency spectrum over long periods of
+time they are able to detect even the most sophisticated bugs, like caching bugs
+that store captured sensitive information temporarily and emit it only at
+defined intervals all at once.
 
 ![REI Oscor Blue Spectrum Analyzer](images/oscorblue.jpg){height=40%}
 
@@ -1399,7 +1426,7 @@ Hand-held, near field devices complement benchtop devices. They make use of
 different probes to locate surveillance devices at their source, for example
 when suspicious signals are detected on the benchtop analyzer and require
 further investigation. The different probes function at different frequency
-ranges, direction focuses, and sensitivities, each specialized to detect a
+ranges, directional focuses, and sensitivities, each specialized to detect a
 specific type of bug or exfiltration path. [@emshield]
 
 ![REI ANDRE Near-field Detection Receiver Probes and
@@ -1407,12 +1434,12 @@ Antennas](images/andre.jpg){height=40%}
 
 Passive transmitters, such as eavesdropping devices that are currently
 switched-off or not transmitting, and surveillance devices' semiconductor
-components can be detected using non-linear-junction detectors (NLJDs). NLJDs
+components can be detected using a non-linear-junction detector (NLJD). NLJDs
 detect the presence of electronics, regardless of whether they are radiating,
 hard wired, or even turned off. They detect physical properties, and not energy
-emissions. For this they make use of semi-conductor's inherent propertiy to
+emissions. To do this they make use of semi-conductor's inherent property to
 return a harmonic signature when radiated with RF energy. By means of a
-specially polarized antenna, the NLJD emits frequency in the range from 880 Hz
+specially polarized antenna, the NLJD emits frequencies in the range of 880 Hz
 to 2.4 GHz and simultaneously receives their respective harmonics, integer
 harmonic oscillations of the original frequency. For example, the second
 harmonic of 880 MHz is (1760 MHz; 880 x 2) and the third harmonic is 2640 MHz
@@ -1420,10 +1447,10 @@ harmonic of 880 MHz is (1760 MHz; 880 x 2) and the third harmonic is 2640 MHz
 component, then each semiconductor (transistor, diode, integrated circuit, etc.)
 causes a strong reflection of the second harmonic. By comparing the reflection
 of the second and third harmonic one can exclude false positives, like those
-resulting from non-electronic metal components which tend to reflect strongly
-on the third harmonic. NLJDs come in slim, hand-held, telescopic boom designs
-that allow them to extend to even the most difficult to reach places. The
-device's head is passed closely over walls, furniture, and other building
+resulting from non-electronic metal components which tend to also reflect
+strongly on the third harmonic. NLJDs come in slim, hand-held, telescopic boom
+designs that allow them to extend to even the most difficult to reach places.
+The device's head is passed closely over walls, furniture, and other building
 components and immediately alerts to any electronic components in its range.
 [@emshield]
 
@@ -1432,22 +1459,22 @@ Features](images/orion.jpg){height=40%}
 
 Line analyzers, like the REI TALAN, can be used to inspect and test analog,
 digital, and VoIP telephone lines and other wiring for taps and eavesdropping
-devices. Instead of listening to ambient noises in the room surveillance devices
-can also be placed directly on legitimate transmission lines to detect sensitive
-information. They can also hijack installed, fixed lines to exfiltrate
+devices. Instead of listening to ambient noises in the room, surveillance
+devices can also be placed directly on legitimate transmission lines to detect
+sensitive information. They can also hijack installed fixed lines to exfiltrate
 information without needing to transmit wirelessly or having to set up a custom,
-covert transmission line. Line analyzers combine multiple testing capabilities
-to detect malicious data transmissions over a fixed line or the source and
-location of any type of device "tapping" the line to capture information
-travelling on it. Test techniques include a digital multimeter to test lines for
-voltage, current, resistance, and incapacitance anomalies, frequency domain
-reflectometion (FDR) to check for impedance anomalies from taps on the line,
-non-linear junction detection to check for electronics connected to a wire,
-digital demodulation to confirm that a digital telephone line is not passing
-audio when it shouldn't, and a high-gain amplifier to detect analog audio being
-passed on a digital line. [@reiusa]
+covert transmission channel. Line analyzers combine multiple testing
+capabilities to detect malicious data transmissions over a fixed line or the
+source and location of any type of device "tapping" the line to capture
+information travelling on it. Test techniques include a digital multimeter to
+test lines for voltage, current, resistance, and incapacitance anomalies,
+frequency domain reflectometion (FDR) to check for impedance anomalies resulting
+from taps on the line, non-linear junction detection to check for electronics
+connected to a wire, digital demodulation to confirm that a digital telephone
+line is not passing audio when it shouldn't, and a high-gain amplifier to detect
+analog audio being passed on a digital line. [@reiusa]
 
-![REI TALAN 3.0 in use](images/talan.jpg){height=40%}
+![REI TALAN 3.0 in Use](images/talan.jpg){height=40%}
 
 Lens finders emit infrared signals in order to detect reflections coming from
 hidden camera lenses. When observed through a special view finder a room will
@@ -1460,8 +1487,8 @@ currently taking a picture. [@globaltscm]
 
 ![View through a WEGA-i Hidden Camera Finder](images/lensfinder.jpg){height=40%}
 
-All these detection devices must be used in concert by trained personnel in
-order to guarantee a maximum detection rate of hidden surveillance devices.
+Only through a careful combination of these different tools by trained personnel
+can a high detection rate of covert listening devices be guaranteed.
 
 For an initial impression on the equipment costs for these devices see this
 included price table:
