@@ -1,6 +1,6 @@
 # DIY SCIF
 
-This project aims to research prior art in the field of Secure Compartmentalized Information Facilities (SCIFs) and improve upon it. We seek to combine active and passive measures to drastically lower the cost of such facilities and package them in ready-made, shipping-container-sized modules.
+This project aims to research prior art in the field of Secure Compartmented Information Facilities (SCIFs) and improve upon it. We seek to combine active and passive measures to drastically lower the cost of such facilities and package them in ready-made, shipping-container-sized modules.
 
 ## Sections
 
