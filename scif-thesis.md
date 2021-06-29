@@ -1507,98 +1507,108 @@ Device | Cost
 
 Global logistics infrastructure is designed from the ground up for the 8 x 8.6 x
 20 ft dimensions of the standard shipping container. Building a SCIF inside
-these measurements allows it to be transported to any point on the globe
-discreetly, cheaply, and quickly. Shipping containers have become commodity
-goods, easy to procure and customise. Furthermore, they come with excellent
-structural properties that allow them to provide a high-level of physical
-security and load-bearing capacity. So called "high-cube" containers are another
-foot higher than the standard shipping container dimensions, with 9.6 ft height,
-providing ample headroom to install proper sound attenuation and ventillation.
-Using a shipping container to manufacture a standardized SCIF unit means
-building on a stable and highly reliable structure that is easily deployed and
-reused in any part of the world. [@logan_braun_2019]
+these confines allows it to be transported to any point on the globe discreetly,
+cheaply, and quickly. Shipping containers have become commodity hardware, easy
+to procure and customize. Furthermore, they come with excellent structural
+properties that allow them to provide a high-level of physical security and
+load-bearing capacity. So called "high-cube" containers are another foot higher
+than the standard shipping container dimensions, with 9.6 ft height, providing
+ample headroom to install proper sound attenuation and ventillation.  Using a
+shipping container to manufacture a standardized SCIF unit means building on a
+stable and highly reliable platform that is easily deployed and reused in any
+part of the world. [@logan_braun_2019]
 
 ![Outside View of SCIF Container Module with Doors
-Open](images/rendering_front_open.jpg){height=40%}
+Open](images/rendering_front_open.png){height=40%}
 
 ## Physical Security
 
 ### During Construction
 
-SCIF container units are factory-built under constant supervision by trusted
-personnel and video surveillance. Stationary manufacturing allows the careful
-control of production premises at all times. The use of long-term employees in a
-factory setting also makes the supervision of personnel according to the
-sections above much easier. The secure procurement, transporation, and storage
-of construction material is also made easier by the long-term stationary
-manufacturing infrastructure. Investments in thorough material testing
-procedures and equipment, like x-ray and ultrasonic, are also made more
-advantegous by the reuse of site infrastructure and higher production
-quantities. SCIFs are no longer bespoke units but become mass-produced commodity
-goods with all the production efficiencies that entails.
+The SCIF container modules should be factory-built under constant supervision by
+trusted personnel and video surveillance. Stationary manufacturing allows for
+more careful oversight of production premises and personnel access than
+constantly changing construction sites. The use of long-term employees is also
+easier in a stationary manufacturing setting than on globally distributed
+construction projects. The secure procurement, transporation, and storage of
+construction material is enhanced by long-term stationary manufacturing
+infrastructure. Investments in thorough material testing equipment and
+procedures, like x-ray and ultrasonic testing, are made more profitable by the
+reuse of site infrastructure and higher production quantities. As container
+modules, SCIFs are no longer bespoke units but mass-produced commodity items,
+with all the production efficiencies that entails.
 
 ### Intrusion Resistance
 
-Physical security is provided in multiple layers, pursuant to the principle of
+Physical security is provided in multiple layers pursuant to the principle of
 security-in-depth. The first line of defense is a controlled perimeter around
-the shipping container. This can be a security fense around the area in which
-the container SCIF is set up. The second line of defense is comprised of the
-shipping container's outer shell made from corrugated steel. This provides
-excellent intrusion resistance because it is essentially a steel cage around the
-actual SCIF unit. For this reason shipping container's located within a secure
-perimeter are also authorized as secure storage areas under the IC Tech Spec‐for
-ICD/ICS 705 [@ics-705-ts, p. 31]. The container doors are fastened with a Kossie
-Heavy Duty Container Locking System.  The third line of defense is the SCIF
-units inner core, made up of Knauf Diamant Steel drywall with a full steel sheet
-insert for additional stability and intrusion resistance. The Krieger Products
-RFI-60-STC-50 Pre-Engineered door does not come with special intrusion
-resistance properties, but instead servers the purpose of shielding the enclosed
-area, acoustically and electromagentically. In concert these different layers
-provide an intrusion resistance that far exceeds the requirements of the ICS
-705.
+the shipping container. For example, this can be a security fence around the
+area in which the container SCIF is set up.
+
+The second line of defense is comprised of the shipping container's outer shell
+made from corrugated steel. This shell provides excellent intrusion resistance.
+For this reason shipping container's located within a secure perimeter are also
+authorized as secure storage areas under the IC Tech Spec‐for ICD/ICS 705
+[@ics-705-ts, p. 31]. The outer shell is essentially a steel cage around the
+actual SCIF unit. The container doors are fastened with a Kossie Heavy Duty
+Container Locking System. The locking system fastens to the container's locking
+bars, creating a well-anchored connection between the two doors. A padlock is
+inserted into a bolt-cutter proof steel sleeve to secure the bracket.
 
 ![Kossie Heavy Duty Container Locking System](images/heavy_duty.png){height=40%}
+
+The third line of defense is the SCIF module's inner core, referred to in this
+paper as the "SCIF unit." Its perimeter is made up of Knauf Diamant Steel
+drywall, a unique drywall solution that features a full steel sheet insert for
+additional stability and intrusion resistance. A Krieger Products RFI-60-STC-50
+pre-engineered door is used to access the SCIF unit. It does not come with
+special intrusion resistance properties, but instead shields the enclosed area,
+both acoustically and electromagentically. In concert, these different layers
+provide an intrusion resistance that meets and exceeds the requirements of the
+ICS 705.
 
 ### Intrusion Detection System
 
 The intrusion detection system is comprised of three Bosch Commercial Series
 TriTech AM Motion Detectors with Anti-mask, two inside the SCIF area and one in
 the vestibule, two Bosch RADION contact SM high-security switches, one on the
-container door and one on the Krieger Products RFI-60-STC-50 inside the SCIF
+container door and one on the Krieger Products RFI-60-STC-50 door inside the SCIF
 area, and one Bosch ISN-SM Seismic detector inside the SCIF area hooked up to an
-Alertr open-source alarm system. The power supply is redundant with a designated
-12 V 18 Ah battery pack. The alarm system is disarmed from a Bosch B915 keypad
-located within the SCIF area. The operator has 60 seconds from the triggering of
-the HSS on the container door to the disarming of the system inside the SCIF
-space to avoid triggering an immediate alarm. Alarms are sent to client devices
-on multiple transmission channels (internet, GSM, radio). The Alertr system can
-also optionally transmit alarms and alerts to an external monitoring station.
+[Alertr open-source alarm system](https://alertr.de/). The power supply is
+redundant with a designated 12 V 18 Ah battery pack. The alarm system is
+disarmed from a Bosch B915 keypad located within the SCIF area. The operator has
+60 seconds from the triggering of the HSS on the container door to the disarming
+of the system inside the SCIF space to avoid triggering an immediate alarm.
+Alarms are sent to client devices on multiple transmission channels (internet,
+GSM, radio). The Alertr system can also optionally transmit alarms and alerts to
+an external monitoring station.
 
-It is preferrable to build on the Alertr open-source alarm system because of its
-free software licensing. This means source code is publicly available and can be
-copied, extended, and modified freely. This system enjoys a higher degree of
-trustworthiness and maintenance than many of the commercial, proprietary
-solutions. It can be easily adapted to the individual requirements of this
-project and doesn't make the user dependent on one manufacturer for new features
-and maintenance.
+It is preferrable to build on the Alertr open-source alarm system over
+conventional, proprietary solutions because of Alertr's free software licensing.
+This means source code is publicly available and can be copied, extended, and
+modified freely. Alertr thereby enjoys a higher degree of trustworthiness and
+maintenance than many of the commercial, proprietary solutions. It can be easily
+adapted to the individual project requirements and doesn't create dependencies
+on the manufacturer for new functionality and support.
 
-![SCIF Entrace Door from Inside with High-Security Switch, Motion Sensor, and
-Air Duct](images/rendering_inside2.png){height=40%}
+![Entrance Door from Inside the SCIF Unit with High-Security Switch, Motion
+Sensor, and Air Duct](images/rendering_inside2.png){height=40%}
 
 ### Access Control
 
-Access control, if necessary to control high-traffic in and out of the SCIF
-during use, can be best implemented with an HID® pivCLASS® Authentication
-system. Unlike the conventional Wiegand authentication cards this system makes
+Access control, if necessary to control high personnel traffic in and out of the
+SCIF during use, can best be implemented with an HID® pivCLASS® authentication
+system. Unlike the conventional Wiegand authentication cards, this system makes
 use of Personal Identity Verification (PIV) public-key authentication. Unlike
-with Wiegand, cards can not easily be cloned to perform replay attacks on the
-card reader [@howson]. The HID® pivCLASS® can make use of the FIPS-certified
-YubiKey 5 with built-in PIV smart card as one of two authentication factors, the
-other one being a PIN. Smart card and PIN are used together to authenticate on a
-HID® pivCLASS® RK40 reader which transmits information to the pivCLASS®
-Authentication Module, which unlocks and locks the door via a HID® EDGE EVO® Solo
-ESHRP40-K standalone door controller. The door is equipped with a positive
-engagement electronic strike lock and a Securitron door contact. [@chapman]
+Wiegand cards, PIV smartcards can not easily be cloned to perform replay attacks
+on the card reader [@howson]. The HID® pivCLASS® can make use of the
+FIPS-certified YubiKey 5 with built-in PIV smart card as one of two
+authentication factors, the other one being a PIN. Smart card and PIN are used
+together to authenticate on a HID® pivCLASS® RK40 reader which transmits
+information to the pivCLASS® Authentication Module, which unlocks and locks the
+door via a HID® EDGE EVO® Solo ESHRP40-K standalone door controller. The door is
+equipped with a positive engagement electronic strike lock and a Securitron door
+contact. [@chapman]
 
 ![Entrace to SCIF Area with ACS Card Reader, CCTV Camera, Krieger Products
 RFI-60-STC-50 Door, and Bosch TriTech Motion
@@ -1606,12 +1616,12 @@ Sensor](images/rendering_frontdoor.png){height=40%}
 
 ### Locks
 
-The second intrusion resistance layer, the shipping container, is lock using a
-Kossie Heavy Duty Container Locking System and an ABLOY PL362 CEN Grade 6
-Maximum Security Padlock. The PL362 is commonly considered one of the most
+The second intrusion resistance layer, the shipping container shell, is locked
+using a Kossie Heavy Duty Container Locking System and an ABLOY PL362 CEN Grade
+6 Maximum Security Padlock. The PL362 is commonly considered one of the most
 secure padlocks in the world [@lockpickinglawyer]. The third layer of defense,
-the actual SCIF unit perimeter, is secured a Krieger RFI-60-STC-50
-Pre-engineered door equipped with a Kaba Mas DKXL-10 FF-L-2890C locking device.
+the actual SCIF unit perimeter, is secured by a Krieger RFI-60-STC-50
+pre-engineered door equipped with a Kaba Mas DKXL-10 FF-L-2890C locking device.
 
 ![Kaba Mas DKXL-10High Security Pedestrian Door Lock FF-L-2890C Type
 II](images/dkxl-10.jpg){height=40%}
@@ -1619,27 +1629,26 @@ II](images/dkxl-10.jpg){height=40%}
 ### CCTV
 
 Video surveillance for security and record-keeping purposes is accomplished with
-an open-hardware/software Elphel NC393-F-CS camera and a ZoneMinder control
-station. The control station makes use of offsite storage to protect video
-footage from accidental loss or manipulation. All components are installed
-external to the SCIF as specified in @ics-705-ts, p. 75. The camera is installed
-without a view of classified information when the door is open nor external
-control pads or access control components that would enable the viewer to
-identify PINs.
+an open-hardware/software system made up of an Elphel NC393-F-CS camera and a
+ZoneMinder control station. The control station makes use of off-site storage to
+protect video footage from accidental loss or manipulation. All components are
+installed external to the SCIF as specified by @ics-705-ts, p. 75. The camera is
+installed without a view of classified information or external control
+components that would enable the viewer to identify PINs and access procedures.
 
 Alternatively to the Elphel NC393-F-CS, trustworthy commercial camera equipment
 like a Bosch Flexidome 7000i can also be used, though open software and hardware
-is preferred for reasons as stated above in [section
+are preferred for reasons as stated in [section
 7.3.2](#intrusion-detection-system-1).
 
 ## Visual
 
-Visual protection for the SCIF space is achieved by a continuous perimeter
+Visual protection of the SCIF unit is achieved by a continuous drywall perimeter
 without holes or gaps. Windows are excluded from the design. On top of entailing
 serious information security risks, as detailed in [section 6.2](#visual-3),
-they also endanger a container's seaworthiness. This jeopardizes the significant
-advantages in mobility of a SCIF container unit.  The container unit also
-includes a vestibule area to protect from visual insight into the SCIF and
+they also endanger a container's seaworthiness. This would jeopardize the
+significant mobility advantages of a SCIF container unit. The container unit
+also includes a vestibule area to protect from visual insight into the SCIF and
 access procedures during personnel entry. The entry CCTV camera is mounted so as
 to not provide direct insight into the SCIF during personnel entry. No other
 video cameras are installed or allowed inside the SCIF container.
@@ -1649,72 +1658,85 @@ Area](images/scif_crosssection_long.jpg){height=40%}
 
 ## Sound
 
-Sound attenuation is achieved by a three-fold approach. The first layer of
-defense is a heavily attenuating wall, floor, and ceiling construction, drawing
-upon standardized and proprietary components. Air vents are muffled by a SCHAKO
-AUDIX® cross-talk sound attenuator. The Krieger RFI-60-STC-50 door offers strong
-passive sound attenuation, however remains one of the weakest parts in the
-passive sound attenuation system.
+Sound attenuation is achieved by a three-layer approach, the first layer of
+defense being a heavily attenuating wall, floor, and ceiling construction with a
+sound-attenuating door and muffled vents.
 
-The walls utilize the Knauf W115-75Y6-10 drywall system, which comes with a
-certified sound attenuation level of R~w~ 73.2 dB [@knauf, p. 14]. All corners
-and joints are carried out to manfucaturer specifications. According to the
-manufacturer specifications, this wall system has a slightly weaker sound
-attenuation performance in the low-frequency range [@knaufacoustics, p. 18].
-This frequency range is especially relvant for the tranmissions of the human
-voice, as detailed in [section 4.2](#acoustic-2). For this reason, a
-supplemental noise reduction system is included as a second layer of defense,
-which specifically addresses this frequency range.
+The wall, floor, and ceiling constructions draw upon DIN standardized and
+Knauf-manufactured, proprietary components. The walls are built with the Knauf
+W115-75Y6-10 drywall system, which comes with a certified sound attenuation
+level of R~w~ = 73.2 dB [@knauf, p.  14]. All corners and joints are carried out
+to manfucaturer specifications.  According to the manufacturer documentation,
+this wall system has a slightly weaker sound attenuation performance in the
+low-frequency range [@knaufacoustics, p. 18]. This frequency range is especially
+relvant for the tranmissions of the human voice, as detailed in [section
+4.2](#acoustic-1). For this reason, a supplemental sound masking system is
+included as a second layer of defense which specifically addresses this
+frequency range.
 
-The floor is constructed to the DIN 4109-33 specifications for wooden beam
-ceilings with suspended ceilings on spring rails in section 4.3.1.4.3
+The floor is constructed to the DIN 4109-33 specifications for "wooden beam
+ceilings with suspended ceilings on spring rails" in section 4.3.1.4.3
 [@din4109-33, p. 45]. The standard width of ca. 390 mm is slightly reduced to
-370 mm, in order to leave more headroom for occupants. The width is taken from
+370 mm in order to leave more headroom for occupants. The width is taken from
 the cavity between the wood-based panel and the cavity damping. This component
 comes to a weighted sound reduction index of R~w~ = 70 dB and a horizontal sound
 transmission attenuation of D~n,f,w~ = 67 dB [@din4109-33, p. 68].
 
 ![DIN 4109-33 Floor Makeup and R~w~](images/din4109-33_floor.png){height=40%}
 
-The ceiling is constructed to the DIN 4109-33 specifications for wooden beam
-ceilings with suspended ceilings in section 5.3.1.1. It is made up of a ceiling
+The ceiling is constructed to the DIN 4109-33 specifications for "wooden beam
+ceilings with suspended ceilings" in section 5.3.1.1. It is made up of a ceiling
 cladding with a spring rail, a subfloor and planking interrupted by the drywall,
-and two-layer ≥ 2x 12.5 mm GWB, with full-surface mineral wool layer ≥ 50 mm.
+and two-layer ≥ 2x 12.5 mm GWB, with a full-surface mineral wool layer ≥ 50 mm.
 The partition wall is perpendicular to the ceiling joists. The soft stud
-compartments are fully insulated. This ceiling makeup has a width of ca. 150 mm.
-The resulting headroom between ceiling and floor comes out to a relatively
-compfortable 213 cm.
+compartments are fully insulated. This ceiling makeup has a width of ca. 150 mm
+and a sound attenuation of R~w~ = 67 dB. [@din4109-33, p. 68] The resulting
+headroom between ceiling and floor comes out to a relatively compfortable 213
+cm.
 
-When entering this system into the Knauf online soundproofing calculator tool we
-attain a resulting R'~w~ of 63 dB, far exceeding the acoustic requirements set
-up in [section 4.2](#acoustic-2). See the [calculation
-report](sources/knaufssrresult.pdf) for more information. The entrance door of
-course decreases this overall performance, however the included vestibule should
-reduce the door's performance impact while the container doors are closed.
+When entering this system into the Knauf online soundproofing calculator, a
+resulting R'~w~ = 63 dB is calculated, far exceeding the acoustic requirements
+set forth in [section 4.2](#acoustic-2). See the [calculation
+report](sources/knaufssrresult.pdf) for more information.
 
-Another weak part in the sound attenuating shell are the air vents. The SCHAKO
-AUDIX® box only provides a sound attenuation of R~w~ = 38 dB. Although the air
-fans serve to aid in masking the sound waves, the air vents remain the weakest
-link in the sound attenuation system. They must be carefully treated with
-additional sound masking measures measures.
+The Krieger RFI-60-STC-50 door "only" provides sound attenuation corresponding
+to STC 50. Although this is on the higher end of the door sound attenuation
+performance range, it nevertheless degrades the overall performance of the
+system. The front SCIF unit wall has a relatively small surface area compared to
+the door, so any performance losses in the door disproportionately affect the
+overall performance of the wall. For this reason, the entrance door also
+decreases the overall performance of the system. However, the included vestibule
+(with sound masking speakers) should reduce the door's overall performance
+impact, provided the container doors are closed during use.
+
+The air vents constitute another weak point in the sound attenuating shell. They
+are muffled by SCHAKO AUDIX® cross-talk attenuator boxes on the intake and
+exhaust side. They use a galvanised sheet steel and an internal lining of
+special insulating plates to form a deflection labyrinth for sound attenuation.
+They are best-in-class for form factor relative to performance, however, they
+still only provide a sound attenuation of R~w~ = 38 dB. Although the inline fans
+aid in breaking/masking the sound waves, the air vents remain the weakest link
+in the sound attenuation system. They must be carefully treated with additional
+sound masking measures.
 
 The second layer of defense is a 12 cm gap between the SCIF perimeter drywall
 and the container shell. Sound masking speakers are mounted inside this gap, as
-well as in the front vestibule, to drown out any remaining sound waves that
+well as in the front vestibule, to drown out any residual sound waves that
 escape the SCIF space. Heavy contact emitters are placed on air vent
 breakthroughs in the gap area to render useless residual sound not attenuated by
-the cross-talk sound attenuator. The sound masking speakers, as well as the
-heavy contact emitters, are fed by a SpeechMasking 8-channel fixed installation
-generator using the highly-advanced M2 algorithm.  The M2 algorithm uses the
-natural-sounding voice spectrum for maximum effectiveness as detailed in
-[section 6.3.2](#sound-masking).
+the cross-talk sound attenuator boxes. The sound masking speakers, as well as
+the heavy contact emitters, are fed by a SpeechMasking™ 8-channel fixed
+installation generator using the highly-advanced M2 algorithm. The M2 algorithm
+uses the natural spectrum of the human voice for maximum effectiveness as
+detailed in [section 6.3.2](#sound-masking).
 
-The third layer of defense is the container shell. It does not factor into the
-above calculations, but undeniably has a positive impact on overall sound
-attenuation. Corrugated steel is relatively heavy and has vastly different
+The third layer of defense is the container shell itself. It does not factor
+into the above calculations, but undeniably has a positive impact on overall
+sound attenuation. Corrugated steel is relatively heavy and has vastly different
 vibration characteristics than drywall. The double-shell drywall is thus
-extended from a classic double-shell system to a "double-shell-plus" system,
-with even better acoustic protection.
+extended from a classic double-shell system, as described in [section
+6.3.1](#sound-attenuation), to a "double-shell-plus" system, with even better
+acoustic protection.
 
 ![SCIF Floor Plan Showing the Multiple Sound Attenuation
 Layers](images/scif_floorplan.jpg){height=40%}
@@ -1722,8 +1744,8 @@ Layers](images/scif_floorplan.jpg){height=40%}
 These three layers together provide sound attenuation that far exceeds the
 provisions of the IC Tech Spec‐for ICD/ICS 705 [@ics-705-ts]. An exact
 measurement for the sound attenuation performance, however, cannot be calculated
-theoretically because of the complex and bespoke nature of this SCIF unit.
-Instead accurate values must be determined empirically through practical tests
+theoretically because of the complex and novel nature of this SCIF module.
+Instead, accurate values must be determined empirically through practical tests
 on a prototype.
 
 ## Electromagnetic/TEMPEST
@@ -1741,24 +1763,25 @@ possible electrical conductivity. Stainless steel plates are not treated against
 corrosion, because this has no added benefit and can worsen electrical
 conductivity. A paint job is applied atop the wall plates for optical reasons.
 
-The Krieger RFI-60-STC-50 door provides at least 60 dB shielding performance
-electric field and plane wave energy from 1 kHz through 18 GHz. It is connected
+The Krieger RFI-60-STC-50 door provides at least 60 dB shielding performance for
+electric field and plane wave energy between 1 kHz and 18 GHz. It is connected
 to the wall with an RF Wiremesh seal which also provides at least 60 dB
-shielding effectiveness. No other moving parts are planned into the SCIF design.
+shielding effectiveness. No other moving parts are included in the SCIF design.
 
 ![Inside SCIF Area with AC Unit, Ventillation Duct, Motion Sensor, and Server
 Rack](images/rendering_inside.png){height=40%}
 
 Electric power lines supply the SCIF space through a Holland Shielding Systems
-compact high performance power line filters for shielded rooms 8020-2-16. It is
-mounted to the shielding material as specified in [section
-6.4.4](#penetrations). Control lines for the AC unit and access control system
-penetrate the electromagentic shield through a Holland Shielding Systems signal
-line filter 8090-2-16-100 kHz also mounted to the attenuating shell. Data lines
-are converted to optical fibre before passing out of the SCIF space through
-special hollow conductors. Optionally, data connections are encrypted to a
-secure exit node over a VPN uplink. Footage from the surveillance camera is
-transmitted over an external data uplink and made accessible inside the SCIF
+compact high performance power line filter model 8020-2-16. It is mounted to the
+shielding material as specified in [section 6.4.4](#penetrations). Control lines
+for the AC unit, access control system, and intrusion detection system are fed
+through rigid conduit and penetrate the electromagentic shield through a
+Holland Shielding Systems signal line filter model 8090-2-16-100, also mounted
+to the attenuating shell. Data lines are converted to optical fibre before
+passing out of the SCIF space through special hollow conductors. Optionally,
+data connections are encrypted to a secure exit node over an encrypted VPN
+uplink. Footage from the surveillance camera is transmitted over an external
+data uplink to the ZoneMinder system, which is made accessible inside the SCIF
 over the shielded data uplink.
 
 Refrigerant lines for the AC unit are fed through purpose-built pipe
@@ -1770,12 +1793,13 @@ through special shielding anchor plates.
 Unit](images/scif_floorplan2.jpg){height=40%}
 
 Air ventillation is accomplished with a 200 x 200 mm duct system with four
-outlets. Ducts are treated with 18 GHz honeycomb filters on both the exhaust and
-supply side. These filter panels, along with the cross-talk sound attenuation
+outlets. Ducts are treated with 18 GHz honeycomb filters on both the intake and
+exhaust side. These filter panels, along with the cross-talk sound attenuation
 boxes, cause pressure losses that must be compensated by inline fans. Heating
-and cooling is achieved with a ductless mini split AC unit fed from the power
-line filter internally and a separate power connection externally. Vapor
-barriers are installed on both sides of the drywall.
+and cooling is achieved with a ductless mini split AC system, whose inside unit
+is fed from the power line filter and outside unit is fed from a separate
+external power connection. Vapor barriers are installed on both sides of the
+drywall.
 
 An electromagnetic shielding monitoring system according to [section
 6.4.6](#shielding-system-function-monitoring) is designed and manufactured to
@@ -1789,9 +1813,9 @@ assumptions hold up.
 ## Bug Sweeping
 
 Thorough bug sweeping using state-of-the-art REI equipment is conducted on all
-construction milestones and before SCIF commission. Additionally, bug sweeps are
-carried out quarterly throughout the SCIF's operational life and when any
-indications give rise to the suspicion that SCIF security has been breached.
+construction milestones and before SCIF commissioning. Additionally, bug sweeps
+are carried out quarterly throughout the SCIF's operational lifecycle and when
+any indications give rise to the suspicion that SCIF security has been breached.
 
 # Conclusion
 
