@@ -17,7 +17,7 @@ abstract: |
     Note, this paper is limited in scope to constructive and technical measures
     and does not focus on IT or organizational security measures, like
     encryption, security-related review/monitoring of employees, and
-    classification levels. It also does not dwell on specific countries
+    classification levels. It also does not dwell on specific countries'
     bureaucratic protocols, but instead aims to present a unified picture of the
     global state of the art and an outlook on future improvements.
 csl: resources/iso690-author-date-en.csl
@@ -32,7 +32,7 @@ different shapes and sizes, each designed for a specific mission demand. They
 can be installed permanently in buildings, aboard aircraft or naval vessels,
 designed as mobile units or set up temporarily. What unites all SCIF variants is
 the common goal of creating a designated space with rigorous security practices
-that thwarts all relevant passive outside observers and active attackers.
+that thwart all relevant passive outside observers and active attackers.
 
 SCIFs are by no means exclusive to U.S. government institutions. They are used
 internationally by a wide range of actors, from other governments to
@@ -168,8 +168,8 @@ equipment_](https://greatscottgadgets.com/hackrf/one/). Although execution is
 fast, reconnaissance, planning and setup, especially for well-protected
 facilities, can entail significant time expenditure.
 
-![Display of One Monitor Reproduced on Another Using its TEMPEST Emanations and
-a $40 Software Defined Radio + Antenna Setup
+![Display of a Monitor Reproduced on another Using its TEMPEST Emanations and a
+$40 Software Defined Radio + Antenna Setup
 [@rtl-sdr]](images/tempest.jpg){height=40%}
 
 Table: Passive Attack Techniques Overview - Electromagnetic
@@ -199,7 +199,7 @@ as much as possible.
 ## Acoustic Attenuation
 
 Acoustic emissions must be reduced by at least a weighted sound reduction index
-of R'~w~ = 53 dB. This measure roughly corresponds to the Sound Transmission
+of $R'_w$ = 53 dB. This measure roughly corresponds to the Sound Transmission
 Class 50 listed in the IC Tech Spec‐for ICD/ICS 705 as an enhanced rating for
 areas that provide for amplified conversations [@ics-705-ts, p. 66]. We use this
 as a general minimum measure, because the IC Tech Spec is geared towards
@@ -213,34 +213,34 @@ the probability of detection of nefarious activity because of continuous
 friendly-forces presence [@ics-705-ts, p. 3]. These conditions cannot be
 guaranteed for all locations, especially in the corporate realm, so the goal is
 to compensate reduced SID with a higher degree of sound insulation. When
-possible, R'~w~ = 53 dB should be exceeded.
+possible, $R'_w$ = 53 dB should be exceeded.
 
-R'~w~ represents the resulting sound insulation between two rooms, taking into
+$R'_w$ represents the resulting sound insulation between two rooms, taking into
 account all sound transmission paths [@tichelmann2000, p. 26]. This explicitly
 includes not only transmission through dividing components, but also so-called
 "flank transmission" over adjoining building components. In this phenomenon,
 sound waves cause vibrations in flanking walls and then linearly travel through
-them into the other room [@moeser2009, p. 254]. R'~w~ is a cummulative value
+them into the other room [@moeser2009, p. 254]. $R'_w$ is a cummulative value
 calculated on the basis of the weighted sound reduction index of each
-component's R~w~ [@tichelmann2000, p. 34].
+component's $R_w$ [@tichelmann2000, p. 34].
 
-R~w~ is calculated by measuring sound transmission from one test cabin into
+$R_w$ is calculated by measuring sound transmission from one test cabin into
 another with the test component in between them. The test is carried out in
 one-third octave or octave steps. White noise, a random signal with equal
 intensity across different frequencies, with the given bandwidth is used as test
-sound. A frequency response curve R is thus obtained in the so-called
+sound. A frequency response curve $R$ is thus obtained in the so-called
 building-acoustics frequency range from 100 Hz and 3.15 kHz. The frequency
-response curve R is then compared to a reference curve B in order to derive a
-single comparison value. In the comparison, the reference curve is shifted in 1
-dB steps onto the frequency response curve until the sum of the undershoots S~U~
-of the frequency response curve compared to the reference curve is less than 32
-dB. [@moeser2009 pp. 256-257]
+response curve $R$ is then compared to a reference curve $B$ in order to derive
+a single comparison value. In the comparison, the reference curve is shifted in
+1 dB steps onto the frequency response curve until the sum of the undershoots
+$S_U$ of the frequency response curve compared to the reference curve is less
+than 32 dB. [@moeser2009 pp. 256-257]
 
-![Definition of the Weighted Sound Reduction Index R~w~. B = Reference Curve,
-B~v~ = Shifted Reference Curve, M = Measured Values, U = Undershoots of M
-Compared to B~v~ [@goesele2004]](images/schalldämmmaß.png){height=40%}
+![Definition of the Weighted Sound Reduction Index $R_w$. $B$ = Reference Curve,
+$B_v$ = Shifted Reference Curve, $M$ = Measured Values, $U$ = Undershoots of $M$
+Compared to $B_v$ [@goesele2004]](images/schalldämmmaß.png){height=40%}
 
-This diagramm also shows that for a R~w~ = 52 dB (the reference curve) the
+This diagramm also shows that for a $R_w$ = 52 dB (the reference curve) the
 fundamental frequency of the male voice - 125 Hz - only undergoes a sound
 attenuation of ca. 35 dB. Given a 60 dB conversation sound-level the sound
 attenuation is not sufficient to protect from a close proximity attacker.
@@ -254,7 +254,7 @@ reduce sound insulation [@din4109-1, p. 19]. In some cases they can even provide
 direct channels for an outside observer to capture sound on [@ics-705-ts, p.
 13]. Hence, they must be treated with special attention. A mistake on a
 component penetrating the SCIF perimeter, like a duct or vent, can render
-useless all other attenuation.
+all other attenuation useless.
 
 ## Electromagnetic/TEMPEST Shielding Requirements
 
@@ -324,7 +324,7 @@ HVAC ducts, or drilled through the perimeter.
 Another attack avenue is taking over installed CCTV cameras. The video feed from
 these cameras could allow insights into the SCIF's comings and goings, and, with
 badly placed cameras, even into the information processed. This attack can also
-target the built-in cameras of information processing equiptment like laptops.
+target the built-in cameras of information processing equipment like laptops.
 
 Cameras transmit video feeds to the outside using radio/electromagnetic waves or
 wired connections. Wired connections could be specially installed for the attack
@@ -340,16 +340,16 @@ Hijacking Existing Camera | low | medium | high
 
 ## Acoustic Attacks
 
-An attacker may also attempt to place a microphone in the SCIF. To do this he
+An attacker may also attempt to place a microphone in the SCIF. To do this, he
 can either physically insert a new microphone or hijack one of the built-in
 microphones of devices already located in the room. Acoustic information is
 usually most sensitive, especially in conference rooms or discussion areas.
 
 Similar to visual attacks, avenues for placing a microphone are physical entry,
-HVAC ducts, and hole drilling. In order to exfiltrate information the attacker
-again utilizes either radio/electromagnetic waves or wired connections, existing
-or specially placed. Another attack is finding a weak spot in the sound
-attenuating shell and placing a contact microphone directly on it.
+HVAC ducts, and hole drilling. In order to exfiltrate information, the attacker
+again utilizes either radio/electromagnetic waves or wired connections,
+existing or specially placed. Another attack is finding a weak spot in the
+sound attenuating shell and placing a contact microphone directly on it.
 
 ![Contact Microphone Gutzeit GmbH](images/contactmicrophone.jpg){height=20%}
 
@@ -446,7 +446,7 @@ that is certified to do so, through, for example, the ISO/IEC 27001 standard.
 Video surveillance during the construction phase can also help supplement
 monitoring efforts when CSTs are not available. However, video surveillance is
 not a magic silver bullet. It requires constant attention and responsiveness,
-just like any non-technological security measure.  Threats from construction
+just like any non-technological security measure. Threats from construction
 personnel can also further be mitigated by careful inspection after each
 construction phase's completion, as well as [_bug sweeping_](#bug-sweeping) and
 performance testing before commissioning of the SCIF.
@@ -481,7 +481,7 @@ supervise non-U.S. and non-cleared U.S. guards, as well as to directly protect
 the site in high-threat, SETL Category I countries. No equivalent to CAGs exists
 in the private sector. Their loyalty is impossible to recreate for a private
 actor who can't offer the same long-term employment guarantees and ideoligical
-motivation.  However, guards with a similar training level can be sourced from
+motivation. However, guards with a similar training level can be sourced from
 private suppliers and with organizational practices, like close supervision and
 vetting, an adequate level of security can be ensured.
 
@@ -505,7 +505,7 @@ site. Non-inspectable materials should be procured from trusted suppliers or
 other approved channels and securely transported to the SSA. They can also be
 procured from untrusted suppliers if randomly chosen by trusted personnel from a
 suppliers shelf-stock without advance notice or indication of their intended
-use.  No discernible purchasing patterns should be established while carrying
+use. No discernible purchasing patterns should be established while carrying
 out this randomized procurement procedure. [@ics-705-ts, pp. 27-29]
 
 Secure transporation is not required for inspectable materials if they are
@@ -590,7 +590,7 @@ removal of the door, e.g. welded or affixed with set screws. [@ics-705-ts, pp.
 
 The IC Tech Spec‐for ICD/ICS 705 requires a maximum response time of 15 minutes
 [@ics-705-ts, p. 14]. Assuming that the door should resist entry for the entire
-alarm response time, i.e. an attacker should be captured before he breaches the
+alarm response time, i.e., an attacker should be captured before he breaches the
 door, this requirement roughly translates to DIN EN 1627 Resistance Class 5. RC
 5 entails that an experienced attacker using hand tools, power tools, such as a
 drill, jigsaw or reciprocating saw and an angle grinder with a maximum disc
@@ -625,12 +625,12 @@ protected by IDS. Special attention should be given to detecting and responding
 to system outages and tampering. Limiting false alarms to a maximum of one per
 30 days further ensures the reliability and effectiveness of the system, as too
 many false alarms cause fatigue and desensitization of security personnel. The
-IDS should be stand-alone, i.e. independent of other facilities' alarm systems.
+IDS should be stand-alone, i.e., independent of other facilities' alarm systems.
 It can be supplemented with [_audio or video monitoring_](#cctv), as long as
 special attention is given not to inadvertently compromise the SCIFs information
 security as explained later on in [_section 6.1.6_](#cctv). [@ics-705-ts, p. 53]
 
-All components, i.e. the monitoring station, movement sensors, high security
+All components, i.e., the monitoring station, movement sensors, high security
 switches (HSS), premise control unit (PCU), and keypads should meet the
 internationally recognized Underwriters Laboratories (UL) Standards 2050, 639,
 634, 1610 and/or 294, respectively. The UL, being an independent, international
@@ -642,7 +642,7 @@ The IDS should allow for operating in access, secure, maintenance, and
 shunted/masked mode. Access mode is used during SCIF operation and should allow
 for normal entry without causing an alarm. Tampering or entry through a
 secondary point, like emergency exits, should continue to trigger an immediate
-alarm. Secure mode is used when the SCIF is unoccupied, i.e. the last person
+alarm. Secure mode is used when the SCIF is unoccupied, i.e., the last person
 departs the SCIF. In secure mode, any unauthorized entry into the SCIF should
 cause an alarm to be immediately transmitted to the monitoring station.
 Maintenace mode is used during routine repairs and testing on the system. A
@@ -721,7 +721,7 @@ three out of every four trials. HSS should be tested to ensure that an alarm
 activates before the non-hinged side of the door or window opens beyond its own
 thickness from the closed position. For example, this means that the HSS
 triggers an alarm before the door opens 5 cm for a 5 cm door. Tamper testing
-should be carried out by ensuring that alarms are triggered when IDS equiptment
+should be carried out by ensuring that alarms are triggered when IDS equipment
 covers are opened, both in secure and access mode. These test procedures should
 be repeated at least semi-anually. [@ics-705-ts, pp. 60-61]
 
@@ -734,7 +734,7 @@ in use. It does not replace the SCIF perimeter door lock while the SCIF is
 unoccupied. [@ics-705-ts, p. 62]
 
 Visual recognition of persons entering the SCIF by an authorized person at the
-entrance is the ideal access control. Should this not be possible an automated
+entrance is the ideal access control. Should this not be possible, an automated
 system can be used instead. [@ics-705-ts, p. 62]
 
 An automated personnel ACS should use two different credentials, such as ID
@@ -749,7 +749,7 @@ encrypted. Equipment containing access-control software, used to program
 allowed entry for authorized persons and remove no longer authorized
 individuals, should be located fully inside the SCIF. Electric door strikes
 used to unlock the door and "buzz people in" must have a positive engagement,
-i.e. rest in a locked position and only unlock on entry authorization. The
+i.e., rest in a locked position and only unlock on entry authorization. The
 electric door strikes should comply to UL 1034 (Burglary-Resistant Electric
 Locking Mechanisms). [@ics-705-ts, p. 63]
 
@@ -801,11 +801,11 @@ investigation [@ics-705-ts, p. 75].
 
 When CCTV is used to monitor a SCIF entrance for ACS purposes, the remote
 control device should be located within the SCIF and should be
-monitored/operated by indoctrinated personnel. The cameras should provide a
-clear view of the SCIF entrance without enabling a viewer to observe classified
-information when the door is open nor external control pads or access control
-components that would enable them to identify PINs or access procedures. The
-CCTV communication lines should be fully located within SCIF. Any external
+monitored/operated by trained personnel. The cameras should provide a clear view
+of the SCIF entrance without enabling a viewer to observe classified information
+when the door is open nor external control pads or access control components
+that would enable them to identify PINs or access procedures. The CCTV
+communication lines should be fully located within SCIF. Any external
 communication lines should be installed to prevent tampering. [@ics-705-ts, p.
 64]
 
@@ -834,13 +834,13 @@ Camera](images/elphel10393.jpeg){height=30%}
 Visual insights into the SCIF space are the easiest attack vector to defend. It
 suffices to create a "water-tight" outer shell without gaps or holes. Every
 effort should be made to exclude windows from the SCIF [@ics-705-ts, p. 12]. If
-they are unavoidable, they must at least be treated for visual protection, i.e.
+they are unavoidable, they must at least be treated for visual protection, i.e.,
 darkened with external blinds and/or laser protection film [@wolfsperger2008, p.
 463]. As noted above, video surveillance systems should be designed with special
 attention not to provide visual insights into the space. No cameras should be
 installed inside the SCIF [@ics-705-ts, p. 82].
 
-To protect from visual insight into the SCIF during personnel entry, entrace
+To protect from visual insight into the SCIF during personnel entry, entrance
 points should incorporate a vestibule to preclude visual observation
 [@ics-705-ts, p. 11]. Double doors should have an astragal strip attached to one
 door to prevent observation through the door crack [@ics-705-ts, p. 12].
@@ -860,11 +860,11 @@ of usable sound information from the outside.
 
 In most cases, passive sound attenuation, walls with strong sound isolation
 properties, must be combined with active sound masking, speakers that emit
-speech-like sounds to render useless escaping sound waves. Both out of room
-constraints and redundancy considerations passive sound attenuation most often
-does not suffice on its own. A sound masking system can reduce the wall thickness
-needed and mitigate any weakpoints that are inadvertently built into the
-attenuating shell. Protecting against attackers who manage to smuggle
+speech-like sounds to render useless escaping sound waves. Both due to room
+constraints and redundancy considerations, passive sound attenuation most often
+does not suffice on its own. A sound masking system can reduce the wall
+thickness needed and mitigate any weakpoints that are inadvertently built into
+the attenuating shell. Protecting against attackers who manage to smuggle
 microphones into the SCIF space, as guests or intruders, should also be
 considered in system design.
 
@@ -911,7 +911,7 @@ rigid as possible and increasing its thickness. [@moeser2009, pp. 258-270]
 ![Principle Curve of the Sound Reduction Index Frequency Response of a Single
 Shell Wall. Eta = Loss Factor Derived from the Loss Mechanisms at Play, Such as
 Internal Damping and Vibration Energy Dissipation to Adjacent Components, f =
-Frequency of Emission, f~cr~= Cut-off Frequency [@moeser2009, p.
+Frequency of Emission, $f_cr$ = Cut-off Frequency [@moeser2009, p.
 267]](images/attenuationprogression.png){height=40%}
 
 Increasing wall rigidity and thickness might not always be possible due to
@@ -923,12 +923,12 @@ create a mass-spring-mass system. No connections or cross-coupling may exist
 between the two shells as these defeat the spring function of the hollow space
 and jeopardize the entire system's effectiveness. [@moeser2009, pp. 270-276]
 
-![Improvement Of the Sound Insulation ΔR of a 80 mm Plaster Wall by a Flexible
-Facing Shell with m^''^~2~ = 4 kg/m^2^ and Cavity Depth d = 65 mm, Filled with
+![Improvement of the Sound Insulation Δ$R$ of a 80 mm Plaster Wall by a Flexible
+Facing Shell with $m^{''}_2$ = 4 kg/m^2^ and Cavity Depth d = 65 mm, Filled with
 Mineral Wool [@moeser2009, p. 274]](images/improvement.png){height=40%}
 
-Below the cut-off frequency the additional shell has no effect, however, above
-it the sound attenuation increases with 12 dB/octave. At the cut-off frequency
+Below the cut-off frequency, the additional shell has no effect, however, above
+it, the sound attenuation increases with 12 dB/octave. At the cut-off frequency
 there is again a slump in attenuation performance. The cut-off frequency should
 be engineered to be as low as possible to make use of the steep attenuation
 increases. According to
@@ -939,31 +939,31 @@ $$
 
 a cut-off frequency of 60 Hz (well below the building acoustics frequency range
 beginning at 100 Hz) can be reached with a facing shell with a mass per unit
-area of m^''^~2~ = 10 kg/m^2^ (heavy gypsum wall board) and a hollow space of
+area of $m^{''}_2$ = 10 kg/m^2^ (heavy gypsum wall board) and a hollow space of
 _d_ = 10 cm. Sufficiently low cut-off frequencies can be achieved without
 excessively heavy facing shells or prohibitively wide hollow spaces.
 [@moeser2009, p. 273]
 
-To achieve a high sound attenuation level it is advantageous to use heavy total
+To achieve a high sound attenuation level, it is advantageous to use heavy total
 masses and to distribute them unequally among the shells, if possible avoding
 shells of equal weight. One should also maximize the distance _d_ between the
 two shells, dampen the cavity as fully as possible with absorber material, and
 avoid leaks or structure-borne sound bridges. [@moeser2009, p. 276]
 
 In order to evaluate the solution on a whole system level, including floors and
-ceilings, one combines the walls R~W~ value as described in [_section
-4.3_](#acoustic-attenuation) with the longitudinal sound attenuation R~L,w~ of
-the four flanking components (two walls, ceiling, and floor) in a stepwise
+ceilings, one combines the walls $R_w$ value as described in [_section
+4.3_](#acoustic-attenuation) with the longitudinal sound attenuation $R_{L,w}$
+of the four flanking components (two walls, ceiling, and floor) in a stepwise
 addition scheme specified in DIN 4109-1. The result is a total resulting sound
-reduction index R'~w,R~ expressed in dB. [@tichelmann2000, p. 34]
+Reduction index $R'_{w,R}$ expressed in dB. [@tichelmann2000, p. 34]
 
 ![Stepwise Addition Scheme DIN 4109-1 [@tichelmann2000, p.
 34]](images/din4109-1.png){height=50%}
 
 In accordance with the above scheme, floors and ceilings must also be
 constructed with sound attenuation in mind to insure adequate system-level
-performance. Both longitudional sound attenuation R~L,w~ and direct sound
-attenuation R~W~ should offer adequate protection of escaping sound waves. In
+performance. Both longitudional sound attenuation $R_{L,w}$ and direct sound
+attenuation $R_w$ should offer adequate protection of escaping sound waves. In
 general, a designer should seek to constuct floors and ceilings as rigid and
 heavy as possible. Walls should go from true-floor to true-ceiling, completely
 interrupting additional longitudional layers like screed, flooring, and false
@@ -991,15 +991,15 @@ of their complexity and relative novelty they are not the go-to solution for air
 vent treatment.
 
 Reflection and wall muflers either achieve high attenuation performance in
-narrow bands or moderate attenuation in wider bands. Knowing the frequency
-range of sound to be cancelled is essential in optimizing the mufflers.
+narrow bands or moderate attenuation in wider bands. Knowing the frequency range
+of the sound to be cancelled is essential for optimizing the mufflers.
 Specialized air vent mufflers for the human voice, called cross-talk sound
 attenuators, are readily available on the market. They achieve relatively high
 performance values around the frequency spectrum of the human voice and come in
 a box shape optimized for installation inside drywall. An off-the-shelf product
 from german manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX®,
-achieves a weighted sound reduction index of R~w~ 38 dB at 508 mm length and
-300 mm height. Normalised sound reduction D~n,e~ at the male fundamental
+achieves a weighted sound reduction index of $R_w$ 38 dB at 508 mm length and
+300 mm height. Normalised sound reduction $D_{n,e}$ at the male fundamental
 frequency 125 Hz is 54 dB. [@schako]
 
 ![SCHAKO Cross-talk Sound Attenuator Box AUDIX® - Installation
@@ -1011,7 +1011,7 @@ When passive measures alone, out of space, weight or costs constraints, can't
 provide an adequate level of sound attenuation, they can be supplemented by a
 sound masking system. In such a system, speakers and transudcers are placed on
 or close to any paths that would allow audio to leave the protected space. In
-conjunction with a noise generator and amplifier they generate and distribute
+conjunction with a noise generator and amplifier, they generate and distribute
 vibrations or noise that drown out escaping audio and render it useless.
 [@ics-705-ts, p. 66]
 
@@ -1052,7 +1052,7 @@ pitch qualities, and other improbable effects of human speech. [@speechmasking]
 Spectrum Mapped over Spectrum of Human Speech
 [@speechmasking]](images/spectra.png){height=40%}
 
-Even more important than the noise source itself though is the way the mask is
+Even more important than the noise source itself, though, is the way the mask is
 applied and directed inside the protected space. In a properly designed system,
 the occupants do not hear, or only faintly hear, the mask inside the room. The
 only way to listen to the mask should be by listening directly against the
@@ -1165,7 +1165,7 @@ Instead of electric field lines, magnetic field lines are refracted at the
 boundary between materials with different magentic permeability. The high
 permeability magnetostatic shield is much more important in practice than the
 dielectric shield. Since there is no physical effect equivalent to the Faraday
-cage for shielding static magnetic fields they present the only method of
+cage for shielding static magnetic fields, they present the only method of
 shielding static magnetic fields, like those emanating from electrical
 conductors carrying a direct current. They must be built from high-permeability
 materials, such as pure iron, to provide effective shielding of both static and
@@ -1280,7 +1280,7 @@ gasket. [@wolfsperger2008, pp. 258-261]
 Elastomer gaskets, both those consisting entirely of conductive material and
 those only covered by conductive textile, have generally weaker shielding
 properties than the above two gasket types. They sit between the moving part and
-its frame. Due to their elastic properties they are compressed by the closure
+its frame. Due to their elastic properties, they are compressed by the closure
 and act as a conductor between the two sides. They require lower contact
 pressures than contact feathers or wire mesh gaskets, have a higher tolerance
 for deviating gap dimensions, are very resistant to mechanical damage, insulate
@@ -1385,18 +1385,18 @@ breaker should be installed to protect occupants from ongoing electric shocks.
 
 ### Shielding System Function Monitoring
 
-In his book, Hans Wolfsperger also proposes a system to continuously monitor the
-function of the room shielding during use. He proposes that the RF output of a
-spectrum analyzer be fed through an amplifier to a broadband transmitting
-antenna permanently installed in the room. A receiving antenna, e.g. a leak
-detector, would also be permanently installed on the outside of the room and
-connected to the input of the spectrum analyzer. During the first functional
-tests, when the system is determined to be effective, the spectrum analyzer
-would determine and store the frequency response of the shielded transmission.
-Each time the shielding is used, the frequency spectrum would be determined
-again and compared with the stored values. If clear deviations from the
-reference are detected, the shielding could be checked for malicious tampering
-or other damages. [@wolfsperger2008, pp. 466-467]
+Hans Wolfsperger also proposes a system to continuously monitor the function of
+the room shielding during use. He proposes that the RF output of a spectrum
+analyzer be fed through an amplifier to a broadband transmitting antenna
+permanently installed in the room. A receiving antenna, e.g. a leak detector,
+would also be permanently installed on the outside of the room and connected to
+the input of the spectrum analyzer. During the first functional tests, when the
+system is determined to be effective, the spectrum analyzer would determine and
+store the frequency response of the shielded transmission. Each time the
+shielding is used, the frequency spectrum would be determined again and compared
+with the stored values. If clear deviations from the reference are detected, the
+shielding could be checked for malicious tampering or other damages.
+[@wolfsperger2008, pp. 466-467]
 
 ![Shield Monitoring System Schematic [@wolfsperger2008, p.
 467]](images/monitoring.png){height=40%}
@@ -1446,7 +1446,7 @@ Benchtop devices scan the frequency spectrum within the protected space over
 hours or even days and then automatically compare them to measurements of the
 surrounding environment, historical measurements, or reference values for that
 type of environment. By monitoring the frequency spectrum over long periods of
-time they are able to detect even the most sophisticated bugs, like caching bugs
+time, they are able to detect even the most sophisticated bugs, like caching bugs
 that store captured sensitive information temporarily and emit it only at
 defined intervals all at once.
 
@@ -1517,8 +1517,8 @@ currently taking a picture. [@globaltscm]
 
 ![View Through a WEGA-i Hidden Camera Finder](images/lensfinder.jpg){height=40%}
 
-Only through a careful combination of these different tools by trained personnel
-can a high detection rate of covert listening devices be guaranteed.
+Only through a careful combination of these different tools by trained
+personnel, a high detection rate of covert listening devices be guaranteed.
 
 For an initial impression on the equipment costs for these devices see this
 included price table:
@@ -1565,7 +1565,7 @@ easier in a stationary manufacturing setting than on globally distributed
 construction projects. The secure procurement, transporation, and storage of
 construction material is enhanced by long-term stationary manufacturing
 infrastructure. Investments in thorough material testing equipment and
-procedures, like x-ray and ultrasonic testing, are made more profitable by the
+procedures, like X-ray and ultrasonic testing, are made more profitable by the
 reuse of site infrastructure and higher production quantities. As container
 modules, SCIFs are no longer bespoke units but mass-produced commodity items,
 with all the production efficiencies that entails.
@@ -1595,7 +1595,7 @@ drywall, a unique drywall solution that features a full steel sheet insert for
 additional stability and intrusion resistance. A Krieger Products RFI-60-STC-50
 pre-engineered door is used to access the SCIF unit. It does not come with
 special intrusion resistance properties, but instead shields the enclosed area,
-both acoustically and electromagentically. In concert, these different layers
+both acoustically and electromagnetically. In concert, these different layers
 provide an intrusion resistance that meets and exceeds the requirements of the
 ICS 705.
 
@@ -1698,7 +1698,7 @@ sound-attenuating door and muffled vents.
 The wall, floor, and ceiling constructions draw upon DIN standardized and
 Knauf-manufactured, proprietary components. The walls are built with the Knauf
 W115-75Y6-10 drywall system, which comes with a certified sound attenuation
-level of R~w~ = 73.2 dB [@knauf, p. 14]. All corners and joints are carried out
+level of $R_w$ = 73.2 dB [@knauf, p. 14]. All corners and joints are carried out
 to manfucaturer specifications. According to the manufacturer documentation,
 this wall system has a slightly weaker sound attenuation performance in the
 low-frequency range [@knaufacoustics, p. 18]. This frequency range is especially
@@ -1712,10 +1712,10 @@ ceilings with suspended ceilings on spring rails" in section 4.3.1.4.3
 [@din4109-33, p. 45]. The standard width of ca. 390 mm is slightly reduced to
 370 mm in order to leave more headroom for occupants. The width is taken from
 the cavity between the wood-based panel and the cavity damping. This component
-comes to a weighted sound reduction index of R~w~ = 70 dB and a horizontal sound
-transmission attenuation of D~n,f,w~ = 67 dB [@din4109-33, p. 68].
+comes to a weighted sound reduction index of $R_w$ = 70 dB and a horizontal
+sound transmission attenuation of $D_{n,f,w}$ = 67 dB [@din4109-33, p. 68].
 
-![DIN 4109-33 Floor Makeup and R~w~](images/din4109-33_floor.png){height=40%}
+![DIN 4109-33 Floor Makeup and $R_w$](images/din4109-33_floor.png){height=40%}
 
 The ceiling is constructed to the DIN 4109-33 specifications for "wooden beam
 ceilings with suspended ceilings" in section 5.3.1.1. It is made up of a ceiling
@@ -1723,12 +1723,12 @@ cladding with a spring rail, a subfloor and planking interrupted by the drywall,
 and two-layer 12.5 mm GWB, with a full-surface 50 mm mineral wool layer. The
 partition wall is perpendicular to the ceiling joists. The soft stud
 compartments are fully insulated. This ceiling makeup has a width of ca. 150 mm
-and a sound attenuation of R~w~ = 67 dB. [@din4109-33, p. 68] The resulting
+and a sound attenuation of $R_w$ = 67 dB. [@din4109-33, p. 68] The resulting
 headroom between ceiling and floor comes out to a relatively compfortable 213
 cm.
 
 When entering this system into the Knauf online soundproofing calculator, a
-resulting R'~w~ = 63 dB is calculated, far exceeding the acoustic requirements
+resulting $R'_w$ = 63 dB is calculated, far exceeding the acoustic requirements
 set forth in [_section 4.3_](#acoustic-attenuation). See the attached
 [_calculation report_](#addendum) for more information.
 
@@ -1747,7 +1747,7 @@ are muffled by SCHAKO AUDIX® cross-talk attenuator boxes on the intake and
 exhaust side. They use a galvanised sheet steel and an internal lining of
 special insulating plates to form a deflection labyrinth for sound attenuation.
 They are best-in-class for form factor relative to performance, however, they
-still only provide a sound attenuation of R~w~ = 38 dB. Although the inline fans
+still only provide a sound attenuation of $R_w$ = 38 dB. Although the inline fans
 aid in breaking/masking the sound waves, the air vents remain the weakest link
 in the sound attenuation system. They must be carefully treated with additional
 sound masking measures.
