@@ -2,10 +2,9 @@ scif-thesis.pdf: scif-thesis.md scif-thesis.bib
 	pandoc --standalone --table-of-contents --number-sections \
          --variable papersize=a4paper \
 	 --filter pandoc-citeproc --bibliography=scif-thesis.bib \
-	 -V linkcolor:blue \
 	 --pdf-engine=xelatex \
 	 -H resources/fix-captions.tex \
-	 -M date="`date "+%B%e, %Y"`" \
+	 -V header-includes="\usepackage{pdfpages}" \
          -s $< \
          -o $@
 
