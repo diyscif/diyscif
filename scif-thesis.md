@@ -1040,7 +1040,7 @@ digital audio players. They emit some kind of recording, music or randomly
 generated noise, like pink or white noise. In practice, noise sources with
 deterministic intensity distribution across the frequency spectrum, also called
 broadband noises, like pink or white noise, have been proven ineffective to
-mask the human voice unless used at uncompfortably loud levels (two to five
+mask the human voice unless used at uncomfortably loud levels (two to five
 times higher than the voice to be masked). They simply do not replicate the
 human vocal system and can easily be filtered out by sophisticated speech
 extraction software. Pre-recorded sounds, such as music or tracks, are also
@@ -1549,17 +1549,17 @@ Device | Cost
 ## Why Shipping Containers?
 
 Global logistics infrastructure is designed from the ground up for the 8 x 8.6 x
-20 ft dimensions of the standard shipping container. Building a SCIF inside
-these confines allows it to be transported to any point on the globe discreetly,
-cheaply, and quickly. Shipping containers have become commodity hardware, easy
-to procure and customize. Furthermore, they come with excellent structural
-properties that allow them to provide a high-level of physical security and
-load-bearing capacity. So called "high-cube" containers are another foot higher
-than the standard shipping container dimensions, with 9.6 ft height, providing
-ample headroom to install proper sound attenuation and ventillation. Using a
-shipping container to manufacture a standardized SCIF unit means building on a
-stable and highly reliable platform that is easily deployed and reused in any
-part of the world. [@logan_braun_2019]
+20 ft dimensions of the standard-size shipping container. Building a SCIF inside
+these dimensions allows it to be transported to any point on the globe
+discreetly, cheaply, and quickly. Shipping containers have become commodity
+hardware, easy to procure and customize. Furthermore, they come with excellent
+structural properties that allow them to provide a high-level of physical
+security and load-bearing capacity. So called "high-cube" containers are another
+foot higher than the standard shipping container dimensions, with 9.6 ft height,
+providing ample headroom to install proper sound attenuation and ventillation.
+Using a shipping container to manufacture a standardized SCIF module means
+building on a stable and highly reliable platform that is easily deployed and
+reused in any region of the world. [@logan_braun_2019]
 
 ![Outside View of SCIF Container Module with Doors
 Open](images/rendering_front_open.png){height=40%}
@@ -1584,7 +1584,7 @@ with all the production efficiencies that entails.
 ### Intrusion Resistance
 
 Physical security is provided in multiple layers pursuant to the principle of
-security-in-depth. The first line of defense is a controlled perimeter around
+Security in Depth. The first line of defense is a controlled perimeter around
 the shipping container. For example, this can be a security fence around the
 area in which the container SCIF is set up.
 
@@ -1645,7 +1645,7 @@ system. Unlike the conventional Wiegand authentication cards, this system makes
 use of Personal Identity Verification (PIV) public-key authentication. Unlike
 Wiegand cards, PIV smartcards can not easily be cloned to perform replay attacks
 on the card reader [@howson]. The HID® pivCLASS® can make use of the
-FIPS-certified YubiKey 5 with built-in PIV smart card as one of two
+FIPS-certified YubiKey 5 with a built-in PIV smart card as one of two
 authentication factors, the other one being a PIN. Smart card and PIN are used
 together to authenticate on a HID® pivCLASS® RK40 reader which transmits
 information to the pivCLASS® Authentication Module, which unlocks and locks the
@@ -1681,7 +1681,7 @@ components that would enable the viewer to identify PINs and access procedures.
 
 Alternatively to the Elphel NC393-F-CS, trustworthy commercial camera equipment
 like a Bosch Flexidome 7000i can also be used, though open software and hardware
-are preferred for reasons as stated in [_section
+are preferred for reasons as stated above in [_section
 7.2.3_](#intrusion-detection-system-1).
 
 ## Visual Protection
@@ -1689,11 +1689,11 @@ are preferred for reasons as stated in [_section
 Visual protection of the SCIF unit is achieved by a continuous drywall perimeter
 without holes or gaps. Windows are excluded from the design. On top of entailing
 serious information security risks, as detailed in [_section
-6.2_](#visual-protection), they also endanger a container's seaworthiness. This
-would jeopardize the significant mobility advantages of a SCIF container unit.
-The container unit also includes a vestibule area to protect from visual insight
-into the SCIF and access procedures during personnel entry. The entry CCTV
-camera is mounted so as to not provide direct insight into the SCIF during
+6.2_](#visual-protection-1), they also endanger a container's seaworthiness.
+This would jeopardize the significant mobility advantages of a SCIF container
+unit.  The container unit also includes a vestibule area to protect from visual
+insight into the SCIF and access procedures during personnel entry. The entry
+CCTV camera is mounted so as not to provide direct insight into the SCIF during
 personnel entry. No other video cameras are installed or allowed inside the SCIF
 container.
 
@@ -1706,8 +1706,8 @@ Sound attenuation is achieved by a three-layer approach, the first layer of
 defense being a heavily attenuating wall, floor, and ceiling construction with a
 sound-attenuating door and muffled vents.
 
-The wall, floor, and ceiling constructions draw upon DIN standardized and
-Knauf-manufactured, proprietary components. The walls are built with the Knauf
+The wall, floor, and ceiling constructions draw upon DIN standardized components
+and Knauf-manufactured, proprietary products. The walls are built with the Knauf
 W115-75Y6-10 drywall system, which comes with a certified sound attenuation
 level of $R_w$ = 73.2 dB [@knauf, p. 14]. All corners and joints are carried out
 to manfucaturer specifications. According to the manufacturer documentation,
@@ -1735,8 +1735,7 @@ and two-layer 12.5 mm GWB, with a full-surface 50 mm mineral wool layer. The
 partition wall is perpendicular to the ceiling joists. The soft stud
 compartments are fully insulated. This ceiling makeup has a width of ca. 150 mm
 and a sound attenuation of $R_w$ = 67 dB. [@din4109-33, p. 68] The resulting
-headroom between ceiling and floor comes out to a relatively compfortable 213
-cm.
+headroom between ceiling and floor comes out to a relatively comfortable 213 cm.
 
 When entering this system into the Knauf online soundproofing calculator, a
 resulting $R'_{w,R}$ = 63 dB is calculated, far exceeding the acoustic
@@ -1758,10 +1757,10 @@ are muffled by SCHAKO AUDIX® cross-talk attenuator boxes on the intake and
 exhaust side. They use a galvanised sheet steel and an internal lining of
 special insulating plates to form a deflection labyrinth for sound attenuation.
 They are best-in-class for form factor relative to performance, however, they
-still only provide a sound attenuation of $R_w$ = 38 dB. Although the inline fans
-aid in breaking/masking the sound waves, the air vents remain the weakest link
-in the sound attenuation system. They must be carefully treated with additional
-sound masking measures.
+still only provide a sound attenuation of $R_w$ = 38 dB. Although the inline
+fans aid in breaking/masking the sound waves, the air vents remain the weakest
+link in the sound attenuation system. They must be carefully treated with
+additional sound masking measures.
 
 The second layer of defense is a 12 cm gap between the SCIF perimeter drywall
 and the container shell. Sound masking speakers are mounted inside this gap, as
@@ -1795,9 +1794,9 @@ on a prototype.
 No microphone jamming is used within the SCIF. The technology is not yet fully
 matured. It can be easily overcome by using specialized microphones without
 hardware non-linearities in the ultrasonic spectrum. In place of the microphone
-jamming system, a tight PED policy should be instituted prohibiting the use of
+jamming system, a strict PED policy should be instituted prohibiting the use of
 all private electronic devices within the SCIF. Compliance with this policy by
-non-trusted personnel should be checked at the entrance.
+non-trusted personnel, like visitors, should be checked at the entrance.
 
 ## Electromagnetic/TEMPEST Shielding
 
@@ -1856,7 +1855,7 @@ Air ventillation is accomplished with a 200 x 200 mm duct system with four
 outlets. Ducts are treated with 18 GHz honeycomb filters on both the intake and
 exhaust side. These filter panels, along with the cross-talk sound attenuation
 boxes, cause pressure losses that must be compensated by inline fans. Heating
-and cooling is achieved with a ductless mini split AC system, whose inside unit
+and cooling is achieved with a ductless mini-split AC system, whose inside unit
 is fed from the power line filter and outside unit is fed from a separate
 external power connection. Vapor barriers are installed on both sides of the
 drywall.
