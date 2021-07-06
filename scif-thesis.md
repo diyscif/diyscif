@@ -1879,6 +1879,36 @@ any indications give rise to the suspicion that SCIF security has been breached.
 
 # Conclusion
 
+This paper has explained the concept of a SCIF and its role in protecting
+sensitive communications in the physical realm. It has defined the theoretical
+ideal state of information security and proposed the method of threat modelling
+for approximating it in practical application. The paper then went on to
+elaborate the different kinds of passive attacks, those performed by an outside
+observer without interacting with the physical SCIF space, and set up
+quantitative limits to prevent them at the source. It also described various
+types of active attacks, aiming to compromise the SCIF space or weaken its
+protective measures. It then set forth a handful surveillance countermeasures
+in physical security, during construction and in operation, visual protection,
+acoustic attenuation/masking, and electromagnetic/TEMPEST shielding effective
+at preventing active attacks and meeting the quantitative limits set forth to
+prevent passive outside observation. It also provided an introduction to
+technical surveillance countermeasure (TSCM) inspections, also referred to as
+"bug sweeping," useful for keeping a SCIF secure over its operation lifecycle.
+
+The paper then applied all the above countersurveillance techniques in a
+shipping-container-based SCIF module that can be serially produced and
+transported anywhere in the world discreetly, cheaply, and quickly. It
+demonstrated how such a module can deliver the state of the art, as standardized
+in the foundational IC Tech Spec‐for ICD/ICS 705, even improving upon it with
+novel features like the shield monitoring system.
+
+The container module delivers standardized performance, high physical security,
+and novel shielding technologies, all in a form-factor conducive to a SCIFs
+overall purpose of discreet and seamless information protection. It should be
+considered as fundamental to future developments in which SCIFs become essential
+tools for corporate and private security, not just bespoke installations only
+available to government agencies.
+
 # References
 
 ::: {#refs}
