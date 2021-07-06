@@ -851,12 +851,12 @@ door to prevent observation through the door crack [@ics-705-ts, p. 12].
 
 To secure the discussions, information processing, and conferences carried out
 inside the SCIF it is essential to design an effective acoustic protection
-system. Sound waves have the habit of finding weakpoints in even the most
-well-designed systems and escaping to the outside where even the faintest
-emission can be captured and reconstructed with digital means. Therefore, it is
-necessary to pay meticulous attention to detail, both in the design and
-construction phase, while building on multiple technologies to prevent capture
-of usable sound information from the outside.
+system. Sound waves tend to find weakpoints in even the most well-designed
+systems, escaping through them to the outside where even the faintest emission
+can be captured and reconstructed with digital means. Therefore, it is necessary
+to pay meticulous attention to detail, both in the design and construction
+phase, while building on multiple technologies to prevent capture of usable
+sound information from the outside.
 
 In most cases, passive sound attenuation, walls with strong sound isolation
 properties, must be combined with active sound masking, speakers that emit
@@ -909,9 +909,9 @@ cut-off frequency as possible. This can be accomplished by making the wall as
 rigid as possible and increasing its thickness. [@moeser2009, pp. 258-270]
 
 ![Principle Curve of the Sound Reduction Index Frequency Response of a Single
-Shell Wall. Eta = Loss Factor Derived from the Loss Mechanisms at Play, Such as
-Internal Damping and Vibration Energy Dissipation to Adjacent Components, f =
-Frequency of Emission, $f_cr$ = Cut-off Frequency [@moeser2009, p.
+Shell Wall. $η$ = Loss Factor Derived from the Loss Mechanisms at Play, such as
+Internal Damping and Vibration Energy Dissipation to Adjacent Components, $f$ =
+Frequency of Emission, $f_{cr}$ = Cut-off Frequency [@moeser2009, p.
 267]](images/attenuationprogression.png){height=40%}
 
 Increasing wall rigidity and thickness might not always be possible due to
@@ -924,8 +924,8 @@ between the two shells as these defeat the spring function of the hollow space
 and jeopardize the entire system's effectiveness. [@moeser2009, pp. 270-276]
 
 ![Improvement of the Sound Insulation Δ$R$ of a 80 mm Plaster Wall by a Flexible
-Facing Shell with $m^{''}_2$ = 4 kg/m^2^ and Cavity Depth d = 65 mm, Filled with
-Mineral Wool [@moeser2009, p. 274]](images/improvement.png){height=40%}
+Facing Shell with $m^{''}_2$ = 4 kg/m^2^ and Cavity Depth $d$ = 65 mm, Filled
+with Mineral Wool [@moeser2009, p. 274]](images/improvement.png){height=40%}
 
 Below the cut-off frequency, the additional shell has no effect, however, above
 it, the sound attenuation increases with 12 dB/octave. At the cut-off frequency
@@ -940,13 +940,13 @@ $$
 a cut-off frequency of 60 Hz (well below the building acoustics frequency range
 beginning at 100 Hz) can be reached with a facing shell with a mass per unit
 area of $m^{''}_2$ = 10 kg/m^2^ (heavy gypsum wall board) and a hollow space of
-_d_ = 10 cm. Sufficiently low cut-off frequencies can be achieved without
+$d$ = 10 cm. Sufficiently low cut-off frequencies can be achieved without
 excessively heavy facing shells or prohibitively wide hollow spaces.
 [@moeser2009, p. 273]
 
 To achieve a high sound attenuation level, it is advantageous to use heavy total
 masses and to distribute them unequally among the shells, if possible avoding
-shells of equal weight. One should also maximize the distance _d_ between the
+shells of equal weight. One should also maximize the distance $d$ between the
 two shells, dampen the cavity as fully as possible with absorber material, and
 avoid leaks or structure-borne sound bridges. [@moeser2009, p. 276]
 
@@ -961,7 +961,7 @@ Reduction index $R'_{w,R}$ expressed in dB. [@tichelmann2000, p. 34]
 34]](images/din4109-1.png){height=50%}
 
 In accordance with the above scheme, floors and ceilings must also be
-constructed with sound attenuation in mind to insure adequate system-level
+constructed with sound attenuation in mind to ensure adequate system-level
 performance. Both longitudional sound attenuation $R_{L,w}$ and direct sound
 attenuation $R_w$ should offer adequate protection of escaping sound waves. In
 general, a designer should seek to constuct floors and ceilings as rigid and
@@ -974,14 +974,15 @@ Walls and flanking components aren't the only transmission paths for sound out
 of the SCIF. Air ducts and vents also present a significant challenge in sound
 attenuation. If untreated they can serve as direct transmission paths for sound
 waves out of the SCIF and eliminate all benefits gained from a carefully
-designed shell system. In order to treat air ducts and vents it is necessary to
-insert some type of silencer. These can be reflection mufflers, wall mufflers or
-active noise cancelling systems. Reflection mufflers work eclusively through
-reflection. Cross-section changes, branch-offs and inserted chambers reflect
-sound waves internally and decrease their energy. Wall mufflers work through
-absorption _and_ reflection. Absorbant wall lining or slim absorbant channels
-are used to reflect sound waves internally. Additionally, these sound waves lose
-energy into the mufflers absorbant surfaces. [@moeser2009, pp. 285-328]
+designed double-shell system. In order to treat air ducts and vents it is
+necessary to insert some type of silencer. These can be reflection mufflers,
+wall mufflers or active noise cancelling systems. Reflection mufflers work
+eclusively through reflection. Cross-section changes, branch-offs and inserted
+chambers reflect sound waves internally and decrease their energy. Wall mufflers
+work through absorption _and_ reflection. Absorbant wall lining or slim
+absorbant channels are used to reflect sound waves internally. Additionally,
+these sound waves lose energy into the mufflers absorbant surfaces.
+[@moeser2009, pp. 285-328]
 
 Active noise cancelling systems produce anti-sound, amplitude inverted sound
 waves, to cancel out sound. They are limited in frequency range and aereal
@@ -997,7 +998,7 @@ Specialized air vent mufflers for the human voice, called cross-talk sound
 attenuators, are readily available on the market. They achieve relatively high
 performance values around the frequency spectrum of the human voice and come in
 a box shape optimized for installation inside drywall. An off-the-shelf product
-from german manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX®,
+from German manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX®,
 achieves a weighted sound reduction index of $R_w$ 38 dB at 508 mm length and
 300 mm height. Normalised sound reduction $D_{n,e}$ at the male fundamental
 frequency 125 Hz is 54 dB. [@schako]
@@ -1042,14 +1043,14 @@ broadband noises, like pink or white noise, have been proven ineffective to
 mask the human voice unless used at uncompfortably loud levels (two to five
 times higher than the voice to be masked). They simply do not replicate the
 human vocal system and can easily be filtered out by sophisticated speech
-extraction software. Pre-recorded sounds such as music or tracks are also
+extraction software. Pre-recorded sounds, such as music or tracks, are also
 easier to isolate and separate digitally from speech. Instead, it is better to
 use randomly generated noise from an algorithm specifically designed to imitate
 the spectral density, resonance, periodic pauses and interruptions, tonal and
 pitch qualities, and other improbable effects of human speech. [@speechmasking]
 
 ![Comparison of Broadband Noise's and SpeechMask® Algorithm's Frequency
-Spectrum Mapped over Spectrum of Human Speech
+Spectrum Mapped over the Spectrum of Human Speech
 [@speechmasking]](images/spectra.png){height=40%}
 
 Even more important than the noise source itself, though, is the way the mask is
@@ -1074,9 +1075,9 @@ Microphone jamming can play a special role in protecting the SCIF from inside
 attackers. A meeting participant who wishes to record the discussions without
 the knowledge of the other participants could smuggle in a covert recording
 device, like a modern smartphone. Due to their small form factor, covert
-recording devices often use micro-electromechanical (MEMS) microphones whose
-inherent hardware properties can be exploited against them to jam and render
-useless their recordings.
+recording devices often use micro-electromechanical microphones (MEMS) whose
+inherent hardware properties can be exploited against them in order to jam and
+render useless their recordings.
 
 A microphone jammer makes use of the hardware non-linearity of commodity
 microphones. Linearity is the ability to generate an electrical output
@@ -1102,7 +1103,7 @@ eliminate hardware non-linearities in the ultrasonic spectrum.
 If used at all, microphone jamming systems should function supplementally to a
 PED policy. A PED policy controls and limits the portable electronic devices
 allowed in the SCIF. It is especially useful when untrusted individuals are
-allowed entry to the SCIF to participate in discussions within. [@ics-705-ts,
+allowed entry to the SCIF to participate in discussions within it. [@ics-705-ts,
 pp. 68-72]
 
 ## Electromagnetic/TEMPEST Shielding
@@ -1129,7 +1130,7 @@ blocking emanations at the individual device level.
 
 There are multiple functional principles which electromagentic shields can
 utilize to block airborne waves. Faraday cages are the simplest and most well
-known type of electromagnetic shield. They make use of conductive material to
+known type of electromagnetic shield. They make use of a conductive material to
 distribute externally induced electric charges within the material, cancelling
 the charge's effects in the cage's interior. The cage can be imagined as two
 metal plates connected by an electric conductor. Because of the higher
@@ -1186,6 +1187,15 @@ well as DC electric fields. Forunately, shielding variable magnetic fields is of
 primary interest in SCIF building. Shielding static magnetic fields, on the
 other hand, is the absolute exception. [@wolfsperger2008, pp. 100-102]
 
+Table: Types of Electromagnetic Field [@wolfsperger2008, p. 88]
+
+Type of Field | Example | Shielding Mechanism
+--- | --- | ---
+Electrostatic field | Separated charges | Dielectric shield, Faraday cage
+Magnetostatic field | Magnetization distribution | Dimagnetic shield
+Quasi-stationary electromagnetic field | Radio waves, microwaves | Electrodynamic shield
+Electromagnetic wave field | Plane wave | Electrodynamic shield
+
 ### Shielding Materials
 
 Electrodynamic shields are constructed from a wide variety of materials.
@@ -1230,11 +1240,11 @@ corrosion. These must be carefully removed along the contact area when joining
 such materials in order to ensure electric conductivity. The stripped surfaces,
 as well as corrosive materials that not do not form a passive layer, must be
 immediately covered by a protective coating upon installation as a component of
-the shield. This prevents the regeneration of the non-conductive passive layer
+the shield. This prevents the regeneration of the non-conductive passive layer,
 or further corrosion in the case of corrosive materials that don't form a
 passive layer. Another factor in the joining of materials, specifically
 materials with different electrode potential, is contact corrosion. When
-materials on opposite ends of the galvanic series are joined they can build a
+materials on opposite ends of the galvanic series are joined, they can build a
 cathode-anode pair that results in the decay of both materials over time.
 Special care should be given not to combine these materials in use.
 [@wolfsperger2008, pp. 249-252]
@@ -1246,7 +1256,7 @@ The ideal methods for joining shielding components, ensuring consistently high,
 also effective as long as the distances between surfaces are small relative to
 the minimum wavelength. However, above methods cannot be applied to connections
 that need to be opened and closed over time, for example those found in a door.
-For such joints, there are different types of HF (high frequency) gaskets that
+For such joints, there are different types of HF (high-frequency) gaskets that
 can provide fully electrically conductive connections over long periods of use
 and many closing cycles. [@wolfsperger2008, pp. 252-253]
 
@@ -1289,7 +1299,7 @@ have self-cleaning properties, don't counteract passive oxidation layers, and
 are less durable over time. [@wolfsperger2008, pp. 261-267]
 
 It is the designers job to weigh the different gaskets' strengths and weaknesses
-and select the ideal type for the individual SCIF and component part.
+and select the ideal type for the individual SCIF project and component part.
 
 ### Electromagnetic Shield Penetrations
 
@@ -1327,7 +1337,7 @@ Screws for affixing cable ducts, pipes, facing shells, claddings, suspended
 ceilings, radiators, etc. should only puncture the electromagnetic shield
 through special shielding anchor plates. These anchor plates are sheet metal
 disks that are attached to the room shielding over a large area with an RF
-gasket or highly conductive adhesive. They insure a larger contact area between
+gasket or highly conductive adhesive. They ensure a larger contact area between
 the screw and shield, to couple them with as low an impedance as possible. This
 helps maintain continuous electrical conductivity, limiting the effect the hole
 has on the shield's overall performance. [@wolfsperger2008, pp. 334-335]
@@ -1382,6 +1392,7 @@ of the personnel working within the SCIF. A shielded room or area should only be
 grounded at a single point so that no equalizing currents (usually magnetically
 induced) can flow through the shielding. In addition, a residual current circuit
 breaker should be installed to protect occupants from ongoing electric shocks.
+[@wolfsperger2008, pp. 351-354]
 
 ### Shielding System Function Monitoring
 
@@ -1433,8 +1444,8 @@ SCIF operators must check both for these devices and their exfiltration channels
 regularly to limit the effective window of a compromise. Tools for bug sweeping
 include spectrum analyzers, non-linear junction detectors, line analyzers, and
 lens finders. By carefully combining the use of these different tools it should
-be possible to locate any active transmitters, passive transmitters, devices'
-built-in semiconductor components, and compromises of installed lines.
+be possible to locate any active transmitters, passive transmitters, listening
+devices' built-in semiconductor components, and compromises of installed lines.
 
 To detect active transmitters in the protected space it is necessary to make use
 of a spectrum analyzer. These devices are designed to capture and analyze
@@ -1472,7 +1483,7 @@ return a harmonic signature when radiated with RF energy. By means of a
 specially polarized antenna, the NLJD emits frequencies in the range of 880 Hz
 to 2.4 GHz and simultaneously receives their respective harmonics, integer
 harmonic oscillations of the original frequency. For example, the second
-harmonic of 880 MHz is (1760 MHz; 880 x 2) and the third harmonic is 2640 MHz
+harmonic of 880 MHz is 1760 MHz (880 x 2) and the third harmonic is 2640 MHz
 (880 x 3). If radio waves emitted by the NLJD antenna hit an electronic
 component, then each semiconductor (transistor, diode, integrated circuit, etc.)
 causes a strong reflection of the second harmonic. By comparing the reflection
@@ -1498,7 +1509,7 @@ capabilities to detect malicious data transmissions over a fixed line or the
 source and location of any type of device "tapping" the line to capture
 information travelling on it. Test techniques include a digital multimeter to
 test lines for voltage, current, resistance, and incapacitance anomalies,
-frequency domain reflectometion (FDR) to check for impedance anomalies resulting
+frequency domain reflectometry (FDR) to check for impedance anomalies resulting
 from taps on the line, non-linear junction detection to check for electronics
 connected to a wire, digital demodulation to confirm that a digital telephone
 line is not passing audio when it shouldn't, and a high-gain amplifier to detect
@@ -1507,7 +1518,7 @@ analog audio being passed on a digital line. [@reiusa]
 ![REI TALAN 3.0 in Use](images/talan.jpg){height=40%}
 
 Lens finders emit infrared signals in order to detect reflections coming from
-hidden camera lenses. When observed through a special view finder a room will
+hidden camera lenses. When observed through a special view finder, a room will
 reflect IR signals at a normal rate, however, hidden lenses will concentrate
 these waves and reflect them particularly strongly. They show up as bright spots
 on the red backdrop of the room. This allows an analyst to quickly detect
@@ -1518,7 +1529,7 @@ currently taking a picture. [@globaltscm]
 ![View Through a WEGA-i Hidden Camera Finder](images/lensfinder.jpg){height=40%}
 
 Only through a careful combination of these different tools by trained
-personnel, a high detection rate of covert listening devices be guaranteed.
+personnel, can a high detection rate of covert listening devices be guaranteed.
 
 For an initial impression on the equipment costs for these devices see this
 included price table:
@@ -1728,9 +1739,9 @@ headroom between ceiling and floor comes out to a relatively compfortable 213
 cm.
 
 When entering this system into the Knauf online soundproofing calculator, a
-resulting $R'_w$ = 63 dB is calculated, far exceeding the acoustic requirements
-set forth in [_section 4.3_](#acoustic-attenuation). See the attached
-[_calculation report_](#addendum) for more information.
+resulting $R'_{w,R}$ = 63 dB is calculated, far exceeding the acoustic
+requirements set forth in [_section 4.3_](#acoustic-attenuation). See the
+attached [_calculation report_](#addendum) for more information.
 
 The Krieger RFI-60-STC-50 door "only" provides sound attenuation corresponding
 to STC 50. Although this is on the higher end of the door sound attenuation
@@ -1781,6 +1792,13 @@ theoretically because of the complex and novel nature of this SCIF module.
 Instead, accurate values must be determined empirically through practical tests
 on a prototype.
 
+No microphone jamming is used within the SCIF. The technology is not yet fully
+matured. It can be easily overcome by using specialized microphones without
+hardware non-linearities in the ultrasonic spectrum. In place of the microphone
+jamming system, a tight PED policy should be instituted prohibiting the use of
+all private electronic devices within the SCIF. Compliance with this policy by
+non-trusted personnel should be checked at the entrance.
+
 ## Electromagnetic/TEMPEST Shielding
 
 Electromagnetic shielding is achieved through a 2 mm stainless steel layer
@@ -1817,6 +1835,13 @@ encrypted to a secure exit node over an encrypted VPN uplink. Footage from the
 surveillance camera is transmitted over an external data uplink to the
 ZoneMinder system, which is made accessible inside the SCIF over the shielded
 data uplink.
+
+Every effort is taken to keep wiring inside the SCIF unit as much as possible.
+For all control lines where running outside the SCIF unit is unavoidable, like
+those of the shield moniotring system and the access control system, lines are
+FIPS-AES encrypted from end-to-end and fed through rigid conduit. This
+eliminates interception of usable information or leakage from improperly
+shielded cables.
 
 Refrigerant lines for the AC unit are fed through purpose-built pipe
 penetrations as specified in [_section
