@@ -240,13 +240,21 @@ than 32 dB. [@moeser2009 pp. 256-257]
 $B_v$ = Shifted Reference Curve, $M$ = Measured Values, $U$ = Undershoots of $M$
 Compared to $B_v$ [@goesele2004]](images/schalldämmmaß.png){height=40%}
 
-This diagramm also shows that for a $R_w$ = 52 dB (the reference curve) the
+This diagram also shows that for a $R_w$ = 52 dB (the reference curve) the
 fundamental frequency of the male voice - 125 Hz - only undergoes a sound
 attenuation of ca. 35 dB. Given a 60 dB conversation sound-level the sound
 attenuation is not sufficient to protect from a close proximity attacker.
 Passive sound-attenuation measures should be specifically evaluated in the 125
 Hz to 300 Hz range. There they must significantly exceed the reference curve's
 performance.
+
+Because of the shortcomings of the standard $B$ reference curve in practical
+settings, DIN EN ISO 717-1:2013-06 introduced the "Spectrum Adjustment Values"
+$C$ and $C_{tr}$. These are used to adjust the $B$ reference curve to different
+specific model noise spectrums, $C$ for residential activites and $C_{tr}$ for
+traffic noises. The resulting values are expressed as $R_w$ ($C$, $C_{tr}$) in
+dB and allow quick insight into the components performance in a typical
+application area.
 
 Airborne sound transmission via ventilation and structure-borne sound
 transmission via ducts, such as water and ventilation pipes, can significantly
@@ -1170,7 +1178,7 @@ cage for shielding static magnetic fields, they present the only method of
 shielding static magnetic fields, like those emanating from electrical
 conductors carrying a direct current. They must be built from high-permeability
 materials, such as pure iron, to provide effective shielding of both static and
-variable magnetic fields. [wolfsperger2008, pp. 94-96]
+variable magnetic fields. [@wolfsperger2008, pp. 94-96]
 
 The most useful functional principle for the electromagnetic shielding of SCIFs
 is the electrodynamic shield. It shields variable magnetic fields while also
@@ -1357,7 +1365,7 @@ the occupants. As an example, a SCIF with 10 occupants requires ca. 360 m^3^/h
 of fresh air per hour. For a ventilation duct with a cross-section area of 0.1
 m^2^ (30x30 cm) this results in a necessary air flow velocity of 3600 m/h = 1
 m/s. Under these condtions, a 18 GHz honeycomb panel would cause a pressure loss
-of 0.1 mbar which would have to be compensated by the ventillation system. The
+of 0.1 mbar which would have to be compensated by the ventilation system. The
 same goes for the exhaust air side. [@wolfsperger2008, pp. 355-358]
 
 Refrigerant lines and water pipes should be fed through purpose-built pipe
@@ -1370,6 +1378,9 @@ the power line filter. The SCIF can be cooled using a ductless mini-split unit
 with all refrigerant lines fed through purpose-built pipe penetrations, power
 lines fed through the power line filter, and control lines fed through a control
 line filter.
+
+![Refrigerant Line Pipe Penetration [@wolfsperger2008, p.
+309]](images/refrigerantline.png){height=40%}
 
 A vapor barrier should be installed on both sides of the perimeter wall to
 protect it from moisture penetration by condensate. Especially in a mobile SCIF
@@ -1556,7 +1567,7 @@ hardware, easy to procure and customize. Furthermore, they come with excellent
 structural properties that allow them to provide a high-level of physical
 security and load-bearing capacity. So called "high-cube" containers are another
 foot higher than the standard shipping container dimensions, with 9.6 ft height,
-providing ample headroom to install proper sound attenuation and ventillation.
+providing ample headroom to install proper sound attenuation and ventilation.
 Using a shipping container to manufacture a standardized SCIF module means
 building on a stable and highly reliable platform that is easily deployed and
 reused in any region of the world. [@logan_braun_2019]
@@ -1691,7 +1702,7 @@ without holes or gaps. Windows are excluded from the design. On top of entailing
 serious information security risks, as detailed in [_section
 6.2_](#visual-protection-1), they also endanger a container's seaworthiness.
 This would jeopardize the significant mobility advantages of a SCIF container
-unit.  The container unit also includes a vestibule area to protect from visual
+unit. The container unit also includes a vestibule area to protect from visual
 insight into the SCIF and access procedures during personnel entry. The entry
 CCTV camera is mounted so as not to provide direct insight into the SCIF during
 personnel entry. No other video cameras are installed or allowed inside the SCIF
@@ -1736,6 +1747,9 @@ partition wall is perpendicular to the ceiling joists. The soft stud
 compartments are fully insulated. This ceiling makeup has a width of ca. 150 mm
 and a sound attenuation of $R_w$ = 67 dB. [@din4109-33, p. 68] The resulting
 headroom between ceiling and floor comes out to a relatively comfortable 213 cm.
+
+![DIN 4109-33 Ceiling Makeup and
+$D_{n,f,w}$](images/din4109-33_ceiling.png){height=40%}
 
 When entering this system into the Knauf online soundproofing calculator, a
 resulting $R'_{w,R}$ = 63 dB is calculated, far exceeding the acoustic
@@ -1833,7 +1847,9 @@ space through special hollow conductors. Optionally, data connections are
 encrypted to a secure exit node over an encrypted VPN uplink. Footage from the
 surveillance camera is transmitted over an external data uplink to the
 ZoneMinder system, which is made accessible inside the SCIF over the shielded
-data uplink.
+data uplink. The surveillance camera footage allows constant monitoring of the
+SCIF's vestibule area during use, allowing SCIF operators to secure its function
+as a visual and acoustic air lock.
 
 Every effort is taken to keep wiring inside the SCIF unit as much as possible.
 For all control lines where running outside the SCIF unit is unavoidable, like
@@ -1851,7 +1867,7 @@ special shielding anchor plates.
 ![SCIF Floor Plan Showing Ventillation Duct and AC
 Unit](images/scif_floorplan2.jpg){height=40%}
 
-Air ventillation is accomplished with a 200 x 200 mm duct system with four
+Air ventilation is accomplished with a 200 x 200 mm duct system with four
 outlets. Ducts are treated with 18 GHz honeycomb filters on both the intake and
 exhaust side. These filter panels, along with the cross-talk sound attenuation
 boxes, cause pressure losses that must be compensated by inline fans. Heating
