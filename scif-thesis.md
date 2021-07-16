@@ -51,9 +51,9 @@ under the Freedom of Information Act (FOIA), leaked documents, and scientific
 literature to create a comprehensive picture of the current state of the art and
 an outlook on future improvements.
 
-# Information Security - Ideal State and Practical Tradeoffs
+# Information Security - Ideal State and Practical Trade-offs
 
-A communication link or room is considered secure if information travelling
+A communication link or room is considered secure if information traveling
 through it cannot be intercepted by unauthorized parties. This is a theoretical
 ideal state that _cannot_ be reached. However, one can employ various
 countermeasures to secure a communication link or room to such a degree that it
@@ -68,7 +68,7 @@ is able to develop a mission-specific threat model that allows him to employ his
 _limited_ resources effectively to defend against the most likely and serious
 attacks.
 
-The IC Tech Spec‐for ICD/ICS 705 [@ics-705-ts, p. 20] bases its threat modelling
+The IC Tech Spec‐for ICD/ICS 705 [@ics-705-ts, p. 20] bases its threat modeling
 on country-level threat ratings derived from the Department of State's (DoS)
 Security Environment Threat List (SETL). Specifically, the ICD establishes
 appropriate construction criteria based on the host country's SETL technical
@@ -78,7 +78,7 @@ different factors to determine threat level. Other possible criteria from which
 to derive a threat level include value of information handled and
 named/identified threats.
 
-The fundamental assumption for threat modelling is that it is highly unlikely
+The fundamental assumption for threat modeling is that it is highly unlikely
 for an attacker to expend more resources to carry out an attack than the
 objective value of the attainable information.
 
@@ -111,7 +111,7 @@ attacks, like lip-reading of sensitive discussions.
 Barring holes in the SCIF perimeter, like propped-open doors, visual leaks can
 only be captured through windows.
 
-![Laser Microphone Sptectra M+](images/spectralasermic.jpg){height=35%}
+![Laser Microphone Spectra M+](images/spectralasermic.jpg){height=35%}
 
 Table: Passive Attack Techniques Overview - Visual
 
@@ -140,7 +140,7 @@ rumors, true or false, are often revealing."
 ![Parabolic Microphone G-PKS PRO EX](images/parabolicmicrophone.jpg){height=30%}
 
 Digital sound processing software can further enhance an outside passive
-attackers capabilites to reconstruct, clarify, and analyze sound leaks.
+attackers capabilities to reconstruct, clarify, and analyze sound leaks.
 
 Table: Passive Attack Techniques Overview - Acoustic
 
@@ -155,12 +155,12 @@ Conventional Microphones | low | medium | medium
 Compromising electromagnetic waves unintentionally emitted from information
 processing equipment, like computers, screens, and even printers are another
 source for information leaks. These radio or electrical signals, sounds, and
-vibrations can be captured with antennae, microphones, and other sensors, and
+vibrations can be captured with anntenae, microphones, and other sensors, and
 allow inferences to be drawn about the information processed, sometimes even
 allowing its complete reconstruction [@liu2020]. They can also serve as a
 side-channel for attacks on cryptography [@genkin2015]. The techniques for
 extraction and analysis of compromising electromagnetic emanations fall under
-the commonly used U.S. National Security Agency codename TEMPEST [@tempest].
+the commonly used U.S. National Security Agency code-name TEMPEST [@tempest].
 
 These attack techniques require high technical skill to develop, however once
 established are easy and fast to reproduce with [_affordable
@@ -192,9 +192,9 @@ ensure adequate protection.
 
 No visual information should be accessible to an outside passive observer.
 Visual information source leaks are the easiest to avoid and should therefore be
-wholly prevented. Even observation of the entrypoint could provide insights into
-the comings and goings of authorized personnel and should therefore be obscured
-as much as possible.
+wholly prevented. Even observation of the entry point could provide insights
+into the comings and goings of authorized personnel and should therefore be
+obscured as much as possible.
 
 ## Acoustic Attenuation
 
@@ -203,24 +203,24 @@ of $R'_w$ = 53 dB. This measure roughly corresponds to the Sound Transmission
 Class 50 listed in the IC Tech Spec‐for ICD/ICS 705 as an enhanced rating for
 areas that provide for amplified conversations [@ics-705-ts, p. 66]. We use this
 as a general minimum measure, because the IC Tech Spec is geared towards
-military and other government facilties that provide a large measure of Security
-in Depth (SID), meaning that only semi-trusted personnel ever get within earshot
-of the SCIF. Security in Depth is a "multilayered approach, which effectively
-employs human and other physical security measures (like fences, walls, and
-guarded entry gates) throughout the installation or facility to create a layered
-defense against potential threats" [@navfac, p. 20]. Additionally, SID increases
-the probability of detection of nefarious activity because of continuous
-friendly-forces presence [@ics-705-ts, p. 3]. These conditions cannot be
-guaranteed for all locations, especially in the corporate realm, so the goal is
-to compensate reduced SID with a higher degree of sound insulation. When
-possible, $R'_w$ = 53 dB should be exceeded.
+military and other government facilities that provide a large measure of
+Security in Depth (SID), meaning that only semi-trusted personnel ever get
+within earshot of the SCIF. Security in Depth is a "multi-layered approach,
+which effectively employs human and other physical security measures (like
+fences, walls, and guarded entry gates) throughout the installation or facility
+to create a layered defense against potential threats" [@navfac, p. 20].
+Additionally, SID increases the probability of detection of nefarious activity
+because of continuous friendly-forces presence [@ics-705-ts, p. 3]. These
+conditions cannot be guaranteed for all locations, especially in the corporate
+realm, so the goal is to compensate reduced SID with a higher degree of sound
+insulation. When possible, $R'_w$ = 53 dB should be exceeded.
 
 $R'_w$ represents the resulting sound insulation between two rooms, taking into
 account all sound transmission paths [@tichelmann2000, p. 26]. This explicitly
 includes not only transmission through dividing components, but also so-called
 "flank transmission" over adjoining building components. In this phenomenon,
 sound waves cause vibrations in flanking walls and then linearly travel through
-them into the other room [@moeser2009, p. 254]. $R'_w$ is a cummulative value
+them into the other room [@moeser2009, p. 254]. $R'_w$ is a cumulative value
 calculated on the basis of the weighted sound reduction index of each
 component's $R_w$ [@tichelmann2000, p. 34].
 
@@ -282,8 +282,8 @@ generates a wave in the range of 1 KHz to 10 GHz. Two antennae are placed, one
 on either side of the shielding. One antenna acts as a transmitting (TX) antenna
 and the other as a receiving (RX) antenna. The antennae are separated by a
 distance of 61 centimeters plus the wall thickness. The signal from the RX
-antenna is fed back into a reciver. Attenuation levels can then be read from a
-spectrum analyzer. Magnetic field, electronic field, and plane wave attenuations
+antenna is fed back into a reciever. Attenuation levels can then be read from a
+spectrum analyzer. Magnetic field, electronic field, and plane wave attenuation
 are then measured at various specified frequencies. Attenuation tests are
 performed around the entire door frame, air ducts, filters and through any
 accessible joint or penetration. [@nsa94-106]
@@ -297,7 +297,7 @@ These holes become more critical the higher the frequency of the field to be
 shielded [@wolfsperger2008, pp. 292-293].
 
 Apart from airborne electromagnetic waves, emanations can also leak from a SCIF
-on cables and wires. Instead of travelling through the air, unwanted signals can
+on cables and wires. Instead of traveling through the air, unwanted signals can
 travel along wires out of the SCIF where they induce electromagnetic fields that
 be captured and turned into usable intelligence [@wolfsperger2008, p. 210].
 
@@ -311,7 +311,7 @@ leaks can be entirely avoided.
 
 Apart from passively observing information source leaks from outside the secure
 facility, an attacker can also actively attack the space to place sensors inside
-the SCIF and transmit sensitive visual, acoustic, or electromagentic information
+the SCIF and transmit sensitive visual, acoustic, or electromagnetic information
 to the outside. He can also seek to weaken the passive attenuation in order to
 increase the information yield of passive observation.
 
@@ -319,7 +319,7 @@ This chapter intends to give some general ideas about possible attack vectors,
 not to list out specific attacks and describe their execution. New attack
 methods are constantly being developed and only few ever get published.
 Thankfully, most can be prevented by implementing a handful established
-countersurveillance measures detailed below in [_chapter 6_](#countermeasures).
+counter-surveillance measures detailed below in [_chapter 6_](#countermeasures).
 
 ## Visual Attacks
 
@@ -379,7 +379,7 @@ Weakening Sound Attenuation | medium | medium | high
 ## Electromagnetic/TEMPEST Attacks
 
 Instead of passively capturing TEMPEST emanations from outside the SCIF
-perimter, an attacker could also seek to place an antenna within the SCIF. He
+perimeter, an attacker could also seek to place an antenna within the SCIF. He
 could then amplify the signals and thereby overpower the shielding or exfiltrate
 them on some other channel. He could also seek to weaken the electromagnetic
 shield by purposely creating holes in it or tampering with protective equipment,
@@ -466,7 +466,7 @@ hardest to defend against.
 #### Site Perimeter
 
 Without a secure perimeter, access to and movement within the site cannot be
-controlled. A secure fencing or other form of perimeter should be errected
+controlled. A secure fencing or other form of perimeter should be erected
 around the site and continuously monitored for unauthorized penetration. For
 renovation projects, barriers should be installed to segregate construction
 workers from operational activities, providing protection against unauthorized
@@ -488,7 +488,7 @@ The IC Tech Spec also requires the use of cleared American guards (CAGs) to
 supervise non-U.S. and non-cleared U.S. guards, as well as to directly protect
 the site in high-threat, SETL Category I countries. No equivalent to CAGs exists
 in the private sector. Their loyalty is impossible to recreate for a private
-actor who can't offer the same long-term employment guarantees and ideoligical
+actor who can't offer the same long-term employment guarantees and ideological
 motivation. However, guards with a similar training level can be sourced from
 private suppliers and with organizational practices, like close supervision and
 vetting, an adequate level of security can be ensured.
@@ -496,15 +496,15 @@ vetting, an adequate level of security can be ensured.
 #### Construction Materials
 
 Construction materials must be procured, transported, and stored in a secure
-way. If not, the entire security of the finished SCIF can be jeapordized by
-faulty or compromised materials. Materials are classfied in two categories,
+way. If not, the entire security of the finished SCIF can be jeopardized by
+faulty or compromised materials. Materials are classified in two categories,
 inspectable and non-inspectable. Inspectable materials are those that can be
 reasonably inspected with available measures. All other materials, as well as
 inspectable materials on which approved test methods were not carried out, are
 classified as non-inspectable and are subject to higher security requirements.
 [@ics-705-ts, p. 30]
 
-Inspectable materials can be procured from trusted supplyer's without further
+Inspectable materials can be procured from trusted supplier's without further
 security restrictions. Inspectable materials from non-trusted suppliers or
 shipped to the site in an unsecured manner should be inspected using approved
 methods and then moved to a Secure Storage Area (SSA). If stored outside the
@@ -516,7 +516,7 @@ suppliers shelf-stock without advance notice or indication of their intended
 use. No discernible purchasing patterns should be established while carrying
 out this randomized procurement procedure. [@ics-705-ts, pp. 27-29]
 
-Secure transporation is not required for inspectable materials if they are
+Secure transportation is not required for inspectable materials if they are
 inspected and then immediately placed in an SSA. If securely procured, shipped
 and stored, inspectable materials may even be utilized without inspection.
 Non-inspectable materials, should be transported securely packaged or
@@ -524,7 +524,7 @@ containerized and under the 24-hour control of an approved courier or escort
 officer. If this is not possible they should be securely shipped using approved
 transit security technical safeguards capable of detecting and displaying
 tampering or compromise. For government actors it may be interesting to require
-the transporation by military or flag carrying vessels. [@ics-705-ts, p. 30]
+the transportation by military or flag carrying vessels. [@ics-705-ts, p. 30]
 
 A secure storage area is a true floor to true ceiling, slab-to-slab construction
 of some substantial material, and a solid wood-core or steel-clad door equipped
@@ -546,7 +546,7 @@ list of inspection methods and their uses.
 #### Technical Security Countermeasures
 
 The construction phase involves many different parties and material suppliers.
-It is almost impossible to defend against threats accross the entire supply
+It is almost impossible to defend against threats across the entire supply
 chain. Monitoring and inspection measures are only able to completely prevent
 the most primitive attacks. They merely serve to make advanced attacks more
 difficult. Therefore, a [_Technical Surveillance Countermeasure (TSCM)
@@ -577,7 +577,7 @@ difficult to penetrate in a covert way. The IC Tech Spec‐for ICD/ICS 705
 [@ics-705-ts, pp. 8-10] proposes different wall makeups for different mission
 demands. For example, an open storage facility, one in which sensitive
 information is stored in the open, without SID requires a true-floor to
-true-ceiling wall made up of (from inside to outside) two 5/8" gipsum wall
+true-ceiling wall made up of (from inside to outside) two 5/8" gypsum wall
 boards (GWB), ¾" mesh from #9 expanded metal spot-welded or screwed every 6" to
 vertical studs, 16" metal studs and runners, acoustic fill, and another 5/8"
 GWB. Specifically the combination of multiple GWBs and expanded metal makes for
@@ -605,7 +605,7 @@ drill, jigsaw or reciprocating saw and an angle grinder with a maximum disc
 diameter of 125 mm can't breach the door within 15 minutes. A SCIF door setup
 should meet or exceed this standard.
 
-Closed storage of sensitive information in a security container is preferrable
+Closed storage of sensitive information in a security container is preferable
 over open storage when the SCIF is not in use. Even better, sensitive
 information should be stored in a separate vault when the SCIF is not in use. A
 security container according to the IC Tech Spec‐for ICD/ICS 705 [@ics-705-ts,
@@ -653,7 +653,7 @@ secondary point, like emergency exits, should continue to trigger an immediate
 alarm. Secure mode is used when the SCIF is unoccupied, i.e., the last person
 departs the SCIF. In secure mode, any unauthorized entry into the SCIF should
 cause an alarm to be immediately transmitted to the monitoring station.
-Maintenace mode is used during routine repairs and testing on the system. A
+Maintenance mode is used during routine repairs and testing on the system. A
 signal for this condition should be automatically sent to the monitoring station
 and verified/recorded there. It might also become necessary to shunt/mask
 sensors and zones for other reasons, like unforeseen malfunctioning of specific
@@ -687,7 +687,7 @@ be gained should be monitored by motion sensors (UL 639) and high security
 switches (HSS) (UL 634 level 1 or 2). Motion sensors trigger alarms on
 detecting movements in their view-field. HSS are split in two components, one
 mounted on the moving component and the other on its adjacent rigid part. They
-trigger alarms when they lose internal contact between their two halfs, for
+trigger alarms when they lose internal contact between their two halves, for
 example when a door is opened. SCIF perimeter doors should be protected by both
 an HSS and a motion sensor. Failed sensors should cause continuous alarm until
 repaired. [@ics-705-ts, pp. 54-55] Seismic detectors, sensors that trigger on
@@ -715,8 +715,8 @@ must be installed in a location that precludes observation by any unauthorized
 party. [@ics-705-ts, p. 55]
 
 Immediate and continuous alarm must be given on any intrusion detection, failed
-sensor, tamper detection, or enabling of maintenance mode (maintenace message
-may be used in place of an alarm). Alarms or maintenace messages should be
+sensor, tamper detection, or enabling of maintenance mode (maintenance message
+may be used in place of an alarm). Alarms or maintenance messages should be
 displayed individually for all zones shunted or masked during maintenance mode.
 [@ics-705-ts, p. 55]
 
@@ -731,7 +731,7 @@ thickness from the closed position. For example, this means that the HSS
 triggers an alarm before the door opens 5 cm for a 5 cm door. Tamper testing
 should be carried out by ensuring that alarms are triggered when IDS equipment
 covers are opened, both in secure and access mode. These test procedures should
-be repeated at least semi-anually. [@ics-705-ts, pp. 60-61]
+be repeated at least semi-annually. [@ics-705-ts, pp. 60-61]
 
 ### Access Control
 
@@ -770,7 +770,7 @@ date of the incident or until the corresponding investigation is resolved.
 
 If the number of personnel that require access is low and there is only one
 entrance, a non-automated access control may be used. This can consist of a
-mechanical, eletric or electromechanical combination lock with combinations of
+mechanical, electric or electromechanical combination lock with combinations of
 four or more random digits. Mechanical access control devices should be
 installed to prevent manipulation or access to mechanisms used for setting the
 combination from outside the door. The control panel or keypad should be
@@ -787,7 +787,7 @@ Specification FF-L-2890 [@ics-705-ts, p. 11]. The combination lock is used to
 secure the door when the SCIF is unoccupied and the access control device is
 used while the SCIF is occupied [@ics-705-ts, p. 63]. The equivalent
 international specifications for FF-L-2740A combination locks are UL 768 and
-DIN EN 1300. The lowest UL 768 rating, Group 2, is essentialy equivalent to
+DIN EN 1300. The lowest UL 768 rating, Group 2, is essentially equivalent to
 FF-L-2740A [@lockreference].
 
 ![Kaba X-10 Mounted Lock (FF-L-2740)](images/ffl2740a.jpg){height=40%}
@@ -859,7 +859,7 @@ door to prevent observation through the door crack [@ics-705-ts, p. 12].
 
 To secure the discussions, information processing, and conferences carried out
 inside the SCIF it is essential to design an effective acoustic protection
-system. Sound waves tend to find weakpoints in even the most well-designed
+system. Sound waves tend to find weak-points in even the most well-designed
 systems, escaping through them to the outside where even the faintest emission
 can be captured and reconstructed with digital means. Therefore, it is necessary
 to pay meticulous attention to detail, both in the design and construction
@@ -871,7 +871,7 @@ properties, must be combined with active sound masking, speakers that emit
 speech-like sounds to render useless escaping sound waves. Both due to room
 constraints and redundancy considerations, passive sound attenuation most often
 does not suffice on its own. A sound masking system can reduce the wall
-thickness needed and mitigate any weakpoints that are inadvertently built into
+thickness needed and mitigate any weak-points that are inadvertently built into
 the attenuating shell. Protecting against attackers who manage to smuggle
 microphones into the SCIF space, as guests or intruders, should also be
 considered in system design.
@@ -953,7 +953,7 @@ excessively heavy facing shells or prohibitively wide hollow spaces.
 [@moeser2009, p. 273]
 
 To achieve a high sound attenuation level, it is advantageous to use heavy total
-masses and to distribute them unequally among the shells, if possible avoding
+masses and to distribute them unequally among the shells, if possible avoiding
 shells of equal weight. One should also maximize the distance $d$ between the
 two shells, dampen the cavity as fully as possible with absorber material, and
 avoid leaks or structure-borne sound bridges. [@moeser2009, p. 276]
@@ -961,20 +961,20 @@ avoid leaks or structure-borne sound bridges. [@moeser2009, p. 276]
 In order to evaluate the solution on a whole system level, including floors and
 ceilings, one combines the walls $R_w$ value as described in [_section
 4.3_](#acoustic-attenuation) with the longitudinal sound attenuation $R_{L,w}$
-of the four flanking components (two walls, ceiling, and floor) in a stepwise
+of the four flanking components (two walls, ceiling, and floor) in a step-wise
 addition scheme specified in DIN 4109-1. The result is a total resulting sound
 Reduction index $R'_{w,R}$ expressed in dB. [@tichelmann2000, p. 34]
 
-![Stepwise Addition Scheme DIN 4109-1 [@tichelmann2000, p.
+![Step-wise Addition Scheme DIN 4109-1 [@tichelmann2000, p.
 34]](images/din4109-1.png){height=50%}
 
 In accordance with the above scheme, floors and ceilings must also be
 constructed with sound attenuation in mind to ensure adequate system-level
-performance. Both longitudional sound attenuation $R_{L,w}$ and direct sound
+performance. Both longitudinal sound attenuation $R_{L,w}$ and direct sound
 attenuation $R_w$ should offer adequate protection of escaping sound waves. In
-general, a designer should seek to constuct floors and ceilings as rigid and
+general, a designer should seek to construct floors and ceilings as rigid and
 heavy as possible. Walls should go from true-floor to true-ceiling, completely
-interrupting additional longitudional layers like screed, flooring, and false
+interrupting additional longitudinal layers like screed, flooring, and false
 ceilings. Example constructions with their associated attenuation values can be
 taken from the component catalog in DIN 4109-33 sections 4.3 and 5.3.
 
@@ -984,31 +984,31 @@ attenuation. If untreated they can serve as direct transmission paths for sound
 waves out of the SCIF and eliminate all benefits gained from a carefully
 designed double-shell system. In order to treat air ducts and vents it is
 necessary to insert some type of silencer. These can be reflection mufflers,
-wall mufflers or active noise cancelling systems. Reflection mufflers work
-eclusively through reflection. Cross-section changes, branch-offs and inserted
+wall mufflers or active noise canceling systems. Reflection mufflers work
+exclusively through reflection. Cross-section changes, branch-offs and inserted
 chambers reflect sound waves internally and decrease their energy. Wall mufflers
 work through absorption _and_ reflection. Absorbant wall lining or slim
 absorbant channels are used to reflect sound waves internally. Additionally,
 these sound waves lose energy into the mufflers absorbant surfaces.
 [@moeser2009, pp. 285-328]
 
-Active noise cancelling systems produce anti-sound, amplitude inverted sound
+Active noise canceling systems produce anti-sound, amplitude inverted sound
 waves, to cancel out sound. They are limited in frequency range and aereal
 effectivity. Large levels of sound reduction require very high replication
-accuracy in the secondary, cancelling field. [@moeser2009, pp. 405-427] Because
+accuracy in the secondary, canceling field. [@moeser2009, pp. 405-427] Because
 of their complexity and relative novelty they are not the go-to solution for air
 vent treatment.
 
-Reflection and wall muflers either achieve high attenuation performance in
+Reflection and wall mufflers either achieve high attenuation performance in
 narrow bands or moderate attenuation in wider bands. Knowing the frequency range
-of the sound to be cancelled is essential for optimizing the mufflers.
+of the sound to be canceled is essential for optimizing the mufflers.
 Specialized air vent mufflers for the human voice, called cross-talk sound
 attenuators, are readily available on the market. They achieve relatively high
 performance values around the frequency spectrum of the human voice and come in
 a box shape optimized for installation inside drywall. An off-the-shelf product
-from German manufacturer SHAKO KG, the cross-talk sound attenuator box AUDIX®,
+from German manufacturer SCHAKO KG, the cross-talk sound attenuator box AUDIX®,
 achieves a weighted sound reduction index of $R_w$ 38 dB at 508 mm length and
-300 mm height. Normalised sound reduction $D_{n,e}$ at the male fundamental
+300 mm height. Normalized sound reduction $D_{n,e}$ at the male fundamental
 frequency 125 Hz is 54 dB. [@schako]
 
 ![SCHAKO Cross-talk Sound Attenuator Box AUDIX® - Installation
@@ -1018,7 +1018,7 @@ Schematic](images/schako.png){height=40%}
 
 When passive measures alone, out of space, weight or costs constraints, can't
 provide an adequate level of sound attenuation, they can be supplemented by a
-sound masking system. In such a system, speakers and transudcers are placed on
+sound masking system. In such a system, speakers and transducers are placed on
 or close to any paths that would allow audio to leave the protected space. In
 conjunction with a noise generator and amplifier, they generate and distribute
 vibrations or noise that drown out escaping audio and render it useless.
@@ -1036,7 +1036,7 @@ perimeter using stud-mount brackets. For vents, ducts, and pipes contact
 speakers are placed directly on the exterior inducing vibrations directly into
 the surface. In raised floors and ceilings, as well as all wall cavities,
 conventional dynamic cone speakers are placed in the hollow space to transmit
-sound through the air and induce audio interferences into adjoining parts. The
+sound through the air and induce audio interference in the adjoining parts. The
 speaker placement must be optimized for each room geometry and wall type.
 [@speechmasking]
 
@@ -1091,9 +1091,9 @@ A microphone jammer makes use of the hardware non-linearity of commodity
 microphones. Linearity is the ability to generate an electrical output
 proportional to the amplitude of the sound input. Any device, such as a
 microphone, exhibits non-linearity in some frequency bands, meaning it produces
-overproportional electrical output for a given input frequency. Ultrasonic
+over-proportional electrical output for a given input frequency. Ultrasonic
 signals (centered around 25kHz) can trigger these non-linearities without being
-noticable by human ears. Inside the microphone, they leak into the audible
+noticeable by human ears. Inside the microphone, they leak into the audible
 spectrum and produce jamming signals. [@chen2019]
 
 A 2019 study by University of Chicago researchers showed existing devices to be
@@ -1122,8 +1122,8 @@ Electromagnetic shielding is used to prevent inadvertent emissions of sensitive
 information from the SCIF, and to make information transmission of bugging
 devices located within it more difficult. These shields take the form of
 separate enclosures around the entire protected space, and make use of different
-phyiscal principles to block airborne electromagentic waves. All penetrations of
-the elctromagentic shield, like pipes, ducts, and cables, are treated separately
+physical principles to block airborne electromagnetic waves. All penetrations of
+the elctromagnetic shield, like pipes, ducts, and cables, are treated separately
 to prevent the inadvertent or malicious transmission of sensitive information
 along them. Additionally, a monitoring system can be designed to ensure the
 continuous performance of the electromagnetic shield over time.
@@ -1136,10 +1136,10 @@ blocking emanations at the individual device level.
 
 ### Functional Principles of Electromagnetic Shielding
 
-There are multiple functional principles which electromagentic shields can
+There are multiple functional principles which electromagnetic shields can
 utilize to block airborne waves. Faraday cages are the simplest and most well
 known type of electromagnetic shield. They make use of a conductive material to
-distribute externally induced electric charges within the material, cancelling
+distribute externally induced electric charges within the material, canceling
 the charge's effects in the cage's interior. The cage can be imagined as two
 metal plates connected by an electric conductor. Because of the higher
 conductivity within the material than into the surrounding air, the external
@@ -1168,10 +1168,10 @@ preferably carried out using the Faraday cage principle. [@wolfsperger2008, pp.
 Constant (Permittivity), Refracting Electric Field Lines [@wolfsperger2008, p.
 93]](images/dielectric.png){height=40%}
 
-Dimagentic shields are fully analog to dielectric shields, just that they
+Dimagnetic shields are fully analog to dielectric shields, just that they
 function in the realm of magnetostatic fields instead of electrostatic fields.
 Instead of electric field lines, magnetic field lines are refracted at the
-boundary between materials with different magentic permeability. The high
+boundary between materials with different magnetic permeability. The high
 permeability magnetostatic shield is much more important in practice than the
 dielectric shield. Since there is no physical effect equivalent to the Faraday
 cage for shielding static magnetic fields, they present the only method of
@@ -1191,8 +1191,8 @@ field. The electrodynamic shield must be constructed of a highly conductive
 material with minimal openings. Therefore it coincidentally also works as a
 Faraday cage. An electrodynamic shield, made of an ideally conductive shell
 without openings, shields alternating electric and variable magnetic fields as
-well as DC electric fields. Forunately, shielding variable magnetic fields is of
-primary interest in SCIF building. Shielding static magnetic fields, on the
+well as DC electric fields. Fortunately, shielding variable magnetic fields is
+of primary interest in SCIF building. Shielding static magnetic fields, on the
 other hand, is the absolute exception. [@wolfsperger2008, pp. 100-102]
 
 Table: Types of Electromagnetic Field [@wolfsperger2008, p. 88]
@@ -1208,9 +1208,9 @@ Electromagnetic wave field | Plane wave | Electrodynamic shield
 
 Electrodynamic shields are constructed from a wide variety of materials.
 Aluminium, steel, zinc, stainless steel, copper, brass, and tin are all useful,
-but come with different tradeoffs that must be evaluated when selecting an ideal
-material for the mission demand. The different materials with their pros and
-cons are listed in the table below.
+but come with different trade-offs that must be evaluated when selecting an
+ideal material for the mission demand. The different materials with their pros
+and cons are listed in the table below.
 
 Table: Electromagnetic Shielding Materials Overview
 
@@ -1219,7 +1219,7 @@ Material | Pros | Cons
 Aluminium | Low weight, easy to work with, high electrical conductivity | Cannot be magnetized, not so easy to weld, not as rigid as steel, electrically insulating passive corrosion layer forms on the surface (in case of joints remove the passive layer and immediately prevent new formation by applying paint or textiles)
 Steel | High magnetic permeability | Corrosive
 Zinc | Passive layer like aluminium | Low nobility (contact with metals higher on the galvanic series problematic for corrosion)
-Stainless steel | Relatively good electrical conductivity, high corrosion resistance (preferred material for electrodynamic shields) | High price, high weight, difficult processing with cutting tools, poor shielding of low frequency fields due to low permeability
+Stainless steel | Relatively good electrical conductivity, high corrosion resistance (prefered material for electrodynamic shields) | High price, high weight, difficult processing with cutting tools, poor shielding of low frequency fields due to low permeability
 Copper | No interfering protective oxidation layers, soft, easy soldering | Very high price
 Brass | Good corrosion resistance, harder than copper | Low conductivity, very expensive
 Tin | Useful as alloy or corrosion protection | Too soft
@@ -1322,7 +1322,7 @@ the design from the outset.
 
 Electrical power lines should pass into the SCIF through a power line filter.
 This filter only allows the 50 Hz frequency of the power grid to pass through
-while "filtering" out all other transmissions. Their encolsure should be mounted
+while "filtering" out all other transmissions. Their enclosure should be mounted
 to the wall shielding in order to make its shielding continuous with that of the
 room. Similar filters also exist for control lines. [@wolfsperger2008, pp.
 271-276]
@@ -1355,7 +1355,7 @@ honey comb panels at the protected space boundary. These make use of the fact
 that hollow conductors have high attenuation properties below their cut-off
 frequency. With sufficiently small hollow conductors the cut-off frequency can
 be raised to a point where almost all waves fall in its highly attenuating
-spectrum below the cut-off freuqency. [@wolfsperger2008, p. 282-284] Due to
+spectrum below the cut-off frequency. [@wolfsperger2008, p. 282-284] Due to
 their small hollow spaces, honeycomb filters restrict air flow. They must be
 dimensioned with a sufficiently large cross-section area to supply the necessary
 air for all occupants and discharge the equivalent amount of exhaust air on the
@@ -1364,9 +1364,9 @@ electromagnetic shields, otherwise there is a serious risk of suffocation for
 the occupants. As an example, a SCIF with 10 occupants requires ca. 360 m^3^/h
 of fresh air per hour. For a ventilation duct with a cross-section area of 0.1
 m^2^ (30x30 cm) this results in a necessary air flow velocity of 3600 m/h = 1
-m/s. Under these condtions, a 18 GHz honeycomb panel would cause a pressure loss
-of 0.1 mbar which would have to be compensated by the ventilation system. The
-same goes for the exhaust air side. [@wolfsperger2008, pp. 355-358]
+m/s. Under these conditions, a 18 GHz honeycomb panel would cause a pressure
+loss of 0.1 mbar which would have to be compensated by the ventilation system.
+The same goes for the exhaust air side. [@wolfsperger2008, pp. 355-358]
 
 Refrigerant lines and water pipes should be fed through purpose-built pipe
 penetrations as shown in @wolfsperger2008 Schematic 4.40 and 4.52. These enclose
@@ -1426,7 +1426,7 @@ shielding could be checked for malicious tampering or other damages.
 This system could help mitigate against sabotage and performance losses over
 time, which would otherwise only be detected by periodic shield attenuation
 measurements. Because of their high equipment and personnel costs, these are
-conventionally only conducted anually, if at all. Undetected leaks can therefore
+conventionally only conducted annually, if at all. Undetected leaks can therefore
 persist for long time periods and nullify the large effort that went into the
 planning and construction of the shield in the first place. Such a system is not
 yet commercially available and would have to be specially planned and
@@ -1460,7 +1460,7 @@ devices' built-in semiconductor components, and compromises of installed lines.
 
 To detect active transmitters in the protected space it is necessary to make use
 of a spectrum analyzer. These devices are designed to capture and analyze
-wireless signals over a wide frequency range. They either come as benchtop
+wireless signals over a wide frequency range. They either come as bench-top
 devices, used to collect the ambient spectrum over longer periods of time, or as
 hand-held, near field devices to detect signals at their source.
 
@@ -1474,9 +1474,9 @@ defined intervals all at once.
 
 ![REI Oscor Blue Spectrum Analyzer](images/oscorblue.jpg){height=40%}
 
-Hand-held, near field devices complement benchtop devices. They make use of
+Hand-held, near field devices complement bench-top devices. They make use of
 different probes to locate surveillance devices at their source, for example
-when suspicious signals are detected on the benchtop analyzer and require
+when suspicious signals are detected on the bench-top analyzer and require
 further investigation. The different probes function at different frequency
 ranges, directional focuses, and sensitivities, each specialized to detect a
 specific type of bug or exfiltration path. [@emshield]
@@ -1518,7 +1518,7 @@ information without needing to transmit wirelessly or having to set up a custom,
 covert transmission channel. Line analyzers combine multiple testing
 capabilities to detect malicious data transmissions over a fixed line or the
 source and location of any type of device "tapping" the line to capture
-information travelling on it. Test techniques include a digital multimeter to
+information traveling on it. Test techniques include a digital multimeter to
 test lines for voltage, current, resistance, and incapacitance anomalies,
 frequency domain reflectometry (FDR) to check for impedance anomalies resulting
 from taps on the line, non-linear junction detection to check for electronics
@@ -1584,7 +1584,7 @@ trusted personnel and video surveillance. Stationary manufacturing allows for
 more careful oversight of production premises and personnel access than
 constantly changing construction sites. The use of long-term employees is also
 easier in a stationary manufacturing setting than on globally distributed
-construction projects. The secure procurement, transporation, and storage of
+construction projects. The secure procurement, transportation, and storage of
 construction material is enhanced by long-term stationary manufacturing
 infrastructure. Investments in thorough material testing equipment and
 procedures, like X-ray and ultrasonic testing, are made more profitable by the
@@ -1637,7 +1637,7 @@ Alarms are sent to client devices on multiple transmission channels (internet,
 GSM, radio). The Alertr system can also optionally transmit alarms and alerts to
 an external monitoring station.
 
-It is preferrable to build on the Alertr open-source alarm system over
+It is preferable to build on the Alertr open-source alarm system over
 conventional, proprietary solutions because of Alertr's free software licensing.
 This means source code is publicly available and can be copied, extended, and
 modified freely. Alertr thereby enjoys a higher degree of trustworthiness and
@@ -1664,7 +1664,7 @@ door via a HID® EDGE EVO® Solo ESHRP40-K standalone door controller. The door 
 equipped with a positive engagement electronic strike lock and a Securitron door
 contact. [@chapman]
 
-![Entrace to SCIF Area with ACS Card Reader, CCTV Camera, Krieger Products
+![Entrance to SCIF Area with ACS Card Reader, CCTV Camera, Krieger Products
 RFI-60-STC-50 Door, and Bosch TriTech Motion
 Sensor](images/rendering_frontdoor.png){height=40%}
 
@@ -1692,7 +1692,7 @@ components that would enable the viewer to identify PINs and access procedures.
 
 Alternatively to the Elphel NC393-F-CS, trustworthy commercial camera equipment
 like a Bosch Flexidome 7000i can also be used, though open software and hardware
-are preferred for reasons as stated above in [_section
+are prefered for reasons as stated above in [_section
 7.2.3_](#intrusion-detection-system-1).
 
 ## Visual Protection
@@ -1721,10 +1721,10 @@ The wall, floor, and ceiling constructions draw upon DIN standardized components
 and Knauf-manufactured, proprietary products. The walls are built with the Knauf
 W115-75Y6-10 drywall system, which comes with a certified sound attenuation
 level of $R_w$ = 73.2 dB [@knauf, p. 14]. All corners and joints are carried out
-to manfucaturer specifications. According to the manufacturer documentation,
+to manufacturer specifications. According to the manufacturer documentation,
 this wall system has a slightly weaker sound attenuation performance in the
 low-frequency range [@knaufacoustics, p. 18]. This frequency range is especially
-relvant for the tranmissions of the human voice, as detailed in [_section
+relevant for the transmissions of the human voice, as detailed in [_section
 4.3_](#acoustic-attenuation). For this reason, a supplemental sound masking
 system is included as a second layer of defense which specifically addresses
 this frequency range.
@@ -1768,7 +1768,7 @@ impact, provided the container doors are closed during use.
 
 The air vents constitute another weak point in the sound attenuating shell. They
 are muffled by SCHAKO AUDIX® cross-talk attenuator boxes on the intake and
-exhaust side. They use a galvanised sheet steel and an internal lining of
+exhaust side. They use a galvanized sheet steel and an internal lining of
 special insulating plates to form a deflection labyrinth for sound attenuation.
 They are best-in-class for form factor relative to performance, however, they
 still only provide a sound attenuation of $R_w$ = 38 dB. Although the inline
@@ -1816,9 +1816,9 @@ non-trusted personnel, like visitors, should be checked at the entrance.
 
 Electromagnetic shielding is achieved through a 2 mm stainless steel layer
 functioning as an electrodynamic shield. The stainless steel plate is mounted
-continously ontop the drywalls interior surface and inside the floor and ceiling
-superstructures. Stainless steel has good electrical conductivity and high
-corrosion resistance. It has therefore become the preferred material for
+continuously on top the drywall's interior surface and inside the floor and
+ceiling superstructures. Stainless steel has good electrical conductivity and
+high corrosion resistance. It has therefore become the prefered material for
 electrodynamic shields, and is also used in this SCIF container. At 100 kHz, the
 lowest usable radio frequency, and 1 m wall clearance this shell provides
 electromagnetic shielding of 100 dB. Connections between stainless steel plates
@@ -1840,7 +1840,7 @@ compact high performance power line filter model 8020-2-16. It is mounted to the
 shielding material as specified in [_section
 6.4.5_](#electromagnetic-shield-penetrations). Control lines for the AC unit,
 access control system, and intrusion detection system are fed through rigid
-conduit and penetrate the electromagentic shield through a Holland Shielding
+conduit and penetrate the electromagnetic shield through a Holland Shielding
 Systems signal line filter model 8090-2-16-100, also mounted to the attenuating
 shell. Data lines are converted to optical fibre before passing out of the SCIF
 space through special hollow conductors. Optionally, data connections are
@@ -1853,7 +1853,7 @@ as a visual and acoustic air lock.
 
 Every effort is taken to keep wiring inside the SCIF unit as much as possible.
 For all control lines where running outside the SCIF unit is unavoidable, like
-those of the shield moniotring system and the access control system, lines are
+those of the shield monitoring system and the access control system, lines are
 FIPS-AES encrypted from end-to-end and fed through rigid conduit. This
 eliminates interception of usable information or leakage from improperly
 shielded cables.
@@ -1897,7 +1897,7 @@ any indications give rise to the suspicion that SCIF security has been breached.
 
 This paper has explained the concept of a SCIF and its role in protecting
 sensitive communications in the physical realm. It has defined the theoretical
-ideal state of information security and proposed the method of threat modelling
+ideal state of information security and proposed the method of threat modeling
 for approximating it in practical application. The paper then went on to
 elaborate the different kinds of passive attacks, those performed by an outside
 observer without interacting with the physical SCIF space, and set up
@@ -1911,7 +1911,7 @@ prevent passive outside observation. It also provided an introduction to
 technical surveillance countermeasure (TSCM) inspections, also referred to as
 "bug sweeping," useful for keeping a SCIF secure over its operation lifecycle.
 
-The paper then applied all the above countersurveillance techniques in a
+The paper then applied all the above counter-surveillance techniques in a
 shipping-container-based SCIF module that can be serially produced and
 transported anywhere in the world discreetly, cheaply, and quickly. It
 demonstrated how such a module can deliver the state of the art, as standardized
